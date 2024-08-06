@@ -1,753 +1,563 @@
-//Tue Aug 06 2024 20:07:52 GMT+0000 (Coordinated Universal Time)
+//Tue Aug 06 2024 20:11:20 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 if (mode) {
-  activityUrl = "https://lzdz1-isv.isvjcloud.com/m/1000282702/dze70dc1d244b18a194dfc8857shop/";
-  activityUrl = "https://jinggengjcq-isv.isvjcloud.com/jdbeverage/pages/oC20240401cot/oC20240401cot?actId=8b0ef0c607f34f2ab2a7a5_240401";
-  activityUrl = "https://jinggengjcq-isv.isvjcloud.com/jdbeverage/pages/oC20240401cot/oC20240401cot?actId=c903126b617b4d8e943c82baa_240403";
-  activityUrl = "https://jinggengjcq-isv.isvjcloud.com/jdbeverage/pages/oC20240401cot/oC20240401cot?actId=0f03b6459c2c4333a1081be5acca7_240410";
-  activityUrl = "https://lzdz1-isv.isvjd.com/m/unite/dzlh0001/?activityId=d5412c11d735467abbfba3b3f4b319d7&venderId=1000001933&adSource=TBGFQJD";
-  activityUrl = "https://lzdz1-isv.isvjd.com/m/1000001683/dzb08098af8dca4bb28fce9c88b6e4/?adsource=0005";
-  activityUrl = "https://lzdz1-isv.isvjd.com/dingzhi/joinCommon/activity/activity?activityId=d5412c11d735467abbfba3b3f4b319d7";
-  activityUrl = "https://szxyun-rc.isvjcloud.com/pagec/unionOpenSHR240422/index.html";
-  activityUrl = "https://lzdz1-isv.isvjcloud.com/m/unite/dzlh0001?activityId=7940395b691b4611a4eadb59c3c8a4f6&venderId=1000003443&adSource=MJLJDZYGFQJD";
-  activityUrl = "https://jinggengjcq-isv.isvjcloud.com/jdbeverage/pages/oC20240410aslw/oC20240410aslw?actId=5f4d63b233744b1_240515";
-  activityUrl = "https://jinggengjcq-isv.isvjcloud.com/jdbeverage/pages/oC20240410aslw/oC20240410aslw?actId=42af5f29743f45e_240517";
-  activityUrl = "https://jinggengjcq-isv.isvjcloud.com/jdbeverage/pages/oC20240520def/oC20240520def?actId=df5b2fe59b9b453_240520";
-  activityUrl = "https://jinggengjcq-isv.isvjcloud.com/jdbeverage/pages/oC2024052402cxc/oC2024052402cxc?actId=0421ccc68d7c41bb_24052402";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10046&templateId=20210714190900lhj011&activityId=1706582977057599489&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10080&templateId=20210714190901ggl011&activityId=1707242183950278658";
+  activityUrl = "https://lorealjdcampaign-rc.isvjcloud.com/interact/index?activityType=10021&activityId=1706684390047875073&templateId=20210527190900dazhuanpan01&nodeId=101001&prd=crm";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10021&activityId=1714950726797340674&templateId=33ed5a4c-5aae-4b99-8b92-85c1c2e5a784&nodeId=101001&prd=cjwx";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity?activityId=56f3d081b3394dd0bf78c3b2ad8ada99";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity?activityId=8f740c7af17747c79d364434aa47c363";
+  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/loadBlindBox?id=9e8080f28b7c3eeb018b7f17e0e01f0a&user_id=1000003788";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10062&templateId=20210824190900zjd011&activityId=1724100184810049538&prd=cjwx";
+  activityUrl = "https://gzsl-isv.isvjcloud.com/wuxian/mobileForApp/dist2/views/pages/gameDZP_57.html?activityId=e836f4faad8d4c99a25ab888288ebae8";
+  activityUrl = "https://hdb-isv.isvjcloud.com/h5/pages/turntable/turntable?id=3ebc29c4a08bf9192d0effd569a491af&userId=12303514";
+  activityUrl = "https://hdb-isv.isvjcloud.com/h5/pages/pointDraw/pointDraw?id=aa5737bac99a9b9f5a4defad272ba8df&userId=131385";
+  activityUrl = "https://hdb-isv.isvjcloud.com/h5/pages/luckyGrid/luckyGrid1?id=87cf65dd463e47e89807d763c43a3f5d&userId=10016542";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/turntable/turntable11?id=6750963b19ec9483a51ae7ca400eb490&userId=688781";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/turntable/turntable11?id=715459808c66e8fe5cac9bad3e1aab46&userId=11744671";
+  activityUrl = "https://gzsl-isv.isvjcloud.com/wuxian/mobileForApp/dist/views/pages/gameDZP_17.html?activityId=089149abd5454a58a924be1e774b9bd3";
+  activityUrl = "https://hzbz-isv.isvjcloud.com/bigdraw/draw.h4?id=d571bc02uzix";
+  activityUrl = "https://hdds-isv.isvjcloud.com/bigdraw/draw.h4?id=f0c6c831megx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10026&activityId=1729748317390970881&templateId=20210518190900jfcj011&nodeId=101001&prd=cjwx&adsource=tg_storePage";
+  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/showDrawOne?id=9e8080c08c1efd3e018c1f9780f5248b&user_id=1000117302";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10026&activityId=1722146358967668737&templateId=20210518190900jfcj011&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/?activityType=10021&activityId=1730049752963821570&templateId=2adaadf0-d16c-4533-b8b4-f32608f4db4c&nodeId=101001&prd=cjwx";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity?activityId=5aaf763d9a0e4e70a3bddc60d1d14e5d";
+  activityUrl = "https://hdb-isv.isvjcloud.com/h5/pages/pointDraw/pointDraw?id=c1d6a646cab33cd6f8786b7f627e30d2&userId=131385";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10026&activityId=1729088940946305026&templateId=20210518190900jfcj011&nodeId=101001&prd=cjwx";
+  activityUrl = "https://hdds-isv.isvjcloud.com/bigdraw/draw.h4?id=a0ea1ac582gx";
+  activityUrl = "https://jinggeng-rc.isvjcloud.com/ql/front/showDrawOne?id=9e8080708c9a6bf2018ca1395354375a&user_id=64340";
+  activityUrl = "https://hzbz-isv.isvjcloud.com/bigdraw/draw.h4?id=1bd11547y87x";
+  activityUrl = "https://gzsl-isv.isvjcloud.com/wuxian/mobileForApp/dist/views/pages/gameDZPWw_1.html?activityId=bdcbe31ba346449a93e95d749a1c493b";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v2/30003/1003/?shopId=819551&activityId=1750765103755206657";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v2/30003/1003/?activityId=1751949454304165889&shopId=1000015026";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v2/10020/1001/?activityId=1752247172913238018&shopId=1000004064";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/turntable/turntable?id=cdbe2aaf3b36048dba88c3c40ffaf59f&userId=1000311299";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10021&activityId=1763155905388326913&templateId=2023120510021dzpcj02&nodeId=101001&prd=cjwx&adsource=tg_storePage";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10042&activityId=1763084851989499905&templateId=20210714190900ggl011&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjd.com/prod/cc/interaction/v2/10023/1001/?shopId=1000003015&activityId=1774717615353618434&shareId=1775154418404347905&nick=醉清风十4506164";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/bestTicket/default?id=24cd1c31ced80756f0bf04e09ec098d2&userId=1000007503";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/gashapon/gashapon?id=9e015d859e3506791672d63bfa21a069&userId=1000015664&actForm=single";
+  activityUrl = "https://lzkj-isv.isvjd.com/wxDrawActivity/activity/activity?activityId=4e314d7ccf594e129f04735705b1bdfc";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v2/30003/1001/?shopId=819551&activityId=1783351662425452546";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10021&templateId=20210527190900dazhuanpan011&activityId=1785218258431082497&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjd.com/prod/cc/interaction/v2/10021/1006/?shopId=1000002984&activityId=1784546748423274498&shareId=1787350615634395137";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10021&templateId=20210527190900dazhuanpan011&activityId=1784159118973149185&nodeId=101001&prd=cjwx";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/turntable/turntable3?id=35bfa9eceee09eccb92b5c5cfa08b83d&userId=139755&actForm=single";
+  activityUrl = "https://jinggeng-rc.isvjcloud.com/ql/front/showDrawOne?id=9e8080a48f2dbdeb018f2e46fae077d1&user_id=722518";
+  activityUrl = "https://gzsl-isv.isvjcloud.com/wuxian/mobileForApp/dist2/views/pages/gameDZP_34.html?activityId=f42d4b371284463eaae514fc0d4b6bef";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity?activityId=b62b337bfc984c40b2c30ece36214dce";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10021&activityId=1775405379973079042&templateId=10021240320dzpcj01&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10046&templateId=20210714190900lhj01&activityId=1800790172506263554&nodeId=101001&prd=crm";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity?activityId=aa8ce8604a064d35a02098444c98f248";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxDrawActivity/activity?activityId=71660c5f93094903827bbf91f7cdb21c";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/turntable/turntable4?id=5096a3806604378765d8863acb6c921f&userId=65679";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v2/10021/1006/?activityId=1806579415919820801&shopId=1000386186";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v2/10020/1002/?activityId=1810484831281164289&shopId=1000376431";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/wxDrawActivity/activity/8906c94a5be64525b9b454fabc0a1b4e?activityId=8906c94a5be64525b9b454fabc0a1b4e";
 }
 const {
-  RunMode: l1IilII,
-  UserMode: il11iiIl,
-  baseCommonEnv: l1l11I1l,
-  baseCommonEnvKey: iIIiIil
+  RunMode: _0x14c5ce,
+  UserMode: _0x2785a5,
+  baseCommonEnv: _0x34c2bd,
+  baseCommonEnvKey: _0x42af3f
 } = require("./bear");
-l1l11I1l.inviteNum = parseInt(process.env.B_WX_OPENCARD_INVITE_NUM || 100);
-l1l11I1l.leaderNum = parseInt(process.env.B_WX_OPENCARD_LEADER_NUM || 1);
-l1l11I1l.viewShop = parseInt(process.env.B_WX_OPENCARD_VIEW_SHOP || 0);
-l1l11I1l.addSku = parseInt(process.env.B_WX_OPENCARD_ADD_SKU || 0);
-iIIiIil.B_WX_OPENCARD_INVITE_NUM = "inviteNum";
-iIIiIil.B_WX_OPENCARD_LEADER_NUM = "leaderNum";
-iIIiIil.B_WX_OPENCARD_VIEW_SHOP = "viewShop";
-iIIiIil.B_WX_OPENCARD_ADD_SKU = "addSku";
-l1IilII.envInfo = {
-  "name": "通用开卡beta",
-  "runName": "jd_wx_opencard",
-  "version": "2.0.2"
+let _0x32ba81 = ["10020", "10021", "10026", "10031", "10041", "10042", "10046", "10062", "10063", "10073", "10080"];
+process.env.B_WX_LUCK_ACTIVITY_TYPES ? process.env.B_WX_LUCK_ACTIVITY_TYPES.split(/[@,&|]/).forEach(_0x3b0926 => _0x32ba81.push(_0x3b0926)) : "";
+_0x34c2bd.notLuckDrawList = process.env.B_WX_NOT_LUCK_DRAW_LIST ? process.env.B_WX_NOT_LUCK_DRAW_LIST.split(/[@,&|]/) : "a2海外@马可波罗@合田家@风向标@罗技二手外设".split("@");
+_0x34c2bd.blackLuckDrawRule = process.env.B_WX_BLACK_LUCK_DRAW_RULE || "FITURE|FITURE";
+_0x34c2bd.openCardMode = parseInt(process.env.B_WX_LUCK_OPEN_MODE || 0);
+_0x34c2bd.notLuckLimit = parseInt(process.env.B_WX_NOT_LUCK_LIMIT || 100);
+_0x34c2bd.activityTypes = _0x32ba81;
+_0x42af3f.B_WX_NOT_LUCK_DRAW_LIST = "__notLuckDrawList__";
+_0x42af3f.B_WX_BLACK_LUCK_DRAW_RULE = "blackLuckDrawRule";
+_0x42af3f.B_WX_LUCK_OPEN_MODE = "openCardMode";
+_0x42af3f.B_WX_LUCK_ACTIVITY_TYPES = "__activityTypes__";
+_0x42af3f.B_WX_NOT_LUCK_LIMIT = "notLuckLimit";
+_0x14c5ce.envInfo = {
+  "name": "幸运抽奖beta",
+  "runName": "jd_wx_luckDraw",
+  "version": "2.0.6"
 };
-class I1IiiIil extends il11iiIl {
-  constructor(ilIIiil1, liIIIiil) {
-    super(ilIIiil1, liIIIiil);
-    this.pinImg = "https://img10.360buyimg.com/imgzone/jfs/t1/21383/2/6633/3879/5c5138d8E0967ccf2/91da57c5e2166005.jpg";
-    this.viewShop = true;
+let _0x5002ff = 0;
+class _0x2f7451 extends _0x2785a5 {
+  constructor(_0x2a4581, _0x463154) {
+    super(_0x2a4581, _0x463154);
+    this.lzkjOpenCard = true;
+    _0x34c2bd.openCardMode === 1 && (this.openCardTypes = [...this.openCardTypes, ..._0x32ba81]);
   }
-  async ["writeLongCache"]() {
-    this.writeFileSyncByLock("cache", this.activityId, this.pin);
+  async ["followShop"](_0x3dd62e) {
+    let _0x9882db = await this.wxApi(this.type + "/follow", {
+      "pin": this.secretPin,
+      "skuId": _0x3dd62e
+    });
+    if (_0x9882db && _0x9882db.result) {
+      return _0x9882db.data;
+    }
+    return false;
   }
-  async ["checkOpenCard"](ii1II1II = false) {
-    this.debug({
-      "activityId": this.activityId,
-      "pin": this.secretPin,
-      "actorUuid": this.shareUuid,
-      "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-    });
-    let i1iI1lI = await this.wxApi("dingzhi/shop/league/checkOpenCard", {
-      "activityId": this.activityId,
-      "pin": this.secretPin,
-      "actorUuid": this.shareUuid,
-      "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-    });
-    this.debug(i1iI1lI);
-    if (!i1iI1lI || !i1iI1lI.result) {
-      this.putMsg(i1iI1lI?.["errorMessage"]);
-      this.wxStop(i1iI1lI?.["errorMessage"]);
-      return;
+  ["exitShop"]() {
+    if (this.shopName?.["match"](_0x34c2bd.blackLuckDrawRule) || _0x34c2bd.notLuckDrawList.some(_0x13379e => this.shopName?.["includes"](_0x13379e))) {
+      return this.putMsg("已屏蔽"), this.stop();
     }
-    let iIilili = i1iI1lI.data.allOpenCard,
-      IIll1iil = i1iI1lI.data.assistStatus,
-      II1lIlIi = i1iI1lI.data.sendBeanNum;
-    this.debug("----", II1lIlIi);
-    if (iIilili) {
-      this.log("已完成全部开卡");
-    }
-    if (this.toHelpUser?.["shareUuid"] && ii1II1II) switch (IIll1iil) {
-      case 0:
-        break;
-      case 1:
-        this.toHelpUser.helpedCount++, this.toHelpUser.helpedCount >= il11iiIl.activity.maxHelpCount && (this.toHelpUser.needHelp = false), this.log("助力成功，已邀请" + this.toHelpUser.helpedCount + "人");
-        break;
-      case 2:
-        this.log("您已经为该好友助力过了！");
-        break;
-      case 3:
-        this.log("您已经为其他好友助力过了！");
-        break;
-      case 11:
-        this.log("今日助力次数已达上限，无法继续为他助力！");
-        break;
-      case 12:
-        this.log("您活动期间助力次数已达上限，无法继续助力！");
-        break;
-      case 21:
-        this.log("您还不是会员，无法为好友助力！");
-        break;
-      case 22:
-        this.log("需要关注店铺及成为全部品牌会员并且有新会员，才能助力成功哦~");
-        break;
-      case 88:
-        this.log("需要关注店铺及成为全部品牌会员并且有新会员，才能助力成功哦~");
-        break;
-      case 66:
-        break;
-      case 99:
-        switch (i1iI1lI.shareType) {
-          case 2:
-            this.log("您需要完成全部开卡才能为好友助力");
-            break;
-          case 5:
-            this.log("您需要完成任意一组开卡，并关注店铺才能为好友助力");
-            break;
-          case 6:
-            this.log("您的好友邀请您为TA助力，您关注店铺和品牌全部开卡后，即为好友助力成功");
-            break;
-          default:
-            break;
+  }
+  async ["userTask"]() {
+    await this.isvObfuscator();
+    if (this.mode === "v2") {
+      await this.login();
+      this.exitShop();
+      if (_0x34c2bd.openCardMode === 1 && !this.openCard) {
+        await this.bindWithVender();
+      }
+      let _0x20f2a7;
+      if (!["30003"].includes(this.activityType)) {
+        await this.v2Task();
+        let _0x4eef74 = await this.v2Api("api/" + this.activityType + "/chanceNum");
+        _0x20f2a7 = _0x4eef74?.["data"] ?? 5;
+      } else _0x20f2a7 = 3;
+      if (_0x20f2a7 === 0) return _0x5002ff++, _0x5002ff >= _0x34c2bd.notLuckLimit && _0x34c2bd.notLuckLimit === this.index + 1 && (this.putMsg("达到无抽奖次数上限"), this.stop()), this.putMsg("无抽奖次数");
+      while (_0x20f2a7-- > 0) {
+        let _0x59e27e = await this.v2Api("api/" + this.activityType + "/lotteryDraw");
+        this.log(_0x59e27e);
+        if (_0x59e27e && _0x59e27e.code === 200) {
+          this.putMsg(_0x59e27e?.["data"]?.["prizeName"] || "空气");
+          _0x59e27e?.["data"]?.["result"]?.["result"] !== "true" && _0x59e27e?.["data"]?.["result"]?.["result"] !== true && _0x59e27e?.["data"]?.["activityPrizeId"] && (this.addressId = _0x59e27e?.["data"]?.["result"]?.["result"], this.prizeName = _0x59e27e?.["data"]?.["prizeName"], this.activityPrizeId = _0x59e27e?.["data"]?.["activityPrizeId"], await this.saveAddress());
+          continue;
         }
-        break;
-    }
-    return i1iI1lI.data.cardList.filter(l1lIIilI => !l1lIIilI.status);
-  }
-  async ["assist"](lI11iIii = false) {
-    let Ii1Ilil1 = await this.wxApi("dingzhi/joinCommon/assist", {
-      "activityId": this.activityId,
-      "pin": this.secretPin,
-      "uuid": this.shareUuid,
-      "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-    });
-    this.debug(Ii1Ilil1);
-    let iiiil1I1 = Ii1Ilil1?.["data"]?.["assistState"],
-      lI1I1lI = Ii1Ilil1?.["data"]?.["openCardInfo"]?.["openAll"];
-    lI1I1lI && this.log("已完成全部开卡");
-    if (this.toHelpUser?.["shareUuid"]) switch (iiiil1I1) {
-      case 0:
-        this.log("无法助力自己");
-        break;
-      case 1:
-        this.toHelpUser.helpedCount++, this.toHelpUser.helpedCount >= il11iiIl.activity.maxHelpCount && (this.toHelpUser.needHelp = false), this.log("助力成功，已邀请" + this.toHelpUser.helpedCount + "人");
-        break;
-      case 2:
-        this.log("已经助力过了");
-        break;
-      case 3:
-        this.log("没有助力次数了");
-        break;
-      case 10:
-        this.log("您已为好友助力过了哦");
-        break;
-      case 11:
-        this.log("您已成功为好友助力了，不能再为其他好友助力了");
-        break;
-      case 20:
-        this.log("您需注册会员,才能为好友助力！");
-        break;
-      case 21:
-        this.log("您需注册会员并关注店铺,才能为好友助力！");
-        break;
-      case 22:
-        this.log("您需注关注店铺,才能为好友助力！");
-        break;
-      case 77:
-        this.log("未全部开卡和关注，不能助力");
-        break;
-      case 78:
-        this.log("已经是老会员，不能助力");
-        break;
-      default:
-        this.log("未知状态");
-        break;
-    }
-    return Ii1Ilil1.data?.["openCardInfo"]["openVenderId"] || [];
-  }
-  async ["getActivityContent"]() {
-    let ll1iIi1I = "";
-    if (this.domain.includes("lzdz-isv")) {
-      let iliIIIil = await this.wxApi("dingzhi/taskact/common/init", {
-        "activityId": this.activityId,
-        "dzActivityType": 0,
-        "pin": "",
-        "adSource": ""
-      });
-      if (!iliIIIil || !iliIIIil.result) {
-        this.putMsg(iliIIIil?.["errorMessage"]);
-        this.wxStop(iliIIIil?.["errorMessage"]);
+        let _0x3e41dc = _0x59e27e?.["message"] || "抽奖失败";
+        this.putMsg(_0x3e41dc);
+        await this.wxStopSync(_0x3e41dc);
         return;
       }
-      let l1ll1iIl = iliIIIil?.["data"]?.["startTime"],
-        IlIIIIl1 = iliIIIil?.["data"]?.["endTime"];
-      if (l1ll1iIl && this.timestamp() < l1ll1iIl) {
+      return;
+    }
+    if (this.mode === "hzbz") {
+      let _0x5d029d = await this.taskGet(this.activityUrl);
+      if (!_0x5d029d) return;
+      if (_0x5d029d.includes("活动已结束")) {
+        this.putMsg("活动已经结束,手动确认");
+        await this.writeLongCacheByStop();
+        this.stop();
+        return;
+      }
+      let _0x115d53 = this.textToHtml(_0x5d029d),
+        _0x3e36cb = _0x115d53("#draw_info").text();
+      _0x3e36cb = this.parseJSON(_0x3e36cb);
+      let _0x48fcd2 = _0x3e36cb?.["condtions"] || [],
+        _0x562996 = _0x3e36cb?.["stime"] || 0,
+        _0x204f49 = _0x3e36cb?.["etime"] || 0;
+      this.shopName = _0x3e36cb?.["shopName"];
+      this.shopId = _0x3e36cb?.["shopId"];
+      this.rule = _0x3e36cb?.["drawRule"];
+      _0x2785a5.activity.shopId = this.shopId;
+      _0x2785a5.activity.venderId = this.shopId;
+      _0x2785a5.activity.shopName = this.shopName;
+      _0x2785a5.activity.startTime = _0x562996;
+      _0x2785a5.activity.endTime = _0x204f49;
+      if (_0x562996 && _0x562996 > this.timestamp()) {
         this.putMsg("活动未开始");
         this.stop();
         return;
       }
-      if (IlIIIIl1 && this.timestamp() > IlIIIIl1) {
+      if (_0x204f49 && _0x204f49 < this.timestamp()) {
         this.putMsg("活动已结束");
+        await this.writeLongCacheByStop();
         this.stop();
         return;
       }
-      ll1iIi1I = await this.wxApi("dingzhi/uinion/plus2505/activityContent", {
-        "activityId": this.activityId,
-        "nick": this.nickname,
-        "pinImg": this.pinImg,
-        "pin": this.secretPin,
-        "shareUuid": this.toHelpUser?.["shareUuid"] || ""
+      this.exitShop();
+      let _0x7a15b7 = await this.hzbzApi("LoadUserData.json", {
+        "id": this.activityId,
+        "token": this.isvToken,
+        "buyerFrom": "01"
       });
-      let IIlI1lIi = ll1iIi1I?.["data"]?.["vipPrize"] ?? [];
-      if (IIlI1lIi.length > 0) {
-        let l1liil11 = [];
-        for (let Ill11lii of IIlI1lIi) {
-          let {
-            bean = 0,
-            score = 0
-          } = Ill11lii;
-          if (bean) l1liil11.push(bean + "京豆");
-          if (score) l1liil11.push(score + "金币");
-        }
-        this.log("获得入会奖励:" + l1liil11.join(","));
+      this.debug(_0x7a15b7);
+      if (_0x7a15b7 && _0x7a15b7.code !== 0 && _0x7a15b7.code !== 1) {
+        this.putMsg(_0x7a15b7?.["txt"]);
       }
-    } else {
-      if (this.activityUrl.includes("/m/unite/") || this.activityUrl.includes("joinCommon")) {
-        let ilIIliII = await this.wxApi("dingzhi/taskact/common/init", {
-          "activityId": this.activityId,
-          "dzActivityType": 1,
-          "pin": ""
-        });
-        this.debug(ilIIliII);
-        if (!ilIIliII || !ilIIliII.result) {
-          this.putMsg(ilIIliII?.["errorMessage"]);
-          this.wxStop(ilIIliII?.["errorMessage"]);
-          return;
+      this.wxStop(_0x7a15b7?.["txt"]);
+      for (let _0x2dca05 of _0x48fcd2) {
+        this.debug(_0x2dca05?.["type"]);
+        _0x2dca05?.["type"] === "sc_shop" && (await this.hzbzApi("CollectShopToDraw.json", {
+          "conditionid": _0x2dca05?.["id"]
+        }));
+        _0x2dca05?.["type"] === "sign_draw" && (await this.hzbzApi("SingedInfo.json", {
+          "conditionid": _0x2dca05?.["id"]
+        }));
+        if (_0x2dca05?.["type"] === "ll_goods") {
+          let _0x3cd470 = JSON.parse(_0x2dca05.condition),
+            _0x5eb9e9 = _0x3cd470?.["allMax"] ?? 0,
+            _0x11b89b = _0x3cd470?.["dayMax"] ?? 0,
+            _0x410394 = _0x3cd470?.["viewCount"] ?? 0;
+          this.debug(_0x5eb9e9, _0x11b89b, _0x410394);
+          this.debug(_0x11b89b ?? _0x410394);
+          await this.hzbzApi("ViewGoodsToDraw.json", {
+            "conditionid": _0x2dca05?.["id"],
+            "count": _0x11b89b ?? _0x410394
+          });
         }
-        let Ilililil = ilIIliII?.["data"]?.["startTime"],
-          illIIii1 = ilIIliII?.["data"]?.["endTime"];
-        if (Ilililil && this.timestamp() < Ilililil) {
+        if (_0x2dca05?.["type"] === "sc_goods") {
+          let _0x4adff0 = JSON.parse(_0x2dca05.condition),
+            _0x1b871f = _0x4adff0?.["viewCount"] ?? 0,
+            _0xcfc62 = _0x4adff0?.["dayMax"] ?? 0;
+          await this.hzbzApi("CollectGoodsToDraw.json", {
+            "conditionid": _0x2dca05?.["id"],
+            "count": _0xcfc62 ?? _0x1b871f
+          });
+        }
+      }
+      _0x7a15b7 = await this.hzbzApi("LoadUserData.json", {
+        "id": this.activityId,
+        "token": this.isvToken,
+        "buyerFrom": "01"
+      });
+      this.debug(_0x7a15b7);
+      if (_0x7a15b7?.["code"] !== 0) {
+        this.putMsg(_0x7a15b7?.["txt"]);
+        return;
+      }
+      let _0x5a6e98 = _0x7a15b7?.["drawChances"] ?? 0;
+      _0x5a6e98 = Math.min(_0x5a6e98, 3);
+      while (_0x5a6e98-- > 0) {
+        await this.sleep(1000);
+        let _0x9c8b99 = await this.hzbzApi("DoDraw.json", {
+          "needCollectShop": _0x7a15b7.needCollectShop ?? false
+        });
+        this.debug(_0x9c8b99);
+        if (_0x9c8b99?.["prizeName"]) {
+          this.putMsg(_0x9c8b99?.["prizeName"]);
+          _0x9c8b99?.["needInputInfo"] && (this.addressId = _0x9c8b99?.["prizeId"], this.prizeName = _0x9c8b99?.["prizeName"], await this.saveAddress());
+          continue;
+        }
+        let _0x15fd7c = _0x9c8b99?.["txt"];
+        this.putMsg(_0x15fd7c);
+        this.wxStop(_0x15fd7c);
+      }
+      return;
+    }
+    if (this.mode === "gzsl") {
+      let _0x1da79b = await this.gzslApi("getLottery");
+      this.debug(_0x1da79b);
+      if (_0x1da79b && _0x1da79b.status === "1") {
+        let _0x3ee58d = _0x1da79b?.["activity"] || {};
+        this.shopId = _0x3ee58d.shopId;
+        this.venderId = _0x3ee58d.customerId ?? this.shopId;
+        this.rule = _0x3ee58d.rule;
+        this.shopName = _0x3ee58d.shopName;
+        let {
+          startTime: _0x2cc036,
+          endTime: _0x173ea5
+        } = _0x3ee58d;
+        _0x2785a5.activity.shopId = this.shopId;
+        _0x2785a5.activity.venderId = this.venderId;
+        _0x2785a5.activity.shopName = this.shopName;
+        _0x2785a5.activity.startTime = _0x2cc036;
+        _0x2785a5.activity.endTime = _0x173ea5;
+        if (_0x2cc036 && _0x2cc036 > this.timestamp()) {
           this.putMsg("活动未开始");
           this.stop();
           return;
         }
-        if (illIIii1 && this.timestamp() > illIIii1) {
+        if (_0x173ea5 && _0x173ea5 < this.timestamp()) {
           this.putMsg("活动已结束");
+          await this.writeLongCacheByStop();
           this.stop();
           return;
         }
-        ll1iIi1I = await this.wxApi("dingzhi/joinCommon/activityContent", {
-          "activityId": this.activityId,
-          "nick": this.nickname,
-          "pinImg": this.pinImg,
-          "pin": this.secretPin,
-          "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-        });
-        this.debug(ll1iIi1I);
-      } else this.activityUrl.includes("shop") ? (ll1iIi1I = await this.wxApi("dingzhi/shop/league/activityContent", {
-        "activityId": this.activityId,
-        "nick": this.nickname,
-        "pinImg": this.pinImg,
-        "pin": this.secretPin,
-        "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-      }), this.debug(ll1iIi1I)) : (await this.getOpenCardPath(), this.debug("dingzhi/" + this.pathType + "/union/activityContent"), ll1iIi1I = await this.wxApi("dingzhi/" + this.pathType + "/union/activityContent", {
-        "activityId": this.activityId,
-        "nick": this.nickname,
-        "pinImg": this.pinImg,
-        "pin": this.secretPin,
-        "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-      }));
-    }
-    return ll1iIi1I;
-  }
-  async ["getOpenCardPath"]() {
-    if (il11iiIl.activity.pathType) return this.pathType = il11iiIl.activity.pathType;
-    let iiIii1Il = await this.taskGet(this.activityUrl);
-    const liIIillI = this.textToHtml(iiIii1Il);
-    let iilill1i = "";
-    liIIillI("script[src]").each((i1Iii1I1, i1I1lli1) => {
-      const iiIl1Ii = liIIillI(i1I1lli1).attr("src");
-      let i1i1II1l = iiIl1Ii.match(/\/\/.*\/js\/index\.\w+\.js/);
-      i1i1II1l && i1i1II1l.length > 0 && (iilill1i = i1i1II1l[0]);
-    });
-    let ll1IllII = await this.request({
-        "url": "https:" + iilill1i
-      }),
-      Iiiiili1 = ll1IllII?.["data"]?.["match"](/dingzhi\/([a-zA-Z]+)\/union\/saveTask/);
-    if (Iiiiili1 && Iiiiili1.length > 1) {
-      il11iiIl.activity.pathType = Iiiiili1[1];
-      this.pathType = Iiiiili1[1];
-      return;
-    }
-    return this.log("未匹配到路径"), this.stop();
-  }
-  async ["initOpenCard"](l1iilIi1 = false) {
-    let lliI11II = await this.wxApi("dingzhi/" + this.pathType + "/union/initOpenCard", {
-      "activityId": this.activityId,
-      "pin": this.secretPin,
-      "actorUuid": this.shareUuid,
-      "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-    });
-    this.debug(lliI11II);
-    let Il11lill = lliI11II?.["data"]?.["allOpenCard"],
-      lliiII1i = lliI11II?.["data"]?.["assistStatus"],
-      Illl1liI = lliI11II?.["data"]?.["openCardBeans"];
-    Illl1liI > 0 && this.log("开卡获得京豆: " + Illl1liI);
-    Il11lill && this.log("已完成全部开卡");
-    if (this.toHelpUser?.["shareUuid"]) {
-      switch (lliiII1i) {
-        case 0:
-          this.log("无法助力自己");
-          break;
-        case 1:
-          this.toHelpUser.helpedCount++, this.toHelpUser.helpedCount >= il11iiIl.activity.maxHelpCount && (this.toHelpUser.needHelp = false), this.log("助力成功，已邀请" + this.toHelpUser.helpedCount + "人");
-          break;
-        case 2:
-          this.log("已经助力过了");
-          break;
-        case 3:
-          this.log("没有助力次数了");
-          break;
-        case 10:
-          this.log("您已为好友助力过了哦");
-          break;
-        case 11:
-          this.log("您已成功为好友助力了，不能再为其他好友助力了");
-          break;
-        case 20:
-          this.log("您需注册会员,才能为好友助力！");
-          break;
-        case 21:
-          this.log("您需注册会员并关注店铺,才能为好友助力！");
-          break;
-        case 22:
-          this.log("您需注关注店铺,才能为好友助力！");
-          break;
-        case 77:
-          this.log("未全部开卡和关注，不能助力");
-          break;
-        case 78:
-          this.log("已经是老会员，不能助力");
-          break;
-        default:
-          this.log("未知状态");
-          break;
-      }
-    }
-    return lliI11II?.["data"]?.["openInfo"] || [];
-  }
-  async ["task"]() {
-    if (this.domain.includes("lzdz-isv")) {
-      let ll11i1lI = this.activityContent.data.vipList ?? [],
-        lIIil1ii = this.activityContent.data.venderList?.["filter"](IilliiI1 => !ll11i1lI.includes(IilliiI1.venderId));
-      if (lIIil1ii.length === 0) return this.log("已全部开卡");
-      for (let IIiilII1 of lIIil1ii) {
-        await this.bindWithVender(IIiilII1.venderId || IIiilII1.shopId);
-        await this.sleep(500, 1000);
-      }
-      await this.getActivityContent();
-      return;
-    }
-    if (this.activityUrl.includes("shop")) {
-      for (let i1ll1li1 in this.activityContent.data) {
-        if (this.activityContent.data[i1ll1li1]?.["allStatus"]) continue;
-        switch (i1ll1li1) {
-          case "followShop":
-            await this.wxApi("dingzhi/shop/league/saveTask", {
-              "activityId": this.activityId,
-              "pin": this.secretPin,
-              "actorUuid": this.shareUuid,
-              "taskType": 1,
-              "taskValue": 1,
-              "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-            });
-            break;
-          case "addSku":
-            await this.wxApi("dingzhi/shop/league/saveTask", {
-              "activityId": this.activityId,
-              "pin": this.secretPin,
-              "actorUuid": this.shareUuid,
-              "taskType": 2,
-              "taskValue": 2,
-              "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-            });
-            break;
-          case "mainActive":
-            break;
+        this.exitShop();
+        let _0x3d7147 = Math.max(0, _0x1da79b?.["leftTime"] ?? 0);
+        if (_0x3d7147 === 0) {
+          _0x5002ff++;
+          _0x5002ff >= _0x34c2bd.notLuckLimit && _0x34c2bd.notLuckLimit === this.index + 1 && (this.putMsg("达到无抽奖次数上限"), this.stop());
+          this.putMsg("无抽奖次数");
+          return;
         }
-      }
-      let iliIlll = await this.checkOpenCard();
-      for (let lIlIll1l of iliIlll) {
-        await this.bindWithVender(lIlIll1l.value || lIlIll1l.value2);
-        await this.sleep(500, 1000);
-      }
-      iliIlll?.["length"] > 0 && (await this.checkOpenCard(true));
-    } else {
-      if (this.activityUrl.includes("/m/unite/") || this.activityUrl.includes("joinCommon")) {
-        let ii11l1ii = await this.wxApi("dingzhi/joinCommon/taskInfo", {
-            "activityId": this.activityId,
-            "pin": this.secretPin,
-            "uuid": this.shareUuid,
-            "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-          }),
-          lIIi11II = await this.wxApi("dingzhi/joinCommon/taskRecord", {
-            "activityId": this.activityId,
-            "pin": this.secretPin,
-            "uuid": this.shareUuid,
-            "shareUuid": this.toHelpUser?.["shareUuid"] || "",
-            "taskType": ""
-          });
-        this.debug(lIIi11II);
-        for (let liiliilI in lIIi11II?.["data"] || {}) {
-          if (liiliilI === "1") continue;
-          if (lIIi11II.data[liiliilI]?.["recordCount"] > 0) continue;
-          if (["20", "23", "24"].includes(liiliilI)) {
-            let iii1ll11 = await this.wxApi("dingzhi/joinCommon/doTask", {
-              "activityId": this.activityId,
-              "pin": this.secretPin,
-              "uuid": this.shareUuid,
-              "shareUuid": this.toHelpUser?.["shareUuid"] || "",
-              "taskType": liiliilI,
-              "taskValue": ""
-            });
-            this.debug(iii1ll11);
+        _0x3d7147 = Math.min(_0x3d7147, 3);
+        this.debug(_0x3d7147);
+        while (_0x3d7147-- > 0) {
+          await this.sleep(2000, 3000);
+          let _0x1a513e = await this.gzslApi("draw");
+          this.log(_0x1a513e);
+          if (_0x1a513e && _0x1a513e.status === "1") this.putMsg(_0x1a513e?.["data"]?.["name"] || "空气");else {
+            if (_0x1a513e && _0x1a513e.status === "-14") {
+              this.putMsg("非会员");
+              return;
+            } else {
+              if (_0x1a513e && _0x1a513e.status === "-3") {
+                this.log("关注");
+                let _0x2e44a0 = await this.taskPostByJson("wuxian/user/flowShop/" + this.shopId + "/" + this.venderId, {
+                  "shopId": this.shopId,
+                  "venderId": this.venderId,
+                  "token": this.isvToken,
+                  "source": "01"
+                });
+                if (_0x2e44a0 && _0x2e44a0.status !== "1") return this.putMsg(_0x1a513e?.["msg"]);
+                _0x3d7147++;
+                continue;
+              } else {
+                let _0x3ef19c = _0x1a513e?.["msg"];
+                this.putMsg(_0x3ef19c);
+                await this.wxStopSync(_0x3ef19c);
+                return;
+              }
+            }
           }
         }
-        let IlIIIlIl = ii11l1ii?.["data"]?.[1]?.["settingInfo"]["map"](liiIliI => parseInt(liiIliI.value)) || [],
-          l1lllilI = (await this.assist()).map(lii1ilii => parseInt(lii1ilii));
-        IlIIIlIl = this.different(IlIIIlIl, l1lllilI);
-        for (let iiil1111 of IlIIIlIl) {
-          await this.bindWithVender(iiil1111);
-          await this.sleep(50, 500);
-        }
-        IlIIIlIl?.["length"] > 0 && (await this.assist(true));
       } else {
-        let I1I1iliI = await this.initOpenCard();
-        for (let I1IlIi of I1I1iliI) {
-          !I1IlIi?.["followShopStatus"] && (await this.wxApi("dingzhi/" + this.pathType + "/union/saveTask", {
-            "activityId": this.activityId,
-            "pin": this.secretPin,
-            "actorUuid": this.shareUuid,
-            "taskType": 1,
-            "taskValue": I1IlIi.venderId,
-            "shareUuid": this.toHelpUser?.["shareUuid"] || ""
-          }));
-          !I1IlIi?.["openStatus"] && (await this.bindWithVender(I1IlIi.venderId));
-        }
-        I1I1iliI?.["length"] > 0 && (await this.initOpenCard(true));
+        let _0x3bd477 = _0x1da79b?.["msg"];
+        this.putMsg(_0x3bd477);
+        await this.wxStopSync(_0x3bd477);
+        return;
       }
+      return;
     }
-  }
-  ["mpdzSign"](i11l1lii) {
-    let lI111i1l = "6cc5dbd8900e434b94c4bdb0c16348ed",
-      I11iIIII = "c1614da9ac68",
-      l1lIiIii = this.timestamp(),
-      l11Ii1iI = "f" + I11iIIII + "D" + JSON.stringify(i11l1lii) + "c" + l1lIiIii + lI111i1l,
-      lli1II = this.md5(l11Ii1iI.toLowerCase());
-    return {
-      "sign": lli1II,
-      "timeStamp": l1lIiIii
-    };
-  }
-  ["jgcqdm"](I1lIIIi, Il1lIill) {
-    let I11ili11 = {
-        "actId": this.activityId,
-        ...Il1lIill,
-        "method": I1lIIIi.replace("dm/front", ""),
-        "userId": this.userId,
-        "buyerNick": this.buyerNick || ""
-      },
-      IlII1Ill = this.mpdzSign(I11ili11);
-    return {
-      "jsonRpc": "2.0",
-      "params": {
-        "commonParameter": {
-          "m": "POST",
-          "oba": IlII1Ill.sign,
-          "timestamp": IlII1Ill.timeStamp,
-          "userId": this.userId
+    if (this.mode === "jinggeng") {
+      await this.setMixNick();
+      await this.jinggengShopInfo();
+      this.exitShop();
+      let _0x37c70a = {
+          "user_id": this.userId,
+          "act_id": this.activityId
         },
-        "admJson": I11ili11
+        _0x5afddd = "";
+      if (this.activityUrl.includes("showDrawOne")) _0x5afddd = "postFrontCheckDrawOne";else {
+        if (this.activityUrl.includes("showTaskDraw")) {
+          _0x5afddd = "postFrontTaskDraw";
+          _0x37c70a.drawCountNumFlag = true;
+        } else {
+          if (this.activityUrl.includes("loadBlindBox")) _0x5afddd = "postBlindBox";else {
+            this.putMsg("未知活动类型");
+            this.stop();
+            return;
+          }
+        }
       }
-    };
-  }
-  async ["mpdzTask"](I1IIIlIl, Iliii11I = {}) {
-    let lIllIil = I1IIIlIl.replace("dm/front", "").replace("//", "/");
-    return await this.taskPostByJson(I1IIIlIl + "?open_id=&mix_nick=" + (this.buyerNick ?? "") + "&user_id=10299171", this.jgcqdm(lIllIil, Iliii11I));
-  }
-  async ["load"]() {
-    let IIll1Ill = await this.mpdzTask("dm/front/jdJoinCardtf/activity/load", {
-      "jdToken": this.isvToken,
-      "source": "01",
-      "inviteNick": this.toHelpUser?.["buyerNick"] || ""
-    });
-    this.debug(IIll1Ill);
-    if (!IIll1Ill || !IIll1Ill.success || IIll1Ill.data.status !== 200) return this.putMsg(IIll1Ill?.["errorMessage"]), this.wxStop(IIll1Ill?.["errorMessage"]), this.index === 0 && this.stop(), this.exit();
-    this.buyerNick = IIll1Ill.data.data.missionCustomer.buyerNick;
-    if (!this.buyerNick) {
-      return this.index === 0 && (this.putMsg("无法获取到buyerNick"), this.stop()), this.log("黑号，跳过"), this.exit();
-    }
-    let lIliiiil = IIll1Ill.data.data.cusActivity.startTime,
-      lli11lI1 = IIll1Ill.data.data.cusActivity.endTime;
-    if (lIliiiil && this.timestamp() < lIliiiil) {
-      this.putMsg("活动未开始");
-      this.stop();
+      let _0x5953ac = 1;
+      while (_0x5953ac-- > 0) {
+        await this.sleep(1000, 2000);
+        let _0x4a715c = await this.jinggengApi(_0x5afddd, _0x37c70a);
+        this.debug(_0x4a715c);
+        if (_0x4a715c && _0x4a715c.succ) {
+          this.log(_0x4a715c);
+          let _0x41ffd2 = _0x4a715c.msg ?? "{}",
+            _0x4e7ab2 = JSON.parse(_0x41ffd2);
+          if (_0x4e7ab2?.["isSendSucc"]) {
+            let _0x5b0978 = _0x4e7ab2?.["drawAwardDto"]?.["awardName"];
+            this.putMsg("" + _0x4e7ab2?.["drawAwardDto"]?.["awardDenomination"] + _0x5b0978);
+            if (_0x4e7ab2?.["drawAwardDto"]?.["awardType"] === "JD_GOODS") {
+              this.addressId = _0x4e7ab2?.["drawAwardDto"]?.["actLogId"];
+              this.prizeName = _0x5b0978;
+              await this.saveAddress();
+            }
+          }
+        } else {
+          let _0x15ba92 = _0x4a715c?.["msg"] || "抽奖失败";
+          if (_0x15ba92?.["includes"]("部分会员") && _0x34c2bd.openCardMode === 1) {
+            this.debug("尝试开卡", this.venderId, this.shopId);
+            await this.bindWithVender();
+            if (this.canNotOpenCard) return;
+            _0x5953ac++;
+            continue;
+          }
+          if (_0x15ba92?.["includes"]("关注店铺")) {
+            await this.taskPost("front/followShop", {
+              "userId": this.userId
+            });
+            _0x5953ac++;
+            continue;
+          }
+          _0x5953ac = _0x4a715c?.["drawNum"] ?? _0x5953ac;
+          this.putMsg(_0x15ba92);
+          this.wxStop();
+        }
+      }
       return;
     }
-    if (lli11lI1 && this.timestamp() > lli11lI1) {
-      this.putMsg("活动已结束");
-      this.stop();
-      return;
-    }
-    !this.isInviter && l1l11I1l.viewShop !== 1 && l1l11I1l.addSku !== 1 && (await this.inviteRelation());
-    if (IIll1Ill.data.data?.["missionCustomer"]?.["hasAddCart"] === 0 && l1l11I1l.viewShop !== 1 && l1l11I1l.addSku === 1) {
-      let l1Illlii = await this.mpdzTask("dm/front/jdJoinCardtf/mission/completeMission", {
-        "missionType": "uniteAddCart"
-      });
-      this.log(l1Illlii?.["data"]?.["data"]?.["remark"] || l1Illlii.errorMessage || "已完成加购任务");
-    }
-    if (IIll1Ill.data?.["data"]?.["missionCustomer"]?.["hasCollectShop"] === 0 && l1l11I1l.viewShop !== 1) {
-      let li1Iili1 = await this.mpdzTask("dm/front/jdJoinCardtf/mission/completeMission", {
-        "missionType": "uniteCollectShop"
-      });
-      this.log(li1Iili1?.["data"]?.["data"]?.["remark"] || li1Iili1.errorMessage || "已完成关注店铺任务");
-    }
-    let lil1llIi = await this.mpdzTask("dm/front/jdJoinCardtf/shop/shopList");
-    this.debug(lil1llIi);
-    let i111iII = lil1llIi?.["data"]?.["data"] || [];
-    if (l1l11I1l.viewShop === 1 || l1l11I1l.viewShop === 2) {
-      for (let iill1II of i111iII) {
-        let lIlll1il = await this.mpdzTask("dm/front/jdJoinCardtf/mission/completeMission", {
-          "missionType": "viewShop",
-          "goodsNumId": iill1II.userId
+    if (this.mode === "hdb") {
+      await this.login();
+      await this.reportPVUV();
+      await this.loadFrontAct();
+      await this.loadFrontAward();
+      this.exitShop();
+      _0x34c2bd.openCardMode === 1 && this.openCard === 0 && (this.debug("尝试开卡", this.venderId, this.shopId), await this.bindWithVender());
+      let _0x50018a = 1;
+      if (this.actType === "pointDraw") {} else {
+        let _0x5d1189 = await this.hdbApi("showTaskList", {}, true);
+        if (_0x5d1189 && _0x5d1189.succ) {
+          let _0x2e2805 = _0x5d1189?.["result"]?.["taskList"] ?? [];
+          if (_0x2e2805.some(_0x5c72e1 => _0x5c72e1.conditionType === "favouriteShop" && _0x5c72e1.isFinish === 0)) {
+            let _0x241748 = await this.hdbApi("completeActivityTask", {
+              "conditionType": "favouriteShop"
+            }, true);
+            this.debug(_0x241748);
+          }
+        }
+        let _0x31118e = await this.hdbApi("getDrawTimes");
+        this.debug(_0x31118e);
+        if (_0x31118e && _0x31118e.succ) {
+          _0x50018a = _0x31118e?.["result"]?.["giveTimes"] ?? 1;
+        }
+      }
+      if (_0x50018a === 0) {
+        _0x5002ff++;
+        _0x5002ff >= _0x34c2bd.notLuckLimit && _0x34c2bd.notLuckLimit === this.index + 1 && (this.putMsg("达到无抽奖次数上限"), this.stop());
+        this.putMsg("无抽奖次数");
+        return;
+      }
+      _0x50018a = Math.min(_0x50018a, 3);
+      while (_0x50018a-- > 0) {
+        await this.sleep(1500);
+        let _0x196699 = await this.hdbApi(this.actType === "pointDraw" ? "postPointDraw" : "postDraw", {
+          "drawTimes": 1
         });
-        this.log(lIlll1il?.["data"]?.["data"]?.["remark"] || lIlll1il.errorMessage);
-        await this.sleep(800, 1200);
+        this.log(_0x196699);
+        if (_0x196699 && _0x196699.succ) {
+          if (_0x196699.result.succ) {
+            this.putMsg(_0x196699.result?.["dmActivityLog"]?.["awardName"] || "空气");
+            _0x196699.result?.["msg"]?.["includes"]("填写信息") && (this.addressId = _0x196699.result?.["dmActivityLog"]?.["id"], this.prizeName = _0x196699.result?.["dmActivityLog"]?.["awardName"], await this.saveAddress());
+            return;
+          } else this.putMsg(_0x196699.result?.["errorMsg"] || _0x196699.result?.["message"]);
+        }
+        let _0x4e39b5 = _0x196699?.["message"];
+        if (_0x4e39b5?.["includes"]("您未中奖")) {
+          this.putMsg("空气");
+          continue;
+        }
+        if (_0x4e39b5?.["includes"]("关注店铺") && (await this.follow())) {
+          _0x50018a++;
+          continue;
+        }
+        this.putMsg(_0x4e39b5);
+        await this.wxStopSync(_0x4e39b5);
+        return;
+      }
+      return;
+    }
+    await this.getDefenseUrls();
+    if (_0x32ba81.includes(this.activityType)) {
+      await this.login();
+      this.exitShop();
+      if (![10026, 10080].includes(this.actType)) {
+        let _0x29cd8a = await this.lzkjApi("api/task/" + this.type + "/activity");
+        if (_0x29cd8a && _0x29cd8a.resp_code === 0) {
+          let _0x431f59 = _0x29cd8a.data?.["taskList"] || [];
+          await this.lzkjTask(_0x431f59);
+        }
+      }
+      let _0x7b628d = await this.lzkjApi("api/prize/drawPrize");
+      this.drawNumber = 5;
+      _0x7b628d && _0x7b628d.resp_code === 0 && (this.drawNumber = _0x7b628d.data?.["drawNumber"]);
+      [10026, 10080].includes(this.actType) && (this.drawNumber = 3);
+      if (this.drawNumber <= 0) {
+        _0x5002ff++;
+        _0x5002ff >= _0x34c2bd.notLuckLimit && _0x34c2bd.notLuckLimit === this.index + 1 && (this.putMsg("达到无抽奖次数上限"), this.stop());
+        this.putMsg("无抽奖次数");
+        return;
+      }
+      this.drawNumber = Math.min(this.drawNumber, 7);
+      while (this.drawNumber-- > 0) {
+        let _0x5aceaa = await this.lzkjApi("api/prize/draw", {
+          "consumePoints": 0,
+          "actId": this.activityId
+        });
+        this.debug(_0x5aceaa);
+        if (_0x5aceaa && _0x5aceaa.resp_code === 0) {
+          if (_0x5aceaa.data === "1") {
+            this.putMsg("积分不足");
+            return;
+          }
+          this.putMsg(_0x5aceaa.data?.["prizeName"] || "空气");
+          _0x5aceaa.data && _0x5aceaa.data?.["prizeName"] && _0x5aceaa.data?.["prizeType"] === 3 && _0x5aceaa.data?.["addressId"] && _0x5aceaa.data?.["dayTime"] === this.formatDate(Date.now(), "yyyy-MM-dd") && (this.addressId = _0x5aceaa.data.addressId, this.prizeName = _0x5aceaa.data?.["prizeName"], await this.saveAddress());
+          await this.sleep(200);
+        } else {
+          let _0x524f34 = _0x5aceaa?.["resp_msg"];
+          this.putMsg(_0x524f34);
+          await this.wxStopSync(_0x524f34);
+          return;
+        }
+      }
+      return;
+    }
+    await this.wxCommonInfo();
+    await this.getSimpleActInfoVo();
+    if (this.index === 0) {
+      await this.getShopInfo();
+      if (this.shopName && ([26, 128, 129].includes(this.activityType) && _0x34c2bd.notLuckDrawList.some(_0x3d777b => this.shopName.includes(_0x3d777b)) || this.shopName.match(_0x34c2bd.blackLuckDrawRule))) {
+        this.putMsg("已屏蔽");
+        this.stop();
+        return;
       }
     }
-    if (l1l11I1l.viewShop === 1 || l1l11I1l.addSku === 1) return;
-    i111iII = lil1llIi?.["data"]?.["data"]?.["filter"](IlIl1I1l => !IlIl1I1l.open) || [];
-    for (let l1Iii1il of i111iII) {
-      let iiii1Iil = await this.mpdzTask("dm/front/jdJoinCardtf/mission/completeMission", {
-        "missionType": "openCard",
-        "shopId": l1Iii1il.userId
-      });
-      this.log(iiii1Iil?.["data"]?.["data"]?.["remark"] || iiii1Iil.errorMessage);
-      let iIi1iil1 = this.getQueryString(l1Iii1il?.["openCardUrl"] || "", "venderId") || l1Iii1il.userId || l1Iii1il.shopId;
-      await this.bindWithVender(iIi1iil1);
-      if (this.canNotOpenCard) this.log("不能开卡", iIi1iil1), this.exit();
-      await this.sleep(500, 1000);
-      await await this.mpdzTask("dm/front/jdJoinCardtf/activity/load", {
-        "jdToken": this.isvToken,
-        "source": "01",
-        "inviteNick": this.toHelpUser?.["buyerNick"] || "",
-        "shopId": l1Iii1il.userId
-      });
-    }
-  }
-  async ["inviteRelation"]() {
-    let I1iiIII = {
-        "inviterNick": this.toHelpUser?.["buyerNick"] || ""
-      },
-      liiiIlI1 = this.jgcqdm("/jdJoinCardtf/customer/inviteRelation", I1iiIII),
-      liiilIII = await this.taskPostByJson("dm/front/jdJoinCardtf/customer/inviteRelation?open_id=&mix_nick=" + (this.buyerNick ?? "") + "&user_id=10299171", liiiIlI1);
-    this.debug(liiilIII);
-    if (!liiilIII || !liiilIII.success || liiilIII.data.status !== 200) return this.putMsg(liiilIII?.["errorMessage"]), this.wxStop(liiilIII?.["errorMessage"]), this.exit();
-    this.log(liiilIII.data.msg || "绑定邀请成功");
-    this.toHelpUser.helpedCount++;
-    this.toHelpUser.helpedCount >= il11iiIl.activity.maxHelpCount && (this.toHelpUser.needHelp = false);
-  }
-  async ["getszxyunActid"]() {
-    if (il11iiIl.activity.activityId) return this.activityId = il11iiIl.activity.activityId;
-    let Iililiii = await this.taskGet(this.activityUrl);
-    const l1illiI1 = this.textToHtml(Iililiii);
-    let ll1llIi = "";
-    l1illiI1("script[src]").each((lli1l1lI, illlllI) => {
-      const iIII1II = l1illiI1(illlllI).attr("src");
-      let iIlIllll = iIII1II.match(/\/\/.*\/js\/app\.\w+\.js/);
-      iIlIllll && iIlIllll.length > 0 && (ll1llIi = iIlIllll[0]);
-    });
-    let lIllI1 = await this.request({
-        "url": "https:" + ll1llIi
-      }),
-      ilIll1iI = lIllI1?.["data"]?.["match"](/unionOpen\w*\"/g);
-    if (ilIll1iI && ilIll1iI.length > 0) {
-      let ilillIl1 = ilIll1iI[0].replace("\"", "");
-      il11iiIl.activity.activityId = ilillIl1;
-      this.activityId = ilillIl1;
-      return;
-    }
-    return this.putMsg("未匹配到活动id"), this.stop();
-  }
-  async ["szxyunLogin"]() {
-    let i1IiI1Il = await this.taskPostByJson("webc/login/userLogin", {
-      "shopId": "1000100710",
-      "token": this.isvToken,
-      "source": "01"
-    });
-    if (!i1IiI1Il || i1IiI1Il.code !== "200") {
-      return this.putMsg(i1IiI1Il.message || "登录失败"), this.wxStop(i1IiI1Il.message || "登录失败"), this.exit();
-    }
-    this.otherHeaders = {
-      "jd-fast-token": i1IiI1Il.data
-    };
-  }
-  async ["active"](ill1liiI = false) {
-    let iiili11i = await this.taskPostByJson("webc/unionOpen/active", {
-      "activeId": this.activityId,
-      "shareId": null
-    });
-    this.debug(iiili11i);
-    if (!iiili11i || iiili11i.code !== "200") {
-      return this.putMsg(iiili11i.message || "获取活动详情失败"), this.wxStop(iiili11i.message || "获取活动详情失败"), this.exit();
-    }
-    if (ill1liiI) {
-      iiili11i.data?.["showBeanList"] && iiili11i.data?.["showBeanList"]["length"] > 0 && this.log("获得:", iiili11i.data?.["showBeanList"][0]?.["sendNum"] + "京豆");
-      return;
-    }
-    this.shareUuid = iiili11i.data?.["userVO"]?.["joinId"];
-    this.helpedCount = iiili11i.data?.["userVO"]?.["points"];
-    this.log("助力码: " + this.shareUuid);
-    this.log("已邀请: " + this.helpedCount);
-    if (this.isInviter) il11iiIl.activity.maxHelpCount = l1l11I1l.inviteNum;
-    let l1iIiI1i = iiili11i.data?.["bindCardInfo"] ?? [];
-    l1iIiI1i = l1iIiI1i.filter(I1lI1i11 => !I1lI1i11.isBindCard);
-    for (let iIili11i of l1iIiI1i) {
-      let liIlilI1 = this.getQueryString(iIili11i?.["openUrl"] || "", "venderId") ?? iIili11i?.["shopId"];
-      await this.bindWithVender(liIlilI1);
-      await this.sleep(50, 500);
-    }
-    l1iIiI1i?.["length"] > 0 && (await this.active(true));
-  }
-  async ["szyunShare"]() {
-    let ili1i = await this.taskPostByJson("webc/unionOpen/share", {
-      "activeId": this.activityId,
-      "joinId": this.shareUuid || "",
-      "shareId": this.toHelpUser?.["shareUuid"] || ""
-    });
-    this.debug(ili1i);
-    if (!ili1i || ili1i.code !== "200") return this.putMsg(ili1i.message || "助力失败"), this.wxStop(ili1i.message || "助力失败"), this.exit();
-    let li1lIIiI = ili1i.data?.["helpStatus"];
-    switch (li1lIIiI) {
-      case 1:
-        this.toHelpUser.helpedCount++, this.toHelpUser.helpedCount >= il11iiIl.activity.maxHelpCount && (this.toHelpUser.needHelp = false), this.log("助力成功，已邀请" + this.toHelpUser.helpedCount + "人");
-        break;
-      case 2:
-        this.log("已经助力过了");
-        break;
-      case 3:
-        this.log("已为他人助力");
-        break;
-      case 4:
-        this.log("发起人助力到达限制");
-        break;
-      case 5:
-        this.log("发起人助力数达到上限");
-        break;
-      default:
-        this.log("未知状态", li1lIIiI);
-        break;
-    }
-  }
-  async ["inviteTask"](l11llII1) {
-    this.toHelpUser = l11llII1;
-    if (!this.toHelpUser.needHelp) {
-      return;
-    }
-    await this.isvObfuscator();
-    if (this.activityUrl.includes("szxyun")) {
-      await this.getszxyunActid();
-      await this.szxyunLogin();
-      this.debug(this.otherHeaders);
-      await this.active();
-      await this.szyunShare();
-      return;
-    }
-    if (this.activityUrl.includes("jinggengjcq")) {
-      this.activityId = this.getQueryString(this.activityUrl, "actId");
-      this.userId = "10299171";
-      await this.load();
-      return;
-    }
-    if (this.domain.includes("lzdz-isv")) await this.taskGet("/wxCommonInfo/token"), this.venderId = this.activityUrl.match(/\/m\/(\d+)/)[1], this.activityId = this.activityUrl.match(/\/(\d+)$/)[1];else {
-      await this.wxCommonInfo();
-      await this.getSimpleActInfoVo("dz/common/getSimpleActInfoVo");
-    }
-    if (this.activityUrl.includes("joinCommon")) {
-      await this.getMyPing();
-    } else {
-      await this.getMyPing("customer/getMyCidPing");
-    }
+    this.defenseUrls.length === 0 ? await this.getMyPing() : await this.initPinToken();
     await this.accessLog();
-    let Iilili1i = await this.getActivityContent();
-    if (!Iilili1i || !Iilili1i.result) {
-      return this.putMsg(Iilili1i?.["errorMessage"]), this.wxStop(Iilili1i?.["errorMessage"]), this.exit();
-    }
-    this.activityContent = Iilili1i;
-    let iiIiilii = Iilili1i?.["data"]?.["actorUuid"] || Iilili1i?.["data"]?.["actorInfo"]?.["uuid"];
-    this.shareUuid = iiIiilii;
-    await this.task();
-  }
-  async ["userTask"]() {
-    if (this.index >= l1l11I1l.leaderNum && l1l11I1l.viewShop !== 1) return this.stop();
-    await this.isvObfuscator();
-    if (this.activityUrl.includes("szxyun")) {
-      await this.getszxyunActid();
-      this.debug("activityId:", this.activityId);
-      await this.szxyunLogin();
-      this.debug(this.otherHeaders);
-      await this.active();
+    let _0x7b6d73 = await this.activityContent();
+    if (!_0x7b6d73?.["result"] || !_0x7b6d73?.["data"]) {
+      this.putMsg(_0x7b6d73?.["errorMessage"]);
       return;
     }
-    if (this.activityUrl.includes("jinggengjcq")) {
-      this.activityId = this.getQueryString(this.activityUrl, "actId");
-      this.userId = "10299171";
-      await this.load();
-      if (l1l11I1l.viewShop === 1) this.needHelp = false;
-      il11iiIl.activity.maxHelpCount = l1l11I1l.inviteNum;
-      this.helpedCount = 0;
-      return;
-    }
-    if (this.domain.includes("lzdz-isv")) await this.taskGet("/wxCommonInfo/token"), this.venderId = this.activityUrl.match(/\/m\/(\d+)/)[1], this.activityId = this.activityUrl.match(/\/(\d+)$/)[1];else {
-      await this.wxCommonInfo();
-      await this.getSimpleActInfoVo("dz/common/getSimpleActInfoVo");
-    }
-    this.activityUrl.includes("joinCommon") ? await this.getMyPing() : await this.getMyPing("customer/getMyCidPing");
-    await this.accessLog();
-    let iill1I1i = await this.getActivityContent();
-    if (!iill1I1i || !iill1I1i.result) return this.putMsg(iill1I1i?.["errorMessage"]), this.wxStop(iill1I1i?.["errorMessage"]), this.exit();
-    let iI1Ili1 = iill1I1i?.["data"]?.["startTime"],
-      IiIl111 = iill1I1i?.["data"]?.["endTime"];
-    if (iI1Ili1 && this.timestamp() < iI1Ili1) {
-      this.putMsg("活动未开始");
+    let _0x16966d = _0x7b6d73.data?.["canDrawTimes"] ?? 5,
+      _0xd7f791 = _0x7b6d73.data?.["dayMaxDraw"] || 5,
+      _0x7dead6 = _0x7b6d73.data?.["hasFollow"] || false,
+      _0x1eb877 = _0x7b6d73.data?.["needFollow"] || false,
+      _0x17c7b8 = _0x7b6d73.data?.["content"]["filter"](_0x2a8f53 => [6, 7, 13, 14, 15, 16].includes(_0x2a8f53.type));
+    if (_0x17c7b8.length === 0) {
+      this.putMsg("垃圾或领完");
       this.stop();
       return;
     }
-    if (IiIl111 && this.timestamp() > IiIl111) {
-      this.putMsg("活动已结束");
-      this.stop();
-      return;
+    let _0x55f613 = await this.getGiveContent();
+    if (_0x55f613 && _0x55f613.data) {
+      let _0x2085f4 = _0x55f613.data;
+      if (_0x2085f4?.["follow"] && _0x2085f4.follow.hasGetGiveTimes < _0x2085f4.follow.maxGiveTimes) {
+        this.log("做关注任务");
+        let _0x2e965c = _0x55f613.data.follow.skuIdsList;
+        const _0x5d0d21 = _0x2085f4?.["followRecordVO"]?.["hasFollowSkuIdsList"];
+        _0x2e965c = _0x5d0d21 ? this.different(_0x2e965c, _0x5d0d21) : _0x2e965c;
+        for (let _0x5b0c3f = 0; _0x5b0c3f < _0x2085f4.follow.followTimes - _0x2085f4.follow.hasFollowTimes; _0x5b0c3f++) {
+          await this.followShop(_0x2e965c[_0x5b0c3f]);
+          await this.sleep(100);
+        }
+        _0x16966d++;
+      }
     }
-    let l1iilIlI = iill1I1i?.["data"]?.["actorUuid"] || iill1I1i?.["data"]?.["actorInfo"]?.["uuid"] || iill1I1i?.["data"]?.["userInfo"]?.["uid"];
-    this.shareUuid = l1iilIlI;
-    this.helpedCount = 0;
-    il11iiIl.activity.maxHelpCount = l1l11I1l.inviteNum;
-    this.log("助力码: " + l1iilIlI);
-    this.activityContent = iill1I1i;
-    await this.task();
+    _0x16966d = Math.min(_0x16966d, _0xd7f791, 7);
+    if (_0x16966d <= 0) return _0x5002ff++, _0x5002ff >= _0x34c2bd.notLuckLimit && _0x34c2bd.notLuckLimit === this.index + 1 && (this.putMsg("达到无抽奖次数上限"), this.stop()), this.putMsg("无抽奖次数");
+    _0x1eb877 && !_0x7dead6 && (this.log("关注店铺"), await this.wxApi("wxActionCommon/newFollowShop", {
+      "buyerPin": this.secretPin,
+      "venderId": this.venderId,
+      "activityType": this.activityType
+    }));
+    _0x16966d = Math.min(_0x16966d, 7);
+    while (_0x16966d-- > 0) {
+      let _0x53578c = await this.wxApi(this.type + "/start", {
+        "pin": this.secretPin
+      });
+      this.debug(_0x53578c);
+      if (_0x53578c && _0x53578c.result) this.putMsg("" + (_0x53578c.data?.["name"] || "空气")), _0x53578c.data?.["drawInfoType"] === 7 && _0x53578c.data?.["needWriteAddress"] === "y" && _0x53578c.data?.["addressId"] && (this.addressId = _0x53578c.data.addressId, this.prizeName = _0x53578c.data.name, await this.saveAddress()), await this.sleep(500);else {
+        let _0x2db8bd = _0x53578c?.["errorMessage"];
+        if (_0x2db8bd?.["includes"]("未关注") && (await this.follow())) {
+          _0x16966d++;
+          continue;
+        }
+        if (_0x34c2bd.openCardMode === 1 && ["不是会员", "店铺会员"].some(_0x336e5a => _0x2db8bd?.["includes"](_0x336e5a))) {
+          await this.bindWithVender();
+          if (this.canNotOpenCard) return this.reseCookieStatus();
+          _0x16966d++;
+          continue;
+        }
+        this.putMsg(_0x2db8bd);
+        await this.wxStopSync(_0x2db8bd);
+        return;
+      }
+    }
   }
 }
-l1IilII.activity = {
+_0x14c5ce.activity = {
   "activityUrl": activityUrl
 };
-l1IilII.TaskClass = I1IiiIil;
-l1IilII.run({
-  "whitelist": ["1-20"],
-  "main_thread": 3,
-  "thread": 10,
-  "inviteTask": true,
-  "noPush": true
+_0x14c5ce.TaskClass = _0x2f7451;
+_0x14c5ce.run({
+  "whitelist": ["1-20000"],
+  "main_thread": 3
 });
