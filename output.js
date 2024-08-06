@@ -1,318 +1,477 @@
-//Tue Aug 06 2024 20:28:26 GMT+0000 (Coordinated Universal Time)
+//Tue Aug 06 2024 20:29:51 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 if (mode) {
-  activityUrl = "https://lzkj-isv.isvjd.com/wxCartKoi/cartkoi/activity/361487a1d9704d178f77ea631279550f?activityId=361487a1d9704d178f77ea631279550f";
-  activityUrl = "https://lzkj-isv.isvjd.com/wxCartKoi/cartkoi/activity/10f3ef3be1414b36b9b566f7ce381372?activityId=10f3ef3be1414b36b9b566f7ce381372&adsource=tg_storePage";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/wxCartKoi/cartkoi/activity/501953175faa4e09913847657eb81681?activityId=501953175faa4e09913847657eb81681";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10036&templateId=2021070590900gwcjl081&activityId=1722164785163591681&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10036&templateId=2021070590900gwcjl081&activityId=1724309552314191873&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10036&activityId=1723332057093693441&templateId=2021070590900gwcjl081&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkjdz-isv.isvjd.com/wxCartKoi/cartkoi/activity/07841bc39b0a4226b26f9d03535e9ab1?activityId=07841bc39b0a4226b26f9d03535e9ab1";
-  activityUrl = "https://lzkj-isv.isvjd.com/wxCartKoi/cartkoi/activity?activityId=cc5ab0a00ccc48a288874549709db392";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10036&templateId=2021070590900gwcjl081&activityId=1715308876757774338&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10036&activityId=1727254167809003522&templateId=2021070590900gwcjl081&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10036&templateId=2021070590900gwcjl081&activityId=1727246016674234370&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10036&templateId=2021070590900gwcjl08&activityId=1731494042823737346&nodeId=101001&prd=crm";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10036&templateId=2023121110036gwcjl01&activityId=1740321245336375298&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10036&templateId=20210518190900rlqd011&activityId=1744276235708506114&prd=cjwx";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxCollectionActivity/activity?activityId=8d0f86f522d34fd6828e3c75fe4091f0";
+  activityUrl = "https://lzkj-isv.isvjd.com/wxCollectionActivity/activity2/0d5b8e8cb94a46bbbe4aff25dc1e9c0d?activityId=0d5b8e8cb94a46bbbe4aff25dc1e9c0d";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=7f4116e9-34b2-4f6d-9684-d7ca7c4b3d69&activityId=1711295984027947010&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10024&templateId=20210518190900jgyl01&activityId=1714916689487958018&nodeId=101001&prd=crm";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/plusGift/plusGift5?id=8e2fcea1fb4f64a11795ffbae977ba58&userId=1000350703";
+  activityUrl = "https://hdb-isv.isvjcloud.com/h5/pages/plusGift/plusGift1?id=dffb05f66b3f1361ddec86a315c052e4&userId=1000461510";
+  activityUrl = "https://gzsl-isv.isvjcloud.com/wuxian/mobileForApp/dist/views/pages/extraGift.html?activityType=JG_1&activityId=644508";
+  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/showCart?id=9e8080b38b49247b018b4ab08b970281&user_id=1000453449";
+  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/showCart?id=9e8080348b68fabe018b7e9eb6a306d9&user_id=1000361845";
+  activityUrl = "https://lzkj-isv.isvjd.com/wxCollectionActivity/activity2?activityId=00175a1d132542c1a8d6321501cf3d3d";
+  activityUrl = "https://hdb-isv.isvjcloud.com/h5/pages/plusGift/plusGift3?id=755f118f0066f6ffe910fc7c849e3ff5&userId=1000111946";
+  activityUrl = "https://lzkj-isv.isvjd.com/wxCollectionActivity/activity2/d4f29769aea4402fbe787652f7210d1a?activityId=d4f29769aea4402fbe787652f7210d1a";
+  activityUrl = "https://lzkj-isv.isvjd.com/wxCollectionActivity/activity2/6bfcc3e5963e42f4a5a49a434668dd83?activityId=6bfcc3e5963e42f4a5a49a434668dd83";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxCollectionActivity/activity?activityId=a13e2f5048f644e8abbfbc990f8034fb";
+  activityUrl = "https://lzkj-isv.isvjd.com/wxCollectionActivity/activity2/0a65517110924fb893dbcd469bc44ad2?activityId=0a65517110924fb893dbcd469bc44ad2";
+  activityUrl = "https://lzkj-isv.isvjd.com/wxCollectionActivity/activity2/fdc4d1c08a594a8d8769072c0452bf7e?activityId=fdc4d1c08a594a8d8769072c0452bf7e";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxCollectionActivity/activity?activityId=891b965fba8a4c599a04ea6b00dbff1c";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=20210518190900jgyl011&activityId=1740268731560538114&nodeId=101001&prd=cjwx";
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxCollectionActivity/activity?activityId=8e61f7b04b184767836879c5d0030ddf";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/plusGift/plusGift3?id=33682adb5b18b15f6e18474b4fd796da&userId=10531658";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&activityId=1747454459906019329&templateId=20210518190900jgyl011&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&activityId=1752631787825057794&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2e&nodeId=101001&prd=cjwx&adsource=tg_storePage";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&activityId=1778229184387391489&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2e&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2e&activityId=1785242486584487938&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&activityId=1787778647572803586&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2e&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2e&activityId=1788121408374505474";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2e&activityId=1788759065054867457&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&activityId=1791354708587520002&templateId=20210518190900jgyl011&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2e&activityId=1790569739104591873&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&activityId=1796843423961112577&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2f&nodeId=101001&prd=cjwx";
+  activityUrl = "https://txzj-isv.isvjcloud.com/cart_item/home?a=TDhQZjBCekt4dldUZnJ4dDBn";
+  activityUrl = "https://txzj-isv.isvjcloud.com/cart_item/home?a=THBhTDJVN0ttNmVUZnI5dDBn";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/plusGift/plusGift1?id=571eedd13a3ad77e376c3d43e1c2a29d&userId=113135&actForm=single";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10024&templateId=c2af9114-85d5-4c31-ab61-201f370f0f2f&activityId=1798618889292062722&prd=cjwx";
 }
 const {
-  RunMode: lIi1I11,
-  UserMode: IIiIi1li,
-  baseCommonEnv: lI1i11I,
-  baseCommonEnvKey: i1Il1Iii
+  RunMode: lllillil,
+  UserMode: lliiii1I,
+  baseCommonEnv: lI1lIIi,
+  baseCommonEnvKey: lII1l1i1
 } = require("./bear");
-lI1i11I.openCardBeanNum = parseInt(process.env.B_WX_CARTKOI_MODE || 3);
-i1Il1Iii.B_WX_CARTKOI_MODE = "openCardBeanNum";
-lIi1I11.envInfo = {
-  "name": "购物车锦鲤beta",
-  "runName": "jd_wx_cartKoi",
-  "version": "2.0.0"
+lI1lIIi.openCardBeanNum = parseInt(process.env.B_WX_ADD_CART_BEAN_NUM || "2");
+lII1l1i1.B_WX_ADD_CART_BEAN_NUM = "openCardBeanNum";
+lllillil.envInfo = {
+  "name": "加购有礼beta",
+  "runName": "jd_wx_addCart",
+  "version": "2.1.0"
 };
-class i11llii extends IIiIi1li {
-  constructor(IiI1iIil, llll1lII) {
-    super(IiI1iIil, llll1lII);
-    this.oneClickPurchase = 0;
+class i1iiIil extends lliiii1I {
+  constructor(llil1li1, iI1I11I1) {
+    super(llil1li1, iI1I11I1);
+    this.errCount = 0;
   }
-  async ["getDrawPrizeInfo"]() {
-    let I1i1lli1 = [];
-    if (lI1i11I.openCardBeanNum === 1) {
-      I1i1lli1.push(6);
-    } else {
-      if (lI1i11I.openCardBeanNum === 2) {
-        I1i1lli1.push(7);
-      } else lI1i11I.openCardBeanNum === 3 && I1i1lli1.push(6, 7);
-    }
-    if (I1i1lli1.length === 0) {
-      this.openCard = true;
+  async ["lzkjToDo"](l1I1Il1I, i1l1iI1i = "", lliII11i = 0) {
+    let iilIIII1 = await this.lzkjApi("api/task/" + this.type + "/toDo", {
+      "taskId": l1I1Il1I,
+      "skuId": i1l1iI1i
+    });
+    this.debug(iilIIII1);
+    if (iilIIII1 && iilIIII1.resp_code === 0) {
+      let i1lIllii = iilIIII1.data?.["canSend"];
+      switch (i1lIllii) {
+        case undefined:
+          break;
+        case 4:
+          return this.putMsg("今日奖品已发完"), this.stop();
+        case 5:
+        case 6:
+          return this.putMsg("活动奖品已发完"), this.stop();
+        case 7:
+          return this.putMsg("空气"), await this.writeLongCache(), this.exit();
+        case 8:
+        case 9:
+          lliII11i++, this.log("活动人气爆棚", "retry:" + lliII11i);
+          if (lliII11i > 10) return this.putMsg("活动人气爆棚"), this.exit();
+          return await this.lzkjToDo(l1I1Il1I, i1l1iI1i, lliII11i);
+        default:
+          this.putMsg("canSend:" + i1lIllii);
+          break;
+      }
+      if (iilIIII1.data) return this.putMsg(iilIIII1.data?.["prizeName"]), await this.writeLongCache(), this.exit();
       return;
     }
-    let lIIlI1iI = await this.wxApi("wxCartKoi/cartkoi/getDrawPrizeInfo", {
-      "activityId": this.activityId
-    });
-    if (lIIlI1iI && lIIlI1iI.data) {
-      let iII1Ii1 = lIIlI1iI.data ?? [];
-      if (iII1Ii1.some(iliIiI11 => I1i1lli1.includes(iliIiI11.type))) {
-        this.openCard = true;
-      }
-    }
-  }
-  async ["addCart"]() {
-    let liI1lliI = await this.wxApi("wxCartKoi/cartkoi/addCart", {
-      "activityId": this.activityId,
-      "pin": this.secretPin,
-      "productId": this.prodectVos[0].productId
-    });
-    this.debug(liI1lliI);
-    if (liI1lliI && liI1lliI.result) {
-      this.putMsg("加购完成");
-      return;
-    }
-    let iiI1iiIl = liI1lliI?.["errorMessage"] || "加购失败";
-    this.putMsg(iiI1iiIl);
-    this.wxStop(iiI1iiIl);
-  }
-  async ["quickAddCart"](llIIIiI = true) {
-    let ll1iilIl = await this.wxApi("wxCartKoi/cartkoi/quickAddCart", {
-      "activityId": this.activityId,
-      "pin": this.secretPin,
-      "productIds": JSON.stringify(this.prodectVos.map(Iiiil11l => Iiiil11l.productId))
-    });
-    this.debug(ll1iilIl);
-    if (ll1iilIl && ll1iilIl.result) {
-      if (this.timestamp() > IIiIi1li.activity.drawTime && this.timestamp() < IIiIi1li.activity.endTime) {
-        return await this.drawResult();
-      }
-      this.putMsg("已完成加购");
-      return;
-    }
-    let lIIl1IIl = ll1iilIl?.["errorMessage"] || "加购失败";
-    if (lIIl1IIl.includes("未关注") && llIIIiI && (await this.follow())) return await this.quickAddCart(false);
-    if (lIIl1IIl.includes("会员") && this.openCard && llIIIiI && (await this.bindWithVender()) && !this.canNotOpenCard) return await this.quickAddCart(false);
-    this.putMsg(lIIl1IIl);
-    this.wxStop(lIIl1IIl);
-  }
-  async ["drawResult"](lIi1liI1 = true) {
-    let iilIIiI = await this.wxApi("wxCartKoi/cartkoi/drawResult", {
-      "activityId": this.activityId,
-      "pin": this.secretPin,
-      "uuid": this.myUuid
-    });
-    this.debug(iilIIiI);
-    if (iilIIiI && iilIIiI.result) this.putMsg("" + (iilIIiI.data?.["name"] || iilIIiI.data?.["drawInfo"]?.["name"] || "空气")), iilIIiI.data?.["drawInfoType"] === 7 && iilIIiI.data?.["needWriteAddress"] === "y" && iilIIiI.data?.["addressId"] && (this.addressId = iilIIiI.data.addressId, this.prizeName = iilIIiI.data.name, await this.saveAddress());else {
-      let II1l1Iii = res?.["errorMessage"];
-      if (II1l1Iii?.["includes"]("未关注") && lIi1liI1 && (await this.follow())) {
-        return await this.drawResult(false);
-      }
-      if (II1l1Iii.includes("会员") && this.openCard && lIi1liI1 && (await this.bindWithVender()) && !this.canNotOpenCard) {
-        return await this.quickAddCart(false);
-      }
-      this.putMsg(II1l1Iii);
-      this.wxStop(II1l1Iii);
-      return;
-    }
-  }
-  async ["drawPrize"]() {
-    let IlIIIiII = await this.lzkjApi("api/prize/drawPrize");
-    this.drawNumber = 1;
-    if (IlIIIiII && IlIIIiII.resp_code === 0) {
-      this.drawNumber = IlIIIiII?.["data"]?.["drawNumber"] ?? 1;
-      let I1IiIiIl = [];
-      if (lI1i11I.openCardBeanNum === 1) {
-        I1IiIiIl.push(1);
-      } else {
-        if (lI1i11I.openCardBeanNum === 2) I1IiIiIl.push(3);else lI1i11I.openCardBeanNum === 3 && I1IiIiIl.push(1, 3);
-      }
-      if (I1IiIiIl.length === 0) {
-        this.openCard = true;
-        return;
-      }
-      let Il1II1li = IlIIIiII?.["data"]?.["prizeInfo"] ?? [];
-      if (Il1II1li.some(illi1iI1 => I1IiIiIl.includes(illi1iI1?.["prizeType"]))) {
-        this.openCard = true;
-      }
-    }
-  }
-  async ["addSku"](l1lllIli = "999") {
-    let ii1I11I = await this.lzkjApi("api/task/addSkuPrice/addSku", {
-      "skuId": l1lllIli
-    });
-    this.debug(ii1I11I);
-    if (typeof ii1I11I?.["data"] === "object" && Object.keys(ii1I11I.data).length === 0 && l1lllIli === "999") {
-      this.oneClickPurchase = 1;
-      return;
-    }
-    if (ii1I11I && ii1I11I.resp_code === 0) {
-      let il1lI111 = ii1I11I?.["data"] ?? {};
-      if (il1lI111.skuFlag) {
-        this.putMsg("加购完成");
-        return;
-      }
-      this.putMsg(il1lI111.messageFlag === 1 ? "未在加购时间内" : il1lI111.messageFlag === 2 ? "当前商品已加购" : il1lI111.messageFlag === 3 ? "当前商品已全部加购" : il1lI111.messageFlag === 4 && "没有加购资格");
-      return;
-    }
-    let illiIIII = ii1I11I?.["resp_msg"] || "加购失败";
-    this.putMsg(illiIIII);
-    this.wxStop(illiIIII);
-  }
-  async ["draw"]() {
-    let iill1I1l = await this.lzkjApi("api/task/addSkuPrice/draw");
-    this.debug(iill1I1l);
-    if (iill1I1l && iill1I1l.resp_code === 0) {
-      let IiiIi11I = iill1I1l?.["data"] ?? {};
-      if (IiiIi11I.skuFlag) {
-        this.putMsg("加购的商品数量不满足抽奖所需的数量");
-        return;
-      }
-      if (IiiIi11I.drawNull) {
-        this.putMsg(IiiIi11I?.["draw"]?.["prizeName"] || "空气");
-        IiiIi11I?.["draw"] && IiiIi11I?.["draw"]?.["prizeName"] && IiiIi11I?.["draw"]?.["prizeType"] === 3 && IiiIi11I?.["draw"]?.["addressId"] && IiiIi11I?.["draw"]?.["dayTime"] === this.formatDate(Date.now(), "yyyy-MM-dd") && (this.addressId = IiiIi11I.draw.addressId, this.prizeName = IiiIi11I.draw.prizeName, await this.saveAddress());
-        return;
-      } else {
-        this.putMsg("空气");
-        return;
-      }
-    }
-    let i1lIIIll = iill1I1l?.["resp_msg"];
-    this.putMsg(i1lIIIll);
-    this.wxStop(i1lIIIll);
-  }
-  async ["inviteActivity"]() {
-    let I1ilIi1I = IIiIi1li.activity.userList && IIiIi1li.activity.userList.length > 0 ? IIiIi1li.activity.userList[0] : null;
-    if (!I1ilIi1I) return;
-    let II1lllil = await this.lzkjApi("api/task/addSkuPrice/activity", {
-      "shareUserId": "1744750944717832194" || ""
-    });
-    if (II1lllil && II1lllil.resp_code === 0) {
-      let iiI1l11I = II1lllil?.["data"]?.["shareNum"] ?? 0,
-        l1I1IliI = II1lllil?.["data"]?.["shareFlag"] ?? 0;
-      this.debug(I1ilIi1I.pin, iiI1l11I, l1I1IliI);
-      if (l1I1IliI && iiI1l11I === 3) {
-        I1ilIi1I.helpedCount++;
-        I1ilIi1I.helpedCount >= I1ilIi1I.maxHelpCount && I1ilIi1I.needHelp && (I1ilIi1I.needHelp = false, IIiIi1li.activity.userList.shift(), await I1ilIi1I.addSku());
-      }
-    }
+    let iIii1ii = iilIIII1?.["resp_msg"];
+    if (iIii1ii?.["includes"]("ibatis.exceptions")) return this.putMsg("数据错误"), await this.writeLongCache(), this.exit();
+    this.putMsg(iIii1ii);
+    if (iIii1ii?.["includes"]("会员等级不足")) return this.exit();
+    await this.wxStopSync(iIii1ii);
+    this.errCount++;
+    if (this.errCount > 3) return this.exit();
   }
   async ["userTask"]() {
+    await this.hitCache();
     await this.isvObfuscator();
-    await this.getDefenseUrls();
-    if (["10036"].includes(this.activityType)) {
-      await this.login();
-      await this.drawPrize();
-      let lIi11iI1 = await this.lzkjApi("api/task/addSkuPrice/activity1");
-      if (lIi11iI1 && lIi11iI1.resp_code === 0) {
-        let IiiI1iIi = lIi11iI1?.["data"]?.["skuInfoList"] ?? [],
-          llIliII = lIi11iI1?.["data"]?.["userAddSkuRecord"] ?? [],
-          iiil1Ill = lIi11iI1?.["data"]?.["addSkuNumber"] ?? 0,
-          I1lI11Il = lIi11iI1?.["data"]?.["addSkuStartTime"] ?? 0,
-          I1Ili1lI = lIi11iI1?.["data"]?.["addSkuEndTime"] ?? 0,
-          iIllIlll = lIi11iI1?.["data"]?.["priceTime"] ?? 0,
-          IlIiliiI = lIi11iI1?.["data"]?.["userSkuCount"] ?? 0,
-          IilIli1 = lIi11iI1?.["data"]?.["unlockSkuNumber"] ?? 0,
-          IiiIiilI = lIi11iI1?.["data"]?.["shareNum"] ?? 0,
-          iIili = lIi11iI1?.["data"]?.["shareFlag"] ?? 0,
-          Ii1ii1l1 = lIi11iI1?.["data"]?.["shareCount"] ?? 0;
-        this.debug(IiiIiilI, iIili);
-        IIiIi1li.activity.drawTimeStr = this.formatDate(iIllIlll, "yyyy-MM-dd HH:mm:ss");
-        IIiIi1li.activity.drawTime = iIllIlll;
-        this.timestamp() < iIllIlll && (IIiIi1li.activity.noDraw = true);
-        if (this.timestamp() < I1lI11Il) {
-          this.putMsg("未到加购时间");
+    if (this.mode === "txzj") {
+      if (!this.activityId) return this.putMsg("活动链接错误"), this.stop();
+      let lII1II11 = await this.taskPost("front/jd_store_user_info", {
+        "token": this.isvToken
+      });
+      if (!lII1II11 || lII1II11.code !== "success") {
+        let iii1I1Ii = lII1II11.msg || "获取用户信息失败";
+        return this.putMsg(iii1I1Ii), this.wxStop(iii1I1Ii);
+      }
+      let iiI1ilI1 = await this.taskGet(this.activityUrl),
+        lIIl1Ii = this.textToHtml(iiI1ilI1),
+        ii11llii = lIIl1Ii(".error-text").text();
+      this.debug(ii11llii);
+      if (ii11llii?.["includes"]("已结束")) return this.putMsg("活动已结束"), await this.writeLongCacheByStop(), this.stop();
+      let iII1Ii1i = await this.taskPost("cart_item/receive_prize", {
+        "pid": this.activityId
+      });
+      this.debug(iII1Ii1i);
+      if (iII1Ii1i && iII1Ii1i.code === "success") {
+        this.putMsg("领取成功");
+        await this.writeLongCache();
+        return;
+      }
+      let lIllil1I = iII1Ii1i?.["msg"] || "领取失败";
+      this.putMsg(lIllil1I);
+      await this.wxStopSync(lIllil1I);
+      return;
+    }
+    if (this.mode === "gzsl") {
+      let iiIIiIli = await this.gzslApi("getGoodsGiftActivity", {
+        "venderId": this.activityId
+      });
+      this.debug(iiIIiIli);
+      if (iiIIiIli && iiIIiIli.status === "1") {
+        let I11iIIIi = iiIIiIli.activity?.["startTime"],
+          IiilIl1 = iiIIiIli.activity?.["endTime"];
+        this.shopId = iiIIiIli.activity?.["shopId"];
+        this.venderId = iiIIiIli.activity?.["venderId"];
+        this.shopName = iiIIiIli.activity?.["detail"];
+        lliiii1I.activity.shopId = this.shopId;
+        lliiii1I.activity.venderId = this.venderId;
+        lliiii1I.activity.shopName = this.shopName;
+        lliiii1I.activity.startTime = I11iIIIi;
+        lliiii1I.activity.endTime = IiilIl1;
+        if (I11iIIIi && I11iIIIi > this.timestamp()) {
+          this.putMsg("活动未开始");
           this.stop();
           return;
         }
-        if (["1006", "1005", "1002"].includes(this.joinCode)) {
-          if (!this.openCard) return this.putMsg(this.joinDes);
-          await this.getShopOpenCardInfo();
-          await this.bindWithVender();
-          if (this.canNotOpenCard) return this.reseCookieStatus();
-          await this.login(false);
+        if (IiilIl1 && IiilIl1 < this.timestamp()) {
+          this.putMsg("活动已结束");
+          this.writeLongCacheByStop();
+          this.stop();
+          return;
         }
-        if (this.timestamp() > I1lI11Il && this.timestamp() < I1Ili1lI) {
-          if (IlIiliiI >= iiil1Ill && IlIiliiI >= IilIli1 + Ii1ii1l1) {
-            this.putMsg("已完成加购");
-          }
-          await this.inviteActivity();
-          if (IilIli1 < iiil1Ill && IlIiliiI < iiil1Ill) {
-            await this.getUserId();
-            this.helpedCount = Ii1ii1l1;
-            this.maxHelpCount = iiil1Ill - IilIli1;
-            !IIiIi1li.activity.userList && (IIiIi1li.activity.userList = []);
-            IIiIi1li.activity.userList.push(this);
-          }
-          this.debug(IilIli1 + Ii1ii1l1, IlIiliiI, iiil1Ill, IilIli1);
-          if (IilIli1 + Ii1ii1l1 > IlIiliiI && IilIli1 + Ii1ii1l1 >= iiil1Ill) {
-            await this.addSku();
-            if (this.oneClickPurchase === 1) {
-              IiiI1iIi = IiiI1iIi.filter(I1lliII => !llIliII.some(lli1I1lI => lli1I1lI.skuId === I1lliII.skuId));
-              if (IiiI1iIi.length === 0) {
-                this.putMsg("已完成加购");
-                return;
-              }
-              for (let lIlIliI of IiiI1iIi) {
-                await this.addSku(lIlIliI.skuId);
-              }
-            }
-          }
+        let lIll1I1 = await this.gzslApi("getGoodsGiftPrizeAndWare", {}, true);
+        this.debug(lIll1I1);
+        if (lIll1I1 && lIll1I1.status === "1") {
+          this.putMsg(lIll1I1.data || "空气");
+          await this.writeLongCache();
+          return;
         }
-        this.debug(this.timestamp(), iIllIlll, IlIiliiI, iiil1Ill, this.drawNumber);
-        this.timestamp() > iIllIlll && IlIiliiI >= iiil1Ill && (await this.draw());
+        let i11l1ii = lIll1I1?.["msg"] || "领取失败";
+        this.putMsg(i11l1ii);
+        await this.wxStopSync(i11l1ii);
+        return;
       }
       return;
     }
-    this.needHelp = false;
+    if (this.mode === "jinggeng") {
+      await this.setMixNick();
+      let lll1lil = await this.jinggengShopInfo(),
+        iIIiilI1 = parseInt(lll1lil(".lastnum").text()),
+        lI1lilI = parseInt(lll1lil("#addnum").text());
+      if (isNaN(iIIiilI1) || isNaN(lI1lilI)) {
+        let l11iIl1I = lll1lil("#description").text();
+        this.debug("重匹规则", l11iIl1I);
+        const lilI11ll = l11iIl1I.match(/加购(\d+)个宝贝/);
+        if (!lilI11ll) {
+          this.putMsg("未匹配到加购数量");
+          return;
+        }
+        iIIiilI1 = parseInt(lilI11ll[1]);
+        lI1lilI = lll1lil(".btnState2").length;
+      }
+      this.debug("needCollectionSize:" + iIIiilI1, "hasCollectionSize:" + lI1lilI);
+      if (lI1lilI >= iIIiilI1) {
+        this.putMsg("已领取过");
+        await this.writeLongCache();
+        return;
+      }
+      const i1IlIliI = lll1lil(".btnState1").map((lIIlIl1, IIi11lll) => lll1lil(IIi11lll).attr("id") || lll1lil(IIi11lll).attr("onclick")?.["match"](/\(([^)]+)\)/)?.[1]).get();
+      this.debug(i1IlIliI);
+      while (lI1lilI < iIIiilI1 && i1IlIliI.length > 0) {
+        await this.sleep(2000);
+        let ii1II1li = await this.jinggengApi("postAddCart", {
+          "itemId": i1IlIliI.shift()
+        });
+        this.debug(ii1II1li);
+        if (ii1II1li && ii1II1li.succ) {
+          lI1lilI++;
+          let iil1lil = ii1II1li.msg,
+            il1i1111 = this.parseJSON(iil1lil);
+          if (il1i1111) {
+            if (il1i1111?.["actLogDto"]?.["remark"]) {
+              this.putMsg(il1i1111?.["actLogDto"]?.["remark"]);
+              await this.writeLongCache();
+              return;
+            }
+          }
+        } else {
+          this.putMsg(ii1II1li?.["msg"] || "加购失败");
+          return;
+        }
+      }
+      return;
+    }
+    if (this.mode == "hdb") {
+      await this.login();
+      await this.reportPVUV();
+      await this.loadFrontAct();
+      await this.loadFrontAward();
+      let IliilI11 = await this.hdbApi("loadAddCartSetting");
+      !(IliilI11 && IliilI11.succ) && this.putMsg(IliilI11?.["message"]);
+      if (IliilI11?.["result"]?.["hasReceiveAward"]) {
+        this.putMsg("已领取");
+        await this.writeLongCache();
+        return;
+      }
+      let I1llliIl = IliilI11.result?.["addCartSetting"]?.["itemAmount"] ?? 5;
+      if (this.openCard === 0 && this.prizeList && this.prizeList.filter(ili11I => ["JD_MARKET"].includes(ili11I.awardType)).length > 0) {
+        await this.bindWithVender();
+        if (this.canNotOpenCard) return this.reseCookieStatus();
+      }
+      let Il1ll = await this.hdbApi("loadFrontItems");
+      if (!(Il1ll && Il1ll.succ)) {
+        this.putMsg(Il1ll?.["message"]);
+        return;
+      }
+      let li1iIilI = Il1ll?.["result"] ?? [],
+        Il11l1i1 = li1iIilI.filter(Iil111i1 => Iil111i1.isFinish == 1).length,
+        lIII11lI = li1iIilI.filter(iiiI1Iil => iiiI1Iil.isFinish == 0);
+      while (Il11l1i1 < I1llliIl && lIII11lI.length > 0) {
+        let IIi1liII = lIII11lI.shift().skuId;
+        this.debug("加购skuId:" + IIi1liII);
+        let li1lI1II = 4;
+        while (li1lI1II-- > 0) {
+          let lI1I1Ii = await this.hdbApi("reportActionLog", {
+            "skuId": IIi1liII,
+            "actionType": "addCart"
+          });
+          if (lI1I1Ii && lI1I1Ii.succ) {
+            Il11l1i1++;
+            await this.sleep(1000);
+            break;
+          }
+          let l11i1lil = lI1I1Ii?.["message"];
+          if (l11i1lil?.["includes"]("关注店铺") && (await this.follow())) {
+            await this.sleep(1000);
+            continue;
+          }
+          if (l11i1lil?.["includes"]("会员") && retry) {
+            await this.bindWithVender();
+            if (this.canNotOpenCard) return this.reseCookieStatus();
+            await this.sleep(1000);
+            continue;
+          }
+          await this.wxStopSync(l11i1lil);
+          this.putMsg(l11i1lil);
+          return;
+        }
+      }
+      if (Il11l1i1 < I1llliIl) {
+        this.log("加购数量不足,不领取");
+        return;
+      }
+      this.debug("加购完成 " + Il11l1i1 + " - " + I1llliIl);
+      let ill1i1l1 = 2;
+      while (ill1i1l1-- > 0) {
+        let lI111llI = await this.hdbApi("postAddCartFrontAct");
+        this.debug(lI111llI);
+        if (lI111llI && lI111llI.succ) {
+          if (lI111llI.result.succ) {
+            this.putMsg(lI111llI.result?.["dmActivityLog"]?.["awardName"] || "空气");
+            await this.writeLongCache();
+            return;
+          } else this.putMsg(lI111llI.result?.["errorMsg"] || lI111llI.result?.["message"]);
+        }
+        let lI1lill = lI111llI?.["message"];
+        if (lI1lill?.["includes"]("关注店铺") && (await this.follow())) {
+          await this.sleep(1000);
+          continue;
+        }
+        this.putMsg(lI1lill);
+        await this.wxStopSync(lI1lill);
+        return;
+      }
+      return;
+    }
+    await this.getDefenseUrls();
+    if (["10024"].includes(this.activityType)) {
+      this.retryStatusRegex = /555/;
+      await this.login();
+      let Iii1liII = await this.lzkjApi("api/prize/drawPrize");
+      if (Iii1liII && Iii1liII.resp_code === 0) {
+        if (Iii1liII.data?.["drawNumber"] > 0) {
+          this.putMsg("已领取");
+          await this.writeLongCache();
+          return;
+        }
+        let III1Iiil = Iii1liII.data?.["prizeInfo"] || [];
+        III1Iiil = III1Iiil.filter(lii11iIl => lii11iIl.prizeType == 1);
+        this.openCard = III1Iiil.some(i11Iill => i11Iill.beanNum >= lI1lIIi.openCardBeanNum);
+      }
+      let il1iii1l = await this.lzkjApi("api/task/" + this.type + "/activity");
+      if (il1iii1l && il1iii1l.resp_code === 0) {
+        let iIiiIlil = il1iii1l.data?.["addWares"] || {},
+          lIIil1lI = iIiiIlil?.["skuInfoVO"] || [],
+          iillII11 = iIiiIlil?.["completeCount"] || 0,
+          lIi1li1l = iIiiIlil?.["finishNum"] || 0,
+          lIl11IlI = iIiiIlil?.["oneClickPurchase"] || 0,
+          ll11iI1l = iIiiIlil?.["taskId"],
+          lli1l11 = il1iii1l.data?.["prizeResultNum"] || 10;
+        lIIil1lI = lIIil1lI.filter(I1I1iiI1 => I1I1iiI1.status === 0);
+        if (lli1l11 <= 0) {
+          this.putMsg("已领完");
+          this.stop();
+          return;
+        }
+        if (lIi1li1l - iillII11 > lIIil1lI.length) {
+          this.putMsg("加购商品数量错误");
+          this.stop();
+          return;
+        }
+        if (["1005", "1006", "1002"].includes(this.joinCode)) {
+          if (!this.openCard) return this.putMsg(this.joinDes);
+          await this.getShopOpenCardInfo();
+          await this.bindWithVender();
+          if (this.canNotOpenCard) return this.putMsg(this.joinDes);
+          await this.login(false);
+        }
+        if (lIl11IlI === 0) return this.debug("一键加购"), await this.lzkjToDo(ll11iI1l);
+        for (let iIIllI1 = 0; iIIllI1 < lIIil1lI.length; iIIllI1++) {
+          this.debug("加购skuId:" + lIIil1lI[iIIllI1].skuId);
+          await this.lzkjToDo(ll11iI1l, lIIil1lI[iIIllI1].skuId);
+        }
+      } else {
+        this.putMsg(il1iii1l?.["resp_msg"] || "获取任务错误");
+        await this.wxStopSync(il1iii1l?.["resp_msg"]);
+      }
+      return;
+    }
     await this.wxCommonInfo();
     await this.getSimpleActInfoVo();
     this.index === 0 && (await this.getShopInfo());
     this.defenseUrls.length === 0 ? await this.getMyPing() : await this.initPinToken();
     await this.accessLog();
-    let ll1liIIl = await this.activityContent({
-      "status": 1
-    });
-    if (!ll1liIIl?.["result"] || !ll1liIIl?.["data"]) {
-      this.putMsg(ll1liIIl?.["errorMessage"]);
+    let li1llIiI = await this.activityContent();
+    if (!li1llIiI?.["result"] || !li1llIiI?.["data"]) {
+      this.putMsg(li1llIiI?.["errorMessage"]);
       return;
     }
-    this.prodectVos = ll1liIIl.data?.["prodectVos"] ?? [];
-    let Ii11I11I = ll1liIIl.data?.["addCarts"] ?? 1,
-      Illi1Iii = ll1liIIl.data?.["activityVo"] ?? {},
-      lIiilllI = this.dateStringToTimestamp(Illi1Iii?.["drawTime"]),
-      ill11I1I = this.dateStringToTimestamp(Illi1Iii?.["cartStartTime"]),
-      llIII1Il = this.dateStringToTimestamp(Illi1Iii?.["cartEndTime"]),
-      IIl11llI = this.dateStringToTimestamp(Illi1Iii?.["startTime"]),
-      li1Ii11l = this.dateStringToTimestamp(Illi1Iii?.["endTime"]),
-      Ili11l11 = Illi1Iii?.["drawCondition"] ?? 1;
-    this.myUuid = ll1liIIl.data?.["joinRecord"]?.["myUuid"] ?? "";
-    this.debug("startTime", "cartStartTime", ill11I1I, "cartEndTime", llIII1Il, IIl11llI, "drawTime", lIiilllI, "endTime", li1Ii11l);
-    this.rule = Illi1Iii?.["actRule"] ?? "";
-    IIiIi1li.activity.timeStr = this.formatDate(IIl11llI, "yyyy-MM-dd HH:mm:ss") + "至" + this.formatDate(li1Ii11l, "yyyy-MM-dd HH:mm:ss");
-    IIiIi1li.activity.startTime = IIl11llI;
-    IIiIi1li.activity.endTime = li1Ii11l;
-    IIiIi1li.activity.drawTimeStr = this.formatDate(lIiilllI, "yyyy-MM-dd HH:mm:ss");
-    IIiIi1li.activity.drawTime = lIiilllI;
-    this.timestamp() < lIiilllI && (IIiIi1li.activity.noDraw = true);
-    IIl11llI && IIl11llI > Date.now() && (this.putMsg("活动未开始"), IIiIi1li.activity.noStart = true, this.stop());
-    li1Ii11l && li1Ii11l < Date.now() && (this.putMsg("活动已结束"), this.stop());
-    let ll11iil1 = Illi1Iii?.["needFollow"] ?? false,
-      Il1ii1Il = ll1liIIl.data?.["hasFollow"] ?? false;
-    ll11iil1 && !Il1ii1Il && (await this.follow());
-    await this.getDrawPrizeInfo();
-    if (this.timestamp() > lIiilllI && this.timestamp() < li1Ii11l && Ii11I11I >= Ili11l11) {
-      return await this.drawResult();
+    let IlllII11 = li1llIiI.data?.["cpvos"] ?? [],
+      I1I1i111 = li1llIiI.data?.["drawInfo"] ?? {},
+      I1lli1I = li1llIiI.data?.["drawInfo"]?.["drawInfo"]?.["beanNum"],
+      lil1IliI = li1llIiI.data?.["needCollectionSize"],
+      lIi1i11 = li1llIiI.data?.["hasCollectionSize"] ?? 0,
+      i11ili = li1llIiI.data?.["oneKeyAddCart"] ?? 0,
+      I1li111i = IlllII11.filter(lII1lil => !lII1lil.collection);
+    if (![6, 7, 9, 13, 14, 15, 16].includes(I1I1i111.drawInfoType)) {
+      this.putMsg("垃圾或领完");
+      this.writeLongCacheByStop();
+      this.stop();
+      return;
     }
-    if (this.timestamp() < llIII1Il) {
-      if (Ii11I11I >= Ili11l11) this.putMsg("已完成加购");else {
-        await this.quickAddCart();
+    if (lil1IliI - lIi1i11 > I1li111i.length) {
+      if (this.domain.includes("cjhy")) {
+        this.putMsg("加购商品数量错误");
+        this.stop();
+        return;
+      }
+      for (let iIII11ii = 0; iIII11ii < lil1IliI - lIi1i11 - I1li111i.length; iIII11ii++) {
+        let lilII1il = this.random(1000000, 9999999);
+        I1li111i.push({
+          "productId": lilII1il,
+          "skuId": lilII1il
+        });
       }
     }
+    let i1Ili1 = this.activityType === 6 ? "addCart" : "collection",
+      iIlI1111 = this.domain.includes("cjhy") ? false : true;
+    if (i11ili === 1) {
+      let IilI1I1l = 5;
+      while (IilI1I1l-- > 0) {
+        let iIi11ii = await this.wxApi("wxCollectionActivity/oneKeyAddCart", {
+          "activityId": this.activityId,
+          "pin": this.secretPin,
+          "productIds": JSON.stringify(I1li111i.map(lIii1lli => lIii1lli.skuId))
+        });
+        this.debug(iIi11ii);
+        if (iIi11ii && iIi11ii.result) {
+          lIi1i11 = lil1IliI;
+          break;
+        }
+        let Iil1lIil = iIi11ii?.["errorMessage"];
+        if (!Iil1lIil) break;
+        if (Iil1lIil.includes("购物车已经满了")) continue;
+        if (Iil1lIil.includes("会员") && I1lli1I && I1lli1I >= lI1lIIi.openCardBeanNum) {
+          await this.getShopOpenCardInfo();
+          let IIl1liIi = await this.bindWithVender();
+          if (IIl1liIi && IIl1liIi.success && ["0", "9003"].includes(IIl1liIi.busiCode)) continue;
+        }
+        this.putMsg(Iil1lIil);
+        await this.wxStopSync(Iil1lIil);
+        return;
+      }
+    } else {
+      I1li111i.length === 0 && iIlI1111 && I1li111i.push(IlllII11[0]);
+      while ((iIlI1111 || lIi1i11 < lil1IliI) && I1li111i.length > 0) {
+        iIlI1111 = false;
+        let IlII1I1i = I1li111i.shift().productId;
+        this.debug("加购productId:" + IlII1I1i);
+        let II1ll1li = 5;
+        while (II1ll1li-- > 0) {
+          let lIIil1ll = await this.wxApi("wxCollectionActivity/" + i1Ili1, {
+            "activityId": this.activityId,
+            "pin": this.secretPin,
+            "productId": IlII1I1i
+          });
+          this.debug(lIIil1ll);
+          if (lIIil1ll && lIIil1ll.result) {
+            lIi1i11 = lIIil1ll.data?.["hasAddCartSize"] ?? lIi1i11 + 1;
+            break;
+          }
+          let iII1il1l = lIIil1ll?.["errorMessage"];
+          if (!iII1il1l) break;
+          if (iII1il1l.includes("购物车已经满了")) continue;
+          if (iII1il1l.includes("会员") && I1lli1I && I1lli1I >= lI1lIIi.openCardBeanNum) {
+            await this.getShopOpenCardInfo();
+            let ilIIilil = await this.bindWithVender();
+            if (ilIIilil && ilIIilil.success && ["0", "9003"].includes(ilIIilil.busiCode)) continue;
+          }
+          this.putMsg(iII1il1l);
+          await this.wxStopSync(iII1il1l);
+          return;
+        }
+      }
+    }
+    if (lIi1i11 < lil1IliI) {
+      this.log("加购数量不足,不领取");
+      return;
+    }
+    this.debug("加购完成 " + lIi1i11 + " - " + lil1IliI);
+    let lii1ii11 = await this.wxApi("wxCollectionActivity/getPrize", {
+      "activityId": this.activityId,
+      "pin": this.secretPin
+    });
+    this.debug(lii1ii11);
+    if (lii1ii11 && lii1ii11.result && lii1ii11.data?.["drawOk"]) {
+      this.putMsg(lii1ii11.data.name);
+      await this.writeLongCache();
+      return;
+    }
+    let iiiiiili = lii1ii11?.["errorMessage"] || lii1ii11?.["data"]?.["errorMessage"];
+    if (!iiiiiili) return;
+    iiiiiili.includes("已领过") && (await this.writeLongCache());
+    this.putMsg(iiiiiili);
+    await this.wxStopSync(iiiiiili);
+    if (iiiiiili.includes("日奖品全部被领取")) {}
   }
 }
-lIi1I11.activity = {
+lllillil.activity = {
   "activityUrl": activityUrl
 };
-lIi1I11.TaskClass = i11llii;
-lIi1I11.run({
+lllillil.TaskClass = i1iiIil;
+lllillil.run({
   "whitelist": ["1-20"],
   "main_thread": 3
 });
