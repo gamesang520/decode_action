@@ -1,181 +1,158 @@
-//Tue Aug 06 2024 20:18:16 GMT+0000 (Coordinated Universal Time)
+//Tue Aug 06 2024 20:19:47 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-if (mode) {
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10069&templateId=ac8b6564-aa35-4ba5-aa62-55b0ce61b5d01&activityId=1719974616209104898&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10053&templateId=20210804190900gzspyl011&activityId=1718891863502409730&nodeId=101001053&prd=cjwx";
-  activityUrl = "https://cjhy-isv.isvjcloud.com/wxShopFollowActivity/activity?activityId=92406df13eae4203b77d7a567c398326";
-  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/showFavoriteShop?id=9e8080a78b83db8f018b854284f27565&user_id=10028198";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10069&activityId=1723989742404182018&templateId=ac8b6564-aa35-4ba5-aa62-55b0ce61b5d01&nodeId=101001&prd=cjwx";
-  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/showFavoriteShop?id=9e8080a784add0d20184c74e8f0659f5&user_id=11179724";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10053&templateId=20210804190900gzspyl011&activityId=1717457082637680641&nodeId=101001053&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10069&templateId=b60a7f97-84ed-445b-a2e2-9709da4a4d34&activityId=1775495796115959810&nodeId=101001&prd=crm";
-}
+mode && (activityUrl = "https://lzkj-isv.isvjcloud.com/wxFansInterActionActivity/activity/5876f114e9524b91ad00080850c49e30?activityId=5876f114e9524b91ad00080850c49e30");
 const {
-  RunMode: lI11Il1,
-  UserMode: i1Ii1i1i
+  RunMode: iI11IIiI,
+  UserMode: il1lIl1i
 } = require("./bear");
-lI11Il1.envInfo = {
-  "name": "关注抽奖beta",
-  "runName": "jd_wx_followDraw",
-  "version": "1.0.1"
+iI11IIiI.envInfo = {
+  "name": "粉丝互动beta",
+  "runName": "jd_wx_fansDraw",
+  "version": "1.0.0"
 };
-class iII11II extends i1Ii1i1i {
-  constructor(il1l1iii, IilIllIl) {
-    super(il1l1iii, IilIllIl);
+class iII1i1lI extends il1lIl1i {
+  constructor(lliliIlI, l1ll1l11) {
+    super(lliliIlI, l1ll1l11);
+    this.content = [];
   }
-  async ["getActivityContentOnly"]() {}
   async ["userTask"]() {
     await this.isvObfuscator();
-    if (this.mode === "jinggeng") {
-      await this.setMixNick();
-      await this.jinggengShopInfo();
-      let I1ll11li = await this.jinggengApi("postFavoriteShop");
-      this.debug(I1ll11li);
-      if (I1ll11li && I1ll11li.succ) {
-        let il1lli1I = I1ll11li.msg ?? "{}",
-          lIlI11i = JSON.parse(il1lli1I);
-        if (lIlI11i?.["actLogDto"]?.["remark"]) {
-          this.putMsg(lIlI11i?.["actLogDto"]?.["remark"]);
-          return;
-        }
-      } else {
-        let iIlIIl = I1ll11li?.["msg"] || "抽奖失败";
-        this.putMsg(iIlIIl);
-        this.wxStop();
-      }
-      return;
-    }
     await this.getDefenseUrls();
-    if (["10053", "10069"].includes(this.activityType)) {
-      await this.login();
-      if (this.type === "lkFollowShop") {
-        await this.unfollow();
-        let iIiil111 = await this.taskGet("api/task/" + this.type + "/getUserFollowInfo");
-        this.debug(iIiil111);
-        if (iIiil111 && iIiil111.resp_code === 0) {
-          if (iIiil111.data.followShop) {
-            let IIllili1 = await this.taskGet("api/task/" + this.type + "/saveFollowInfo?actType=" + this.activityType);
-            this.debug(IIllili1);
-            if (IIllili1 && IIllili1.resp_code === 0) {
-              this.putMsg(IIllili1.data?.["prizeName"] || "空气");
-              return;
-            }
-            let il11l1I1 = IIllili1?.["resp_msg"] || "关注店铺失败";
-            this.putMsg(il11l1I1);
-            return;
-          } else this.putMsg("此活动只针对新关注店铺用户~");
-        } else {
-          let lIII1lli = iIiil111?.["resp_msg"] || "获取关注信息失败";
-          this.putMsg(lIII1lli);
-        }
-        return;
-      }
-      if (this.type === "followGoods") {
-        let Ill11lIl = await this.lzkjApi("api/task/" + this.type + "/getFollowGoods");
-        if (Ill11lIl && Ill11lIl.resp_code === 0) {
-          this.taskId = Ill11lIl.data?.[0]?.["taskId"];
-          let iil1IiIl = Ill11lIl.data?.[0]?.["completeCount"] || 0,
-            IlIilllI = Ill11lIl.data?.[0]?.["finishNum"] || 0,
-            i1II1il = Ill11lIl.data?.[0]?.["oneClickFollowPurchase"] || 1,
-            l1ll1iii = Ill11lIl.data?.[0]?.["status"] || 0,
-            il111Ii = Ill11lIl.data?.[0]?.["skuInfoVO"] || [];
-          il111Ii = il111Ii.filter(Ilii11li => Ilii11li.status === 0);
-          if (iil1IiIl >= IlIilllI || l1ll1iii === 1) {
-            this.putMsg("已领取");
-            return;
-          }
-          if (i1II1il === 0) {
-            let i1llIlll = await this.lzkjApi("api/task/" + this.type + "/followGoods", {
-              "taskId": this.taskId,
-              "skuId": ""
-            });
-            this.debug(i1llIlll);
-            if (i1llIlll && i1llIlll.resp_code === 0) {
-              this.putMsg(i1llIlll.data?.["prizeName"] || "空气");
-              return;
-            }
-            let Ii1ilil = i1llIlll?.["resp_msg"] || "关注商品失败";
-            this.log(Ii1ilil);
-          } else for (let lIIi11ll of il111Ii) {
-            let i1ilIil = await this.lzkjApi("api/task/" + this.type + "/followGoods", {
-              "skuId": lIIi11ll.skuId
-            });
-            this.debug(i1ilIil);
-            if (i1ilIil && i1ilIil.resp_code === 0) {
-              if (i1ilIil.data) {
-                this.putMsg(i1ilIil.data?.["prizeName"] || "空气");
-                return;
-              }
-            }
-            let iI1ii111 = i1ilIil?.["resp_msg"] || "关注商品失败";
-            this.log(iI1ii111);
-            if (iI1ii111.includes("会员等级")) {
-              return;
-            }
-          }
-        } else {
-          let i1lll1II = Ill11lIl?.["resp_msg"] || "获取关注商品信息失败";
-          this.log(i1lll1II);
-        }
-      }
-      return;
-    }
     await this.wxCommonInfo();
     await this.getSimpleActInfoVo();
-    this.index === 0 && (await this.getShopInfo());
     this.defenseUrls.length === 0 ? await this.getMyPing() : await this.initPinToken();
     await this.accessLog();
-    let lIiIil1i = await this.wxApi("wxShopFollowActivity/activityContentOnly", {
+    let Ill1II11 = await this.wxApi("wxFansInterActionActivity/activityContent", {
       "activityId": this.activityId,
       "pin": this.secretPin
     });
-    this.debug(lIiIil1i);
-    if (lIiIil1i && lIiIil1i.result) {
-      let Iliilii = lIiIil1i.data.hasFollow ?? false,
-        II1iiI1 = lIiIil1i.data.canDrawTimes ?? 1,
-        IIIII = lIiIil1i.data.startTime ?? 0,
-        I111I1i = lIiIil1i.data.endTime ?? 0;
-      i1Ii1i1i.activity.startTime = IIIII;
-      i1Ii1i1i.activity.endTime = I111I1i;
-      const II11IiI1 = this.formatDate(IIIII, "yyyy-MM-dd HH:mm:ss") + "至" + this.formatDate(I111I1i, "yyyy-MM-dd HH:mm:ss");
-      i1Ii1i1i.activity.timeStr = II11IiI1;
-      if (IIIII && IIIII > Date.now()) {
-        this.putMsg("活动未开始");
-        this.stop();
-        return;
-      }
-      if (I111I1i && I111I1i < Date.now()) {
-        this.putMsg("活动已结束");
-        this.stop();
-        return;
-      }
-      if (II1iiI1 === 0) {
-        this.putMsg("无抽奖次数");
-        return;
-      }
-      Iliilii && (await this.unfollow());
-      if (this.domain.includes("cjhy")) await this.follow();else {
-        let Ii1ii111 = await this.wxApi("wxShopFollowActivity/follow", {
-          "activityId": this.activityId,
-          "pin": this.secretPin
-        });
-        this.debug(Ii1ii111);
-        if (!(Ii1ii111 && Ii1ii111.result)) {
-          let l11iilI = Ii1ii111?.["errorMessage"] || "关注店铺失败";
-          this.putMsg(l11iilI);
-          return;
+    if (!Ill1II11 || !Ill1II11.result) {
+      let iiIIIIil = Ill1II11?.["msg"] || "获取活动信息失败";
+      this.putMsg(iiIIIIil);
+      this.wxStop(iiIIIIil);
+      return;
+    }
+    let lIIII1i = Ill1II11.data?.["actInfo"]?.["startTime"],
+      ii1i1lii = Ill1II11.data?.["actInfo"]?.["endTime"];
+    ["giftLevelOne", "giftLevelTwo", "giftLevelThree"].forEach(I1IiIliI => JSON.parse(Ill1II11.data?.["actInfo"]?.[I1IiIliI] ?? "[]").forEach(iii1lIIl => this.content.push(iii1lIIl)));
+    this.shopName = Ill1II11.data?.["actInfo"]?.["shopName"];
+    let iliI1l11 = Ill1II11.data?.["actorInfo"];
+    il1lIl1i.activity.shopName = this.shopName;
+    il1lIl1i.activity.startTime = lIIII1i;
+    il1lIl1i.activity.endTime = ii1i1lii;
+    if (lIIII1i && this.timestamp() < lIIII1i) {
+      this.putMsg("活动未开始");
+      this.wxStop();
+      return;
+    }
+    if (ii1i1lii && this.timestamp() > ii1i1lii) {
+      this.putMsg("活动已结束");
+      this.wxStop();
+      return;
+    }
+    if (iliI1l11?.["prizeOneStatus"] && iliI1l11?.["prizeTwoStatus"] && iliI1l11?.["prizeThreeStatus"]) {
+      this.putMsg("已领取所有奖品");
+      return;
+    }
+    let lI1liliI = iliI1l11.uuid,
+      I11II1l1 = {
+        1: "task1Sign",
+        2: "task2BrowGoods",
+        3: "task3AddCart",
+        4: "task4Share",
+        5: "task5Remind",
+        6: "task6GetCoupon",
+        7: "task7MeetPlaceVo"
+      },
+      IIlIi1l1 = Ill1II11.data?.["actInfo"]?.["taskIds"];
+    for (let ill1IIIi of IIlIi1l1.split(",")) {
+      let lIill11 = Ill1II11.data?.[I11II1l1[ill1IIIi]] ?? {};
+      if (lIill11.finishedCount >= lIill11.upLimit) continue;
+      for (let i1ll1i1 = 0; i1ll1i1 < lIill11.upLimit - lIill11.finishedCount; i1ll1i1++) {
+        try {
+          if (["task1Sign", "task4Share", "task5Remind", "task7MeetPlaceVo"].includes(I11II1l1[ill1IIIi])) {
+            let iI11Il = I11II1l1[ill1IIIi] === "task1Sign" ? "doSign" : I11II1l1[ill1IIIi] === "task4Share" ? "doShareTask" : I11II1l1[ill1IIIi] === "task5Remind" ? "doRemindTask" : "doMeetingTask";
+            await this.wxApi("wxFansInterActionActivity/" + iI11Il, {
+              "activityId": this.activityId,
+              "uuid": lI1liliI
+            });
+          }
+          if (["task2BrowGoods", "task3AddCart"].includes(I11II1l1[ill1IIIi]) && lIill11.taskGoodList?.["length"] > 0) {
+            let iIil1IIl = lIill11.taskGoodList,
+              illlliI1 = iIil1IIl[i1ll1i1].skuId,
+              i1iIiI1I = I11II1l1[ill1IIIi] === "task2BrowGoods" ? "doBrowGoodsTask" : "doAddGoodsTask";
+            await this.wxApi("wxFansInterActionActivity/" + i1iIiI1I, {
+              "activityId": this.activityId,
+              "uuid": lI1liliI,
+              "skuId": illlliI1
+            });
+          }
+          if (I11II1l1[ill1IIIi] === "task6GetCoupon" && lIill11.taskCouponInfoList?.["length"] > 0) {
+            let lI1IIl11 = lIill11.taskCouponInfoList,
+              il11illl = lI1IIl11[0].couponId;
+            await this.wxApi("wxFansInterActionActivity/doGetCouponTask", {
+              "activityId": this.activityId,
+              "uuid": lI1liliI,
+              "couponId": il11illl
+            });
+          }
+        } catch (I1Ii1II) {
+          this.log(I1Ii1II);
+        } finally {
+          this.sleep(1500);
         }
       }
-      await this.getPrize();
     }
+    let iliIilIi = iliI1l11?.["follow"];
+    !iliIilIi && (await this.wxApi("wxFansInterActionActivity/followShop", {
+      "activityId": this.activityId,
+      "uuid": lI1liliI
+    }));
+    Ill1II11 = await this.wxApi("wxFansInterActionActivity/activityContent", {
+      "activityId": this.activityId,
+      "pin": this.secretPin
+    });
+    iliI1l11 = Ill1II11.data?.["actorInfo"] || iliI1l11;
+    let IiI1illi = iliI1l11?.["energyValue"] ?? 0;
+    IiI1illi += iliI1l11?.["fansLoveValue"] ?? 0;
+    let lIiiIi1l = iliI1l11?.["prizeOneStatus"] ?? false,
+      IIli11I1 = iliI1l11?.["prizeTwoStatus"] ?? false,
+      i11i1Ii = iliI1l11?.["prizeThreeStatus"] ?? false,
+      lIi1iiiI = Ill1II11.data?.["actConfig"],
+      Ii1IlIli = lIi1iiiI?.["prizeScoreOne"] ?? 0,
+      lil1IlII = lIi1iiiI?.["prizeScoreTwo"] ?? 0,
+      l1i1lI11 = lIi1iiiI?.["prizeScoreThree"] ?? 0,
+      iIl1Iii1 = "";
+    !lIiiIi1l && IiI1illi >= Ii1IlIli && (iIl1Iii1 = "01");
+    !IIli11I1 && IiI1illi >= lil1IlII && (iIl1Iii1 = "02");
+    !i11i1Ii && IiI1illi >= l1i1lI11 && (iIl1Iii1 = "03");
+    if (iIl1Iii1) {
+      let ili1Iil1 = await this.wxApi("wxFansInterActionActivity/startDraw", {
+        "activityId": this.activityId,
+        "uuid": lI1liliI,
+        "drawType": iIl1Iii1
+      });
+      this.log(ili1Iil1);
+      if (ili1Iil1 && ili1Iil1.result) {
+        let l1IIIilI = ili1Iil1.data.drawOk ? ili1Iil1.data?.["name"] : ili1Iil1.data?.["errorMessage"] || "空气";
+        this.putMsg(l1IIIilI);
+        ili1Iil1.data.needWriteAddress === "y" && ili1Iil1.data?.["drawInfoType"] === 7 && ili1Iil1.data?.["addressId"] && (this.addressId = ili1Iil1.data.addressId, this.prizeName = l1IIIilI, await this.saveAddress());
+        return;
+      }
+      let ilI111I = ili1Iil1?.["errorMessage"];
+      this.putMsg(ilI111I);
+      this.wxStop(ilI111I);
+      return;
+    }
+    this.putMsg("积分:" + IiI1illi + ",兑换1:" + lIiiIi1l + ",兑换2:" + IIli11I1 + "兑换3:" + i11i1Ii);
   }
 }
-lI11Il1.activity = {
+iI11IIiI.activity = {
   "activityUrl": activityUrl
 };
-lI11Il1.TaskClass = iII11II;
-lI11Il1.run({
+iI11IIiI.TaskClass = iII1i1lI;
+iI11IIiI.run({
   "whitelist": ["1-20"],
   "main_thread": 3
 });
