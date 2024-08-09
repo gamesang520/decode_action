@@ -1,702 +1,524 @@
-//Tue Aug 06 2024 20:45:46 GMT+0000 (Coordinated Universal Time)
+//Fri Aug 09 2024 17:12:29 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-const notify = require("./utils/Rebels_sendJDNotify"),
-  jdCookie = require("./jdCookie"),
-  common = require("./utils/Rebels_jdCommon"),
-  {
-    H5st
-  } = require("./utils/Rebels_H"),
-  isNotify = process.env.jd_zzhb_Notify === "true",
-  pddcode = process.env.jd_zzhb_inviterId || "",
-  pddnum = process.env.jd_zzhb_num,
-  linkId = "wDNvX5t2N52cWEM8cLOa0g",
-  PDD_WAIT = "1";
-let waitTimes = parseInt(PDD_WAIT) * 1000;
-$.helpnum = 0;
-$.PDDEnd = false;
-let cookie = "";
-const cookiesArr = Object.keys(jdCookie).map(illIii => jdCookie[illIii]).filter(ii1il1 => ii1il1);
-!cookiesArr[0] && ($.msg($.name, "【提示】请先获取Cookie"), process.exit(1));
-!(async () => {
-  authorCodeList = await getAuthorCodeList("http://code.257999.xyz/yqlxj.json");
-  authorCodeList ? (console.log("❖ 测试连通性中...\n❖ 服务状态正常...\n"), $.authorCode = authorCodeList[random(0, authorCodeList.length)]) : console.log("❖ 准备就绪...\n");
-  if (pddnum) console.log("❖ 已填写指定人数变量，指定人数 [" + pddnum + "]");
-  pddcode ? console.log("❖ 已填写指定助力变量，开始助力 [" + pddcode + "]") : console.log("❖ 未填写指定助力变量，开始助力账号[1]");
-  notify.config({
-    "title": $.name
-  });
-  for (let l1iIII = 0; l1iIII < cookiesArr.length; l1iIII++) {
-    $.index = l1iIII + 1;
-    cookie = cookiesArr[l1iIII];
-    common.setCookie(cookie);
-    $.UserName = decodeURIComponent(common.getCookieValue(cookie, "pt_pin"));
-    $.UA = common.genUA($.UserName);
-    $.message = notify.create($.index, $.UserName);
-    $.nickName = "";
-    console.log("\n******开始【京东账号" + $.index + "】" + ($.nickName || $.UserName) + "******\n");
-    $.hash = gen_jda_cookie();
-    $.strList = "__jda=" + $.hash.jda + ";__jdb=" + $.hash.jdb + ";__jdc=" + $.hash.jdc + ";__jdv=" + $.hash.jdv + ";;";
-    $.uuid = new Date().getTime() + "" + parseInt(2147483647 * Math.random());
-    await Main();
-    common.unsetCookie();
-    if ($.PDDEnd || $.runEnd) break;
-    await $.wait(parseInt(waitTimes * 1 + 100, 10));
-  }
-  isNotify && notify.getMessage() && (notify.appendContent("\n"), await notify.push());
-})().catch(llI1I1 => $.logErr(llI1I1)).finally(() => $.done());
-async function Main() {
-  $.canWatering = true;
-  try {
-    if (pddcode) {
-      $.index == 1 ? (console.log("⏺️ 账号[1]默认去助力作者"), await inviteFissionhelp($.authorCode)) : await inviteFissionhelp(pddcode);
-    } else {
-      if ($.index == 1) {
-        console.log("⏺️ 账号[1]默认去助力作者");
-        await inviteFissionHome();
-        if ($.runEnd) return;
-        await inviteFissionhelp($.authorCode);
-      } else await inviteFissionhelp($.shareinviter);
-    }
-  } catch (iii1ii) {
-    console.log(iii1ii.message);
-  }
+if (mode) {
+  activityUrl = "https://cjhy-isv.isvjcloud.com/wxTeam/activity?activityId=6d08fc8fad484372a99351bcf60e87ac";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&templateId=2021062190900zdgf081&activityId=1717808855827406850&nodeId=101001&prd=cjwx";
+  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=54e4903a3bfc4e10a6ecdeaa58abaed1";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=ef8d69fd0410fe9da216f1c964c54c3f&userId=13082769";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=b44c5677f7363015af66dea0a932dd4f&userId=1000451545";
+  activityUrl = "https://hdb-isv.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=5f1c0796be4f651574e9e0f5a7e8f8af&userId=182482";
+  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/showPartition?id=9e80802f8a49b510018a4a5422db2b78&user_id=172541";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/?activityType=10033&templateId=2021062190900zdgf081&activityId=1730058154674954241&nodeId=101001&prd=cjwx&shareuserid4minipg=BbrGRKytrjDMjC1fQeEoy2pCfN5ZmfvMwbWBLt73u98ENlAanVdw4/1A%207yG9wzk&shopid=1000102709&shopid=1000102709&shopid=1000102709&shopid=1000102709&shopid=1000102709&shopid=1000102709&shopid=1000102709&=&=&=&=&=&&shareUserId=1730262436920238081&shopid=1000102709";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=4641a455f3611a88d3538d86f403e317&userId=13082769";
+  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=31a27ba5e17344e2a35f9d1eb9a8a826";
+  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=8827e30a920a41119f5d07f55a7e1060";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&templateId=2021062190900zdgf081&activityId=1744920180164960258&prd=cjwx";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=34ccb6e412f39d0e620012efef471549&userId=61627";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=db8e1dee18da0e3a784873fa62f579a8&userId=13082769&teamId=db8e1dee18da0e3a784873fa62f579a886";
+  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=6fb5fd5ab88e4c87be19ae8571052957";
+  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=982597cea4ec4ea1997f7c69e5f7143e";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10033&activityId=1776856935890481154&templateId=2021062190900zdgf08&nodeId=101001&prd=crm";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=d9e4888b159f560683efa86734d8a0b3&userId=1000007503&actForm=single&teamId=d9e4888b159f560683efa86734d8a0b31218";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&templateId=2021062190900zdgf081&activityId=1782628595081019394&nodeId=101001&prd=cjwx";
+  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=f47d2818bc8140d181844044f2aeb1d5";
+  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=644a01191a234c729066967c9cfb9877";
+  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=434e32054d3d4744a9caee80ffa70cce";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&activityId=1796452463138701313&templateId=2021062190900zdgf081&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&templateId=10202401041003302zdgfjp&activityId=1798545988361469954&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&activityId=1789853943779532801&templateId=2021062190900zdgf081&nodeId=101001&prd=cjwx";
+  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/showPartition?id=9e808086900394930190064ac05e41f7&user_id=1000003065";
+  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=ce4e9365871c0fd4ac075f00f1a01f69&userId=1000007503&actForm=single&teamId=ce4e9365871c0fd4ac075f00f1a01f691789";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/?activityType=10033&templateId=10202401031003302zdgfjp&activityId=1805130307891695618&nodeId=101001&prd=cjwx";
 }
-async function inviteFissionHome() {
-  await sendRequest("inviteFissionBeforeHome");
-  if ($.runEnd) return;
-  await $.wait(parseInt(waitTimes * 1 + 100, 10));
-  await sendRequest("inviteFissionHome");
-  await $.wait(parseInt(waitTimes * 1 + 100, 10));
-  if ($.inviteFissionHome?.["inviter"]) {
-    $.shareinviter = $.inviteFissionHome?.["inviter"];
-    const lilIIi = new Date().valueOf(),
-      i1l1Il = $.inviteFissionHome?.["countDownTime"] + lilIIi,
-      llIli = $.time("yyyy-MM-dd HH:mm:ss", i1l1Il);
-    console.log("⏺️ 已开启活动，到期时间：" + llIli + "\n⏺️ 助力码：" + $.shareinviter);
-  } else console.log("⏺️ 未能正确获取到助力码，退出执行！"), $.runEnd = true;
-}
-async function inviteFissionhelp(i1i11l) {
-  $.inviter = i1i11l;
-  await sendRequest("inviteFissionhelp");
-}
-async function handleResponse(IiiliI, iii1iI) {
-  try {
-    switch (IiiliI) {
-      case "inviteFissionhelp":
-        if (iii1iI?.["code"] === 0 && iii1iI?.["success"] === true) {
-          $.inviteFissionhelp = iii1iI.data;
-          switch ($.inviteFissionhelp?.["helpResult"]) {
-            case null:
-              console.log("❌ 助力码未填写");
-              break;
-            case 0:
-              console.log("❌ 不能自己助力自己");
-              break;
-            case 1:
-              if ($.index == 1) console.log("✅ 助力成功 [感谢]");else {
-                $.helpnum++;
-                console.log("✅ 助力成功 [" + $.helpnum + "]");
-                if (pddnum) {
-                  if (pddnum <= $.helpnum) {
-                    console.log("✅ 当前助力已达到指定助力人数，退出！");
-                    $.PDDEnd = true;
-                    return;
-                  }
-                }
-              }
-              break;
-            case 2:
-              console.log("❌ 活动火爆");
-              break;
-            case 3:
-              console.log("❌ 没有助力次数");
-              break;
-            case 6:
-              console.log("❌ 已助力过了");
-              break;
-            case 8:
-              if ($.index == 1) {
-                console.log("❌ 助力码失效，作者未开启活动！");
-                break;
-              } else {
-                console.log("❌ 助力码失效，请先去开启新一轮活动后再运行吧！");
-                return;
-              }
-            default:
-              {
-                console.log("[未知助力状态]:[" + helpResult + "]");
-                break;
-              }
-          }
-        } else {
-          if (iii1iI.data?.["bizMsg"]) {
-            console.log("> " + iii1iI.errMsg);
-          } else {
-            if (iii1iI.errMsg) console.log("> " + iii1iI.errMsg);else iii1iI.msg ? console.log("> " + iii1iI.msg) : console.log("❓" + IiiliI + " " + JSON.stringify(iii1iI));
-          }
-        }
-        break;
-      case "inviteFissionBeforeHome":
-        if (iii1iI?.["code"] === 0 && iii1iI?.["success"] === true) $.inviteFissionBeforeHome = iii1iI.data;else {
-          if (iii1iI.data?.["bizMsg"]) console.log("> " + iii1iI.data?.["bizMsg"] + "}");else {
-            if (iii1iI.errMsg) $.runEnd = true, console.log("> " + iii1iI.errMsg);else iii1iI.msg ? console.log("> " + iii1iI.msg) : console.log("❓" + IiiliI + " " + JSON.stringify(iii1iI));
-          }
-        }
-        break;
-      case "inviteFissionHome":
-        if (iii1iI?.["code"] === 0 && iii1iI?.["success"] === true) $.inviteFissionHome = iii1iI.data;else {
-          if (iii1iI.data?.["bizMsg"]) console.log("> " + iii1iI.data?.["bizMsg"]);else {
-            if (iii1iI.errMsg) $.runEnd = true, console.log("> " + iii1iI.errMsg);else iii1iI.msg ? console.log("> " + iii1iI.msg) : console.log("❓" + IiiliI + " " + JSON.stringify(iii1iI));
-          }
-        }
-        break;
-    }
-  } catch (Iil1ll) {
-    console.log("❌ 未能正确处理 " + IiiliI + " 请求响应 " + (Iil1ll.message || Iil1ll));
-  }
-}
-async function sendRequest(iillI) {
-  if ($.runEnd) return;
-  let IIliIi = "",
-    IllIiI = null,
-    i1il1 = null,
-    I1l111 = "POST",
-    IIii1l = {},
-    I1iIII = {};
-  switch (iillI) {
-    case "inviteFissionhelp":
-      I1iIII = {
-        "appId": "c5389",
-        "functionId": "inviteFissionhelp",
-        "appid": "activities_platform",
-        "clientVersion": common.getLatestAppVersion(),
-        "client": "ios",
-        "body": {
-          "linkId": linkId,
-          "isJdApp": true,
-          "inviter": $.inviter
-        },
-        "version": "4.7",
-        "ua": $.UA,
-        "t": true
-      }, IIii1l = await H5st.getH5st(I1iIII), IIliIi = "https://api.m.jd.com/client.action", IllIiI = IIii1l.paramsData;
-      break;
-    case "inviteFissionBeforeHome":
-      I1iIII = {
-        "appId": "02f8d",
-        "functionId": "inviteFissionBeforeHome",
-        "appid": "activities_platform",
-        "clientVersion": common.getLatestAppVersion(),
-        "client": "ios",
-        "body": {
-          "linkId": linkId,
-          "isJdApp": true,
-          "inviter": ""
-        },
-        "version": "4.7",
-        "ua": $.UA,
-        "t": true
-      }, IIii1l = await H5st.getH5st(I1iIII), IIliIi = "https://api.m.jd.com/client.action", IllIiI = IIii1l.paramsData;
-      break;
-    case "inviteFissionHome":
-      I1iIII = {
-        "appId": "eb67b",
-        "functionId": "inviteFissionHome",
-        "appid": "activities_platform",
-        "clientVersion": common.getLatestAppVersion(),
-        "client": "ios",
-        "body": {
-          "linkId": linkId,
-          "inviter": ""
-        },
-        "version": "4.7",
-        "ua": $.UA,
-        "t": true
-      }, IIii1l = await H5st.getH5st(I1iIII), IIliIi = "https://api.m.jd.com/client.action", IllIiI = IIii1l.paramsData;
-      break;
-    default:
-      console.log("❌ 未知请求 " + iillI);
-      return;
-  }
-  const liiI11 = {};
-  IllIiI && (IllIiI = {
-    ...IllIiI,
-    ...liiI11
-  });
-  i1il1 && (i1il1 = {
-    ...i1il1,
-    ...liiI11
-  });
-  const ililI1 = {
-    "url": IIliIi,
-    "method": I1l111,
-    "headers": {
-      "Accept": "application/json, text/plain, */*",
-      "Accept-Encoding": "gzip, deflate, br",
-      "Accept-Language": "zh-cn",
-      "Connection": "keep-alive",
-      "Content-Type": "application/x-www-form-urlencoded",
-      "X-Requested-With": "XMLHttpRequest",
-      "Cookie": cookie + $.strList,
-      "Referer": "https://pro.m.jd.com/jdlite/active/23CeE8ZXA4uFS9M9mTjtta9T4S5x/index.html",
-      "X-Referer-Page": "https://pro.m.jd.com/jdlite/active/23CeE8ZXA4uFS9M9mTjtta9T4S5x/index.html",
-      "Origin": "https://pro.m.jd.com",
-      "x-rp-client": "h5_1.0.0",
-      "User-Agent": $.UA
-    },
-    "params": i1il1,
-    "data": IllIiI,
-    "timeout": 20000
-  };
-  I1l111 === "GET" && (delete ililI1.data, delete ililI1.headers["Content-Type"]);
-  const IIii1i = 1;
-  let i1ili = 0,
-    Iiill1 = null,
-    I1iII1 = false;
-  while (i1ili < IIii1i) {
-    i1ili > 0 && (await $.wait(1000));
-    const Ii1ilI = await common.request(ililI1);
-    if (!Ii1ilI.success) {
-      Iiill1 = "🚫 " + iillI + " 请求失败 ➜ " + Ii1ilI.error;
-      i1ili++;
-      continue;
-    }
-    if (!Ii1ilI?.["data"]) {
-      Iiill1 = "🚫 " + iillI + " 请求失败 ➜ 无响应数据";
-      i1ili++;
-      continue;
-    }
-    handleResponse(iillI, Ii1ilI.data);
-    I1iII1 = false;
-    break;
-  }
-  if (i1ili >= IIii1i) {
-    console.log(Iiill1);
-    I1iII1 && ($.outFlag = true, $.message && $.message.fix(Iiill1));
-  }
-}
-function getAuthorCodeList(lill1i) {
-  return new Promise(Ill11i => {
-    const iilil = {
-      "url": "" + lill1i,
-      "timeout": 10000,
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"
-      }
-    };
-    $.get(iilil, async (Ill11l, il1ll, i1ilIi) => {
-      try {
-        if (Ill11l) {} else {
-          if (i1ilIi) {
-            i1ilIi = JSON.parse(i1ilIi);
-          } else console.log("未获取到数据,请重新运行");
-        }
-      } catch (Ii1il1) {
-        $.logErr(Ii1il1, il1ll);
-        i1ilIi = null;
-      } finally {
-        Ill11i(i1ilIi);
-      }
+const {
+  RunMode: aa,
+  UserMode: ab,
+  baseCommonEnv: ac,
+  baseCommonEnvKey: ad
+} = require("./bear");
+aa.envInfo = {
+  "name": "组队瓜分beta",
+  "runName": "jd_wx_team",
+  "version": "2.0.1"
+};
+ac.leaderNum = parseInt(process.env.B_TEAM_LEADER_NUM || 10);
+ad.B_TEAM_LEADER_NUM = "leaderNum";
+class ae extends ab {
+  async ["saveCaptain"](e = true) {
+    let g = await this.wxApi(this.type + "/saveCaptain", {
+      "activityId": this.activityId,
+      "pin": this.secretPin,
+      "venderId": this.venderId,
+      "pinImg": "https://img10.360buyimg.com/imgzone/jfs/t1/21383/2/6633/3879/5c5138d8E0967ccf2/91da57c5e2166005.jpg"
     });
-  });
-}
-function gen_jda_cookie() {
-  const il1lI = "3";
-  let IliIIl = Math.floor(147483647 * Math.random()).toString(),
-    I1il1l = [...Array(12)].map(() => Math.floor(Math.random() * 10)).join(""),
-    lI1l1l = timestamp() - 200000,
-    IIliII = lI1l1l + Math.floor(Math.random() * 100000),
-    iiliI = IIliII + Math.floor(Math.random() * 10000),
-    Ill11I = lI1l1l + Math.floor(Math.random() * 100000),
-    I1il1i = [IliIIl, "" + lI1l1l + I1il1l, lI1l1l.toString(), IIliII.toString(), iiliI.toString(), il1lI].join("."),
-    IliIIi = [IliIIl, I1il1l.slice(-2), "" + lI1l1l + I1il1l + "|" + il1lI, iiliI.toString()].join("."),
-    lI1l1i = IliIIl,
-    i1iil = [IliIIl, "kong", "t_1003649902_", "tuiguang", "202054b9f71e49e6a228adc8e665f848", Ill11I.toString()],
-    llI11l = encodeURIComponent(i1iil.join("|"));
-  return {
-    "jda": I1il1i,
-    "jdb": IliIIi,
-    "jdc": lI1l1i,
-    "jdv": llI11l
-  };
-}
-function timestamp() {
-  return Math.floor(Date.now() / 1000);
-}
-function random(iili1, II11ii) {
-  return Math.floor(Math.random() * (II11ii - iili1)) + iili1;
-}
-function Env(t, e) {
-  "undefined" != typeof process && JSON.stringify(process.env).indexOf("GITHUB") > -1 && process.exit(0);
-  class s {
-    constructor(t) {
-      this.env = t;
+    this.debug(g);
+    if (g && g.result) {
+      this.signUuid = g.data?.["signUuid"];
+      this.log("助力码[" + this.signUuid + "]");
+      this.putMsg("建队");
+      return;
     }
-    send(t, e = "GET") {
-      t = "string" == typeof t ? {
-        url: t
-      } : t;
-      let s = this.get;
-      return "POST" === e && (s = this.post), new Promise((e, i) => {
-        s.call(this, t, (t, s, r) => {
-          t ? i(t) : e(s);
-        });
-      });
+    let h = g?.["errorMessage"] ?? "";
+    if (h.includes("店铺会员") && ab.activity.openCard && e) {
+      await this.bindWithVender();
+      if (this.canNotOpenCard) return this.reseCookieStatus();
+      return await this.saveCaptain(false);
+    } else h.includes("活动未开始") && (ab.activity.noStart = true, this.stop());
+    this.log(h);
+    await this.wxStopSync(h);
+    this.needHelp = false;
+  }
+  async ["saveMember"](e = true) {
+    let g = await this.wxApi(this.type + "/saveMember", {
+      "activityId": this.activityId,
+      "pin": this.secretPin,
+      "venderId": this.venderId,
+      "pinImg": "https://img10.360buyimg.com/imgzone/jfs/t1/21383/2/6633/3879/5c5138d8E0967ccf2/91da57c5e2166005.jpg",
+      "signUuid": this.toHelpUser.signUuid
+    });
+    this.debug(g);
+    if (g && g.result) {
+      this.log("加入[" + this.toHelpUser.pin + "]成功");
+      this.toHelpUser.helpedCount += 1;
+      if (this.toHelpUser.helpedCount >= ab.activity.maxHelpCount) {
+        this.toHelpUser.needHelp = false;
+        this.toHelpUser.putMsg("已组满");
+        await this.toHelpUser.writeLongCache();
+      }
+      await this.writeLongCache(this.activityId + "_invite");
+      return;
     }
-    get(t) {
-      return this.send.call(this.env, t);
+    let h = g?.["errorMessage"] ?? "";
+    if (h.includes("满员")) {
+      this.toHelpUser.needHelp = false;
+      await this.toHelpUser.writeLongCache();
+      this.reseInviteStatus();
+      return;
+    } else {
+      if (h.includes("已经加入")) this.canHelp = false, await this.writeLongCache(this.activityId + "_invite");else {
+        if (h.includes("店铺会员") && ab.activity.openCard && e) {
+          await this.bindWithVender();
+          if (this.canNotOpenCard) return this.reseCookieStatus();
+          return await this.saveMember(false);
+        }
+      }
     }
-    post(t) {
-      return this.send.call(this.env, t, "POST");
+    this.canHelp = false;
+    this.log(h);
+    await this.wxStopSync(h);
+  }
+  async ["getActContent"]() {
+    let f = await this.activityContent();
+    if (!f?.["result"] || !f?.["data"]) {
+      this.putMsg(f?.["errorMessage"]);
+      return;
+    }
+    this.signUuid = f.data?.["signUuid"];
+    let g = f.data?.["active"] ?? {},
+      h = g?.["maxGroup"] ?? 5,
+      {
+        prizeType: i,
+        startTime: j,
+        endTime: k
+      } = g;
+    ab.activity.startTime = j;
+    ab.activity.endTime = k;
+    i == 6 && (ab.activity.openCard = true);
+    ab.activity.maxHelpCount = h * 4;
+    let l = f.data?.["successRetList"] ?? [],
+      m = f.data?.["list"] ?? [],
+      n = f.data?.["joinMap"]?.["memberList"] ?? [];
+    if (n.length > 0) {
+      this.canHelp = false;
+      await this.writeLongCache(this.activityId + "_invite");
+    }
+    this.helpedCount = Math.abs(Math.max(l?.["length"] * 4 + (m?.["length"] > 0 ? m.length - 1 : 0), 0));
+    this.debug(this.helpedCount);
+    const o = this.formatDate(j, "yyyy-MM-dd HH:mm:ss") + "至" + this.formatDate(k, "yyyy-MM-dd HH:mm:ss");
+    ab.activity.timeStr = o;
+    if (j && j > Date.now()) {
+      let s = j - Date.now();
+      s < 60 * 1000 * 4 ? (this.log("活动即将开始,等待" + s / 1000 + "s"), await this.sleep(s)) : (this.putMsg("活动未开始"), i == 6 && (ab.activity.noStart = true), this.stop());
+    }
+    k && k < Date.now() && (this.putMsg("活动已结束"), await this.writeLongCacheByStop(), this.stop());
+    if (this.helpedCount >= ab.activity.maxHelpCount) {
+      this.needHelp = false;
+      this.putMsg("已组满");
+      await this.writeLongCache();
+      return;
+    }
+    this.signUuid ? this.log("助力码[" + this.signUuid + "]") : await this.saveCaptain();
+  }
+  async ["activityInfo"]() {
+    let f = await this.lzkjApi("api/task/" + this.type + "/activity", {
+      "shareUserId": this.shareUserId || ""
+    });
+    if (f && f.resp_code === 0) {
+      let i = f.data?.["groupNumber"] ?? 5;
+      ab.activity.maxHelpCount = i * 4;
+      this.helpedCount = 0;
+      let j = f.data?.["captainList"] ?? [];
+      this.createTeamNum = i - j.length;
+      let k = f.data?.["prizeType"] ?? 0;
+      k == 1 && (ab.activity.openCard = true);
+      ab.activity.customThread = 1;
+      if (j.length > 0) {
+        this.teamId = j[j.length - 1].id;
+        let m = j[j.length - 1]?.["teamList"] ?? [];
+        this.helpedCount = m.length > 0 ? m.length - 1 : 0;
+      }
+      let l = f.data?.["captain"];
+      l && (await this.writeLongCache(this.activityId + "_invite"), this.canHelp = false);
+      if (this.createTeamNum === 0 && this.helpedCount === 4) {
+        this.putMsg("已组满");
+        this.needHelp = false;
+        await this.writeLongCache();
+        this.exit();
+      }
+      return;
+    }
+    let g = f?.["resp_msg"];
+    this.log(g);
+  }
+  async ["saveCaptain100"](e = true) {
+    let g = await this.lzkjApi("api/task/" + this.type + "/saveCaptain");
+    this.debug(g);
+    if (g && g.resp_code === 0) {
+      this.putMsg("建队");
+      this.createTeamNum -= 1;
+      this.helpedCount = 0;
+      return;
+    }
+    let h = g?.["resp_msg"];
+    if (h?.["includes"]("会员") && ab.activity.openCard && e) {
+      await this.bindWithVender();
+      if (this.canNotOpenCard) return this.reseCookieStatus();
+      return await this.login(false), await this.saveCaptain100(false);
+    }
+    this.log(h);
+    await this.wxStopSync(h);
+  }
+  async ["saveMember100"](e = true, f = 0) {
+    let h = await this.lzkjApi("api/task/" + this.type + "/saveMember", {
+      "shareUserId": this.toHelpUser.shareUserId,
+      "teamId": this.toHelpUser.teamId
+    });
+    this.debug(h);
+    if (h && h.resp_code === 0) {
+      let j = h.data?.["canSend"];
+      switch (j) {
+        case undefined:
+          break;
+        case 4:
+          return this.putMsg("今日奖品已发完"), this.stop();
+        case 5:
+        case 6:
+          return this.putMsg("活动奖品已发完"), this.stop();
+        case 8:
+        case 9:
+          f++, this.log("活动人气爆棚", "retry:" + f);
+          if (f > 10) return this.putMsg("活动人气爆棚"), this.exit();
+          return await this.saveMember100(e, f);
+        default:
+          this.putMsg("canSend:" + j);
+          break;
+      }
+      if (h.data == true) {
+        this.toHelpUser.putMsg("已组满");
+        this.toHelpUser.needHelp = false;
+        await this.toHelpUser.writeLongCache();
+        this.reseInviteStatus();
+        return;
+      } else {
+        if (h.data?.["memberList"]) {
+          this.log("加入[" + this.toHelpUser.pin + "]成功");
+          await this.writeLongCache(this.activityId + "_invite");
+          this.toHelpUser.helpedCount += 1;
+          if (this.toHelpUser.helpedCount >= ab.activity.maxHelpCount) {
+            if (this.toHelpUser.createTeamNum > 0) {
+              return;
+            }
+            this.toHelpUser.needHelp = false;
+            this.toHelpUser.putMsg("已组满");
+            await this.toHelpUser.writeLongCache();
+          }
+          return;
+        } else {
+          if (JSON.stringify(h.data) == "{}") {
+            this.canHelp = false;
+            this.log("已加入或不能参加");
+            await this.writeLongCache(this.activityId + "_invite");
+          }
+        }
+      }
+      return;
+    }
+    let i = h?.["resp_msg"];
+    if (i?.["includes"]("会员") && ab.activity.openCard && e) {
+      await this.bindWithVender();
+      if (this.canNotOpenCard) return this.reseCookieStatus();
+      return await this.login(false), await this.saveMember100(false);
+    }
+    if (i?.["includes"]("已加入其他队伍")) {
+      await this.writeLongCache(this.activityId + "_invite");
+    }
+    this.canHelp = false;
+    this.log(i);
+    await this.wxStopSync(i);
+  }
+  async ["getTeamInfo"]() {
+    await this.getUserId();
+    if (!this.teamId) {
+      await this.activityInfo();
     }
   }
-  return new class {
-    constructor(t, e) {
-      this.name = t;
-      this.http = new s(this);
-      this.data = null;
-      this.dataFile = "box.dat";
-      this.logs = [];
-      this.isMute = !1;
-      this.isNeedRewrite = !1;
-      this.logSeparator = "\n";
-      this.startTime = new Date().getTime();
-      Object.assign(this, e);
-      this.log("", `🔔${this.name}, 开始!`);
-    }
-    isNode() {
-      return "undefined" != typeof module && !!module.exports;
-    }
-    isQuanX() {
-      return "undefined" != typeof $task;
-    }
-    isSurge() {
-      return "undefined" != typeof $httpClient && "undefined" == typeof $loon;
-    }
-    isLoon() {
-      return "undefined" != typeof $loon;
-    }
-    toObj(t, e = null) {
-      try {
-        return JSON.parse(t);
-      } catch {
-        return e;
+  async ["loadPartitionTeamSetting"]() {
+    let f = await this.hdbApi("loadPartitionTeamSetting");
+    this.debug(f);
+    if (f && f?.["succ"]) {
+      let {
+        surPlusTeamNum: h,
+        hasInviteTeam: i,
+        hasJoinTeam: j,
+        partitionTeamSetting = {},
+        myTeamLog = {}
+      } = f.result;
+      if (j > 0) {
+        this.canHelp = false;
       }
-    }
-    toStr(t, e = null) {
-      try {
-        return JSON.stringify(t);
-      } catch {
-        return e;
-      }
-    }
-    getjson(t, e) {
-      let s = e;
-      const i = this.getdata(t);
-      if (i) try {
-        s = JSON.parse(this.getdata(t));
-      } catch {}
-      return s;
-    }
-    setjson(t, e) {
-      try {
-        return this.setdata(JSON.stringify(t), e);
-      } catch {
-        return !1;
-      }
-    }
-    getScript(t) {
-      return new Promise(e => {
-        this.get({
-          url: t
-        }, (t, s, i) => e(i));
-      });
-    }
-    runScript(t, e) {
-      return new Promise(s => {
-        let i = this.getdata("@chavy_boxjs_userCfgs.httpapi");
-        i = i ? i.replace(/\n/g, "").trim() : i;
-        let r = this.getdata("@chavy_boxjs_userCfgs.httpapi_timeout");
-        r = r ? 1 * r : 20;
-        r = e && e.timeout ? e.timeout : r;
-        const [o, h] = i.split("@"),
-          n = {
-            url: `http://${h}/v1/scripting/evaluate`,
-            body: {
-              script_text: t,
-              mock_type: "cron",
-              timeout: r
-            },
-            headers: {
-              "X-Key": o,
-              Accept: "*/*"
-            }
-          };
-        this.post(n, (t, e, i) => s(i));
-      }).catch(t => this.logErr(t));
-    }
-    loaddata() {
-      if (!this.isNode()) return {};
-      {
-        this.fs = this.fs ? this.fs : require("fs");
-        this.path = this.path ? this.path : require("path");
-        const t = this.path.resolve(this.dataFile),
-          e = this.path.resolve(process.cwd(), this.dataFile),
-          s = this.fs.existsSync(t),
-          i = !s && this.fs.existsSync(e);
-        if (!s && !i) return {};
+      let {
+          inviterTimes: k,
+          teamCondition: l
+        } = partitionTeamSetting,
         {
-          const i = s ? t : e;
-          try {
-            return JSON.parse(this.fs.readFileSync(i));
-          } catch (t) {
-            return {};
-          }
-        }
+          teamMemberNum = 0,
+          teamId = ""
+        } = myTeamLog ?? {};
+      ab.activity.maxHelpCount = l - 1;
+      this.helpedCount = Math.abs(Math.max(teamMemberNum - 1, 0));
+      this.createTeamNum = h;
+      this.log(this.helpedCount, ab.activity.maxHelpCount);
+      if (h <= 0) {
+        this.putMsg("已组满");
+        await this.writeLongCache();
+        this.needHelp = false;
+        return;
       }
+      if (!teamId) return await this.startPartitionTeam();
+      if (teamMemberNum >= l) {
+        await this.startPartitionTeam();
+        return;
+      } else this.teamId = teamId;
+      this.debug("helpedCount", this.helpedCount, this.createTeamNum, this.teamId, ab.activity.maxHelpCount);
+      return;
     }
-    writedata() {
-      if (this.isNode()) {
-        this.fs = this.fs ? this.fs : require("fs");
-        this.path = this.path ? this.path : require("path");
-        const t = this.path.resolve(this.dataFile),
-          e = this.path.resolve(process.cwd(), this.dataFile),
-          s = this.fs.existsSync(t),
-          i = !s && this.fs.existsSync(e),
-          r = JSON.stringify(this.data);
-        s ? this.fs.writeFileSync(t, r) : i ? this.fs.writeFileSync(e, r) : this.fs.writeFileSync(t, r);
+    let g = f?.["message"];
+    this.log(g);
+    this.needHelp = false;
+  }
+  async ["startPartitionTeam"](e = true) {
+    let g = await this.hdbApi("startPartitionTeam");
+    this.debug(g);
+    if (g && g?.["succ"]) {
+      this.teamId = g.result.teamId;
+      this.putMsg("建队");
+      this.createTeamNum -= 1;
+      this.helpedCount = 0;
+      return;
+    }
+    let h = g?.["message"];
+    if (h?.["includes"]("关注店铺") && (await this.follow())) return await this.sleep(1000), await this.startPartitionTeam();
+    if (h?.["includes"]("会员") && e) {
+      await this.bindWithVender();
+      if (this.canNotOpenCard) return this.reseCookieStatus();
+      return await this.sleep(1000), await this.startPartitionTeam(false);
+    }
+    this.needHelp = false;
+    this.log(h);
+  }
+  async ["joinPartitionTeam"](e = true) {
+    let g = await this.hdbApi("joinPartitionTeam", {
+      "teamId": this.toHelpUser.teamId,
+      "tidaType": "joinPartitionTeam"
+    });
+    this.debug(g);
+    if (g && g?.["succ"]) {
+      this.log("加入[" + this.toHelpUser.pin + "]成功");
+      this.toHelpUser.helpedCount += 1;
+      if (this.toHelpUser.helpedCount >= ab.activity.maxHelpCount) {
+        if (this.toHelpUser.createTeamNum > 0) return await this.toHelpUser.startPartitionTeam();
+        this.toHelpUser.needHelp = false;
+        this.toHelpUser.putMsg("已组满");
+        await this.toHelpUser.writeLongCache();
       }
+      await this.writeLongCache(this.activityId + "_invite");
+      return;
     }
-    lodash_get(t, e, s) {
-      const i = e.replace(/\[(\d+)\]/g, ".$1").split(".");
-      let r = t;
-      for (const t of i) if (r = Object(r)[t], void 0 === r) return s;
-      return r;
+    let h = g?.["message"];
+    if (h?.["includes"]("关注店铺") && (await this.follow())) return await this.sleep(1000), await this.joinPartitionTeam();
+    if (h?.["includes"]("会员") && e) {
+      await this.bindWithVender();
+      if (this.canNotOpenCard) return this.reseCookieStatus();
+      return await this.sleep(1000), await this.joinPartitionTeam(false);
     }
-    lodash_set(t, e, s) {
-      return Object(t) !== t ? t : (Array.isArray(e) || (e = e.toString().match(/[^.[\]]+/g) || []), e.slice(0, -1).reduce((t, s, i) => Object(t[s]) === t[s] ? t[s] : t[s] = Math.abs(e[i + 1]) >> 0 == +e[i + 1] ? [] : {}, t)[e[e.length - 1]] = s, t);
+    if (h?.["includes"]("已满员")) {
+      await this.toHelpUser.writeLongCache();
+      this.reseInviteStatus();
+      return;
     }
-    getdata(t) {
-      let e = this.getval(t);
-      if (/^@/.test(t)) {
-        const [, s, i] = /^@(.*?)\.(.*?)$/.exec(t),
-          r = s ? this.getval(s) : "";
-        if (r) try {
-          const t = JSON.parse(r);
-          e = t ? this.lodash_get(t, i, "") : e;
-        } catch (t) {
-          e = "";
-        }
+    this.canHelp = false;
+    this.log(h);
+    await this.wxStopSync(h);
+  }
+  async ["postPartition"](e = true) {
+    let g = await this.jinggengApi("postPartition");
+    this.debug(g);
+    if (g && (g?.["succ"] || g?.["msg"]?.["includes"]("请先完成现有组队") || g?.["msg"]?.["includes"]("机会用完了"))) {
+      let i = g.data?.["partitionSetting"]?.["creatTeamNum"] ?? 0,
+        j = g.data?.["partitionSetting"]?.["teamNum"] ?? 0,
+        k = g.data?.["partitionTeamLogParams"] ?? [];
+      this.teamId = k[0].jdCombatTeamLogs[0].teamId;
+      this.createTeamNum = i - k.length;
+      ab.activity.maxHelpCount = j - 1;
+      this.helpedCount = Math.abs(Math.max(k[0].jdCombatTeamLogs.length - 1, 0));
+      this.debug("helpedCount", this.helpedCount, this.createTeamNum, this.teamId, ab.activity.maxHelpCount);
+      if (this.createTeamNum <= 0 && this.helpedCount >= ab.activity.maxHelpCount) {
+        this.needHelp = false;
+        this.putMsg("已组满");
+        await this.writeLongCache();
+        return;
       }
-      return e;
+      this.putMsg("建队");
+      return;
     }
-    setdata(t, e) {
-      let s = false;
-      if (/^@/.test(e)) {
-        const [, i, r] = /^@(.*?)\.(.*?)$/.exec(e),
-          o = this.getval(i),
-          h = i ? "null" === o ? null : o || "{}" : "{}";
-        try {
-          const e = JSON.parse(h);
-          this.lodash_set(e, r, t);
-          s = this.setval(JSON.stringify(e), i);
-        } catch (e) {
-          const o = {};
-          this.lodash_set(o, r, t);
-          s = this.setval(JSON.stringify(o), i);
-        }
-      } else s = this.setval(t, e);
-      return s;
-    }
-    getval(t) {
-      return this.isSurge() || this.isLoon() ? $persistentStore.read(t) : this.isQuanX() ? $prefs.valueForKey(t) : this.isNode() ? (this.data = this.loaddata(), this.data[t]) : this.data && this.data[t] || null;
-    }
-    setval(t, e) {
-      return this.isSurge() || this.isLoon() ? $persistentStore.write(t, e) : this.isQuanX() ? $prefs.setValueForKey(t, e) : this.isNode() ? (this.data = this.loaddata(), this.data[e] = t, this.writedata(), !0) : this.data && this.data[e] || null;
-    }
-    initGotEnv(t) {
-      this.got = this.got ? this.got : require("got");
-      this.cktough = this.cktough ? this.cktough : require("tough-cookie");
-      this.ckjar = this.ckjar ? this.ckjar : new this.cktough.CookieJar();
-      t && (t.headers = t.headers ? t.headers : {}, void 0 === t.headers.Cookie && void 0 === t.cookieJar && (t.cookieJar = this.ckjar));
-    }
-    get(t, e = () => {}) {
-      t.headers && (delete t.headers["Content-Type"], delete t.headers["Content-Length"]);
-      this.isSurge() || this.isLoon() ? (this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
-        "X-Surge-Skip-Scripting": !1
-      })), $httpClient.get(t, (t, s, i) => {
-        !t && s && (s.body = i, s.statusCode = s.status);
-        e(t, s, i);
-      })) : this.isQuanX() ? (this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
-        hints: !1
-      })), $task.fetch(t).then(t => {
-        const {
-          statusCode: s,
-          statusCode: i,
-          headers: r,
-          body: o
-        } = t;
-        e(null, {
-          status: s,
-          statusCode: i,
-          headers: r,
-          body: o
-        }, o);
-      }, t => e(t))) : this.isNode() && (this.initGotEnv(t), this.got(t).on("redirect", (t, e) => {
-        try {
-          if (t.headers["set-cookie"]) {
-            const s = t.headers["set-cookie"].map(this.cktough.Cookie.parse).toString();
-            s && this.ckjar.setCookieSync(s, null);
-            e.cookieJar = this.ckjar;
-          }
-        } catch (t) {
-          this.logErr(t);
-        }
-      }).then(t => {
-        const {
-          statusCode: s,
-          statusCode: i,
-          headers: r,
-          body: o
-        } = t;
-        e(null, {
-          status: s,
-          statusCode: i,
-          headers: r,
-          body: o
-        }, o);
-      }, t => {
-        const {
-          message: s,
-          response: i
-        } = t;
-        e(s, i, i && i.body);
-      }));
-    }
-    post(t, e = () => {}) {
-      if (t.body && t.headers && !t.headers["Content-Type"] && (t.headers["Content-Type"] = "application/x-www-form-urlencoded"), t.headers && delete t.headers["Content-Length"], this.isSurge() || this.isLoon()) this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
-        "X-Surge-Skip-Scripting": !1
-      })), $httpClient.post(t, (t, s, i) => {
-        !t && s && (s.body = i, s.statusCode = s.status);
-        e(t, s, i);
-      });else if (this.isQuanX()) t.method = "POST", this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
-        hints: !1
-      })), $task.fetch(t).then(t => {
-        const {
-          statusCode: s,
-          statusCode: i,
-          headers: r,
-          body: o
-        } = t;
-        e(null, {
-          status: s,
-          statusCode: i,
-          headers: r,
-          body: o
-        }, o);
-      }, t => e(t));else if (this.isNode()) {
-        this.initGotEnv(t);
-        const {
-          url: s,
-          ...i
-        } = t;
-        this.got.post(s, i).then(t => {
-          const {
-            statusCode: s,
-            statusCode: i,
-            headers: r,
-            body: o
-          } = t;
-          e(null, {
-            status: s,
-            statusCode: i,
-            headers: r,
-            body: o
-          }, o);
-        }, t => {
-          const {
-            message: s,
-            response: i
-          } = t;
-          e(s, i, i && i.body);
-        });
+    let h = g?.["msg"] || "建队失败";
+    if (h?.["includes"]("关注店铺") && e) return await this.taskPost("front/followShop", {
+      "userId": this.userId
+    }), await this.sleep(1000), await this.postPartition(false);
+    this.putMsg(h);
+    await this.wxStopSync(h);
+    this.needHelp = false;
+    return;
+  }
+  async ["postPartitionJoin"](e = true) {
+    let g = await this.jinggengApi("postPartition", {
+      "teamId": this.toHelpUser.teamId
+    });
+    if (g && g?.["succ"]) {
+      this.log("加入[" + this.toHelpUser.pin + "]成功");
+      this.toHelpUser.helpedCount += 1;
+      if (this.toHelpUser.helpedCount >= ab.activity.maxHelpCount) {
+        if (this.toHelpUser.createTeamNum > 0) return await this.toHelpUser.postPartition();
+        this.toHelpUser.needHelp = false;
+        this.toHelpUser.putMsg("已组满");
+        await this.toHelpUser.writeLongCache();
       }
+      await this.writeLongCache(this.activityId + "_invite");
+      return;
     }
-    time(t, e = null) {
-      const s = e ? new Date(e) : new Date();
-      let i = {
-        "M+": s.getMonth() + 1,
-        "d+": s.getDate(),
-        "H+": s.getHours(),
-        "m+": s.getMinutes(),
-        "s+": s.getSeconds(),
-        "q+": Math.floor((s.getMonth() + 3) / 3),
-        S: s.getMilliseconds()
-      };
-      /(y+)/.test(t) && (t = t.replace(RegExp.$1, (s.getFullYear() + "").substr(4 - RegExp.$1.length)));
-      for (let e in i) new RegExp("(" + e + ")").test(t) && (t = t.replace(RegExp.$1, 1 == RegExp.$1.length ? i[e] : ("00" + i[e]).substr(("" + i[e]).length)));
-      return t;
+    let h = g?.["msg"] || "入队失败";
+    if (h?.["includes"]("满员")) {
+      this.toHelpUser.needHelp = false;
+      await this.toHelpUser.writeLongCache();
+      this.reseInviteStatus();
+      return;
     }
-    msg(e = t, s = "", i = "", r) {
-      const o = t => {
-        if (!t) return t;
-        if ("string" == typeof t) return this.isLoon() ? t : this.isQuanX() ? {
-          "open-url": t
-        } : this.isSurge() ? {
-          url: t
-        } : void 0;
-        if ("object" == typeof t) {
-          if (this.isLoon()) {
-            let e = t.openUrl || t.url || t["open-url"],
-              s = t.mediaUrl || t["media-url"];
-            return {
-              openUrl: e,
-              mediaUrl: s
-            };
-          }
-          if (this.isQuanX()) {
-            let e = t["open-url"] || t.url || t.openUrl,
-              s = t["media-url"] || t.mediaUrl;
-            return {
-              "open-url": e,
-              "media-url": s
-            };
-          }
-          if (this.isSurge()) {
-            let e = t.url || t.openUrl || t["open-url"];
-            return {
-              url: e
-            };
-          }
-        }
-      };
-      if (this.isMute || (this.isSurge() || this.isLoon() ? $notification.post(e, s, i, o(r)) : this.isQuanX() && $notify(e, s, i, o(r))), !this.isMuteLog) {
-        let t = ["", "==============📣系统通知📣=============="];
-        t.push(e);
-        s && t.push(s);
-        i && t.push(i);
-        console.log(t.join("\n"));
-        this.logs = this.logs.concat(t);
+    if (h?.["includes"]("关注店铺") && e) return await this.taskPost("front/followShop", {
+      "userId": this.userId
+    }), await this.postPartitionJoin(false);
+    h?.["includes"]("组队机会已用完") && (await this.writeLongCache(this.activityId + "_invite"));
+    this.canHelp = false;
+    this.log(h);
+    await this.wxStopSync(h);
+  }
+  async ["inviteTask"](e) {
+    await this.hitCache(this.activityId + "_invite", this.pin, "已加入队伍", true);
+    this.retryCount = 2;
+    this.proxyRetryCount = 5;
+    this.toHelpUser = e;
+    if (!this.toHelpUser.needHelp) return;
+    await this.isvObfuscator();
+    if (this.mode === "jinggeng") {
+      await this.setMixNick();
+      await this.postPartitionJoin();
+      return;
+    }
+    if (this.mode == "hdb") {
+      const h = await this.login();
+      if (!(h && h.code)) return;
+      await this.loadFrontAct();
+      await this.reportPVUV();
+      await this.joinPartitionTeam();
+      return;
+    }
+    await this.getDefenseUrls();
+    if (["10033"].includes(this.activityType)) {
+      await this.login();
+      if (["1005", "1006", "1002"].includes(this.joinCode)) {
+        if (!ab.activity.openCard) return this.log(this.joinDes), this.reseCookieStatus();
+        await this.bindWithVender();
+        if (this.canNotOpenCard) return this.log(this.joinDes), this.reseCookieStatus();
+        await this.login(false);
       }
+      await this.toHelpUser.activityInfo();
+      await this.saveMember100();
+      return;
     }
-    log(...t) {
-      t.length > 0 && (this.logs = [...this.logs, ...t]);
-      console.log(t.join(this.logSeparator));
+    await this.wxCommonInfo();
+    await this.getSimpleActInfoVo();
+    this.defenseUrls.length === 0 ? await this.getMyPing() : await this.initPinToken();
+    await this.accessLog();
+    await this.saveMember();
+  }
+  async ["userTask"]() {
+    await this.hitCache();
+    this.inviteMode = 2;
+    if (this.index >= ac.leaderNum) return this.stop();
+    await this.isvObfuscator();
+    if (this.mode === "jinggeng") {
+      await this.setMixNick();
+      await this.postPartition();
+      return;
     }
-    logErr(t, e) {
-      const s = !this.isSurge() && !this.isQuanX() && !this.isLoon();
-      s ? this.log("", `❗️${this.name}, 错误!`, t.stack) : this.log("", `❗️${this.name}, 错误!`, t);
+    if (this.mode == "hdb") {
+      const g = await this.login();
+      if (!(g && g.code)) return;
+      await this.loadFrontAct();
+      await this.reportPVUV();
+      await this.loadPartitionTeamSetting();
+      return;
     }
-    wait(t) {
-      return new Promise(e => setTimeout(e, t));
+    await this.getDefenseUrls();
+    if (["10033"].includes(this.activityType)) {
+      await this.login();
+      await this.activityInfo();
+      if (["1005", "1006", "1002"].includes(this.joinCode)) {
+        if (!ab.activity.openCard) return this.log(this.joinDes), this.reseCookieStatus();
+        await this.bindWithVender();
+        if (this.canNotOpenCard) return this.log(this.joinDes), this.reseCookieStatus();
+        await this.login(false);
+      }
+      this.debug(this.createTeamNum, this.helpedCount);
+      !this.teamId && (await this.saveCaptain100());
+      await this.getTeamInfo();
+      !this.teamId && (this.needHelp = false);
+      return;
     }
-    done(t = {}) {
-      const e = new Date().getTime(),
-        s = (e - this.startTime) / 1000;
-      this.log("", `🔔${this.name}, 结束! 🕛 ${s} 秒`);
-      this.log();
-      (this.isSurge() || this.isQuanX() || this.isLoon()) && $done(t);
-    }
-  }(t, e);
+    await this.wxCommonInfo();
+    await this.getSimpleActInfoVo();
+    this.defenseUrls.length === 0 ? await this.getMyPing() : await this.initPinToken();
+    await this.accessLog();
+    await this.getActContent();
+  }
 }
+aa.activity = {
+  "activityUrl": activityUrl
+};
+aa.TaskClass = ae;
+aa.run({
+  "whitelist": ["1-20000"],
+  "thread": 99,
+  "main_thread": 1,
+  "inviteTask": true
+});
