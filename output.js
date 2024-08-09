@@ -1,524 +1,338 @@
-//Fri Aug 09 2024 17:12:29 GMT+0000 (Coordinated Universal Time)
+//Fri Aug 09 2024 17:16:54 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 if (mode) {
-  activityUrl = "https://cjhy-isv.isvjcloud.com/wxTeam/activity?activityId=6d08fc8fad484372a99351bcf60e87ac";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&templateId=2021062190900zdgf081&activityId=1717808855827406850&nodeId=101001&prd=cjwx";
-  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=54e4903a3bfc4e10a6ecdeaa58abaed1";
-  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=ef8d69fd0410fe9da216f1c964c54c3f&userId=13082769";
-  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=b44c5677f7363015af66dea0a932dd4f&userId=1000451545";
-  activityUrl = "https://hdb-isv.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=5f1c0796be4f651574e9e0f5a7e8f8af&userId=182482";
-  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/showPartition?id=9e80802f8a49b510018a4a5422db2b78&user_id=172541";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/?activityType=10033&templateId=2021062190900zdgf081&activityId=1730058154674954241&nodeId=101001&prd=cjwx&shareuserid4minipg=BbrGRKytrjDMjC1fQeEoy2pCfN5ZmfvMwbWBLt73u98ENlAanVdw4/1A%207yG9wzk&shopid=1000102709&shopid=1000102709&shopid=1000102709&shopid=1000102709&shopid=1000102709&shopid=1000102709&shopid=1000102709&=&=&=&=&=&&shareUserId=1730262436920238081&shopid=1000102709";
-  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=4641a455f3611a88d3538d86f403e317&userId=13082769";
-  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=31a27ba5e17344e2a35f9d1eb9a8a826";
-  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=8827e30a920a41119f5d07f55a7e1060";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&templateId=2021062190900zdgf081&activityId=1744920180164960258&prd=cjwx";
-  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=34ccb6e412f39d0e620012efef471549&userId=61627";
-  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=db8e1dee18da0e3a784873fa62f579a8&userId=13082769&teamId=db8e1dee18da0e3a784873fa62f579a886";
-  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=6fb5fd5ab88e4c87be19ae8571052957";
-  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=982597cea4ec4ea1997f7c69e5f7143e";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10033&activityId=1776856935890481154&templateId=2021062190900zdgf08&nodeId=101001&prd=crm";
-  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=d9e4888b159f560683efa86734d8a0b3&userId=1000007503&actForm=single&teamId=d9e4888b159f560683efa86734d8a0b31218";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&templateId=2021062190900zdgf081&activityId=1782628595081019394&nodeId=101001&prd=cjwx";
-  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=f47d2818bc8140d181844044f2aeb1d5";
-  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=644a01191a234c729066967c9cfb9877";
-  activityUrl = "https://cjhydz-isv.isvjcloud.com/wxTeam/activity?activityId=434e32054d3d4744a9caee80ffa70cce";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&activityId=1796452463138701313&templateId=2021062190900zdgf081&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&templateId=10202401041003302zdgfjp&activityId=1798545988361469954&nodeId=101001&prd=cjwx";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10033&activityId=1789853943779532801&templateId=2021062190900zdgf081&nodeId=101001&prd=cjwx";
-  activityUrl = "https://jinggeng-isv.isvjcloud.com/ql/front/showPartition?id=9e808086900394930190064ac05e41f7&user_id=1000003065";
-  activityUrl = "https://jingyun-rc.isvjcloud.com/h5/pages/partitionTeam/partitionTeam?id=ce4e9365871c0fd4ac075f00f1a01f69&userId=1000007503&actForm=single&teamId=ce4e9365871c0fd4ac075f00f1a01f691789";
-  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/?activityType=10033&templateId=10202401031003302zdgfjp&activityId=1805130307891695618&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10070&templateId=7fab7995-298c-44a1-af5a-f79c520fa8a888&activityId=1743104309459283970&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10070&templateId=7fab7995-298c-44a1-af5a-f79c520fa8a888&activityId=1739220043064475649&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lorealjdcampaign-rc.isvjcloud.com/interact/index?activityType=10006&activityId=1738126574080573441&templateId=20201228083300yqrhyl01&nodeId=101001005&prd=crm";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interaction/v1/index?activityType=10006&templateId=20201228083300yqrhyl01&activityId=1745043938804285441&nodeId=101001005&&shareUserId=1745055475646279682&shopid=1000002984";
+  activityUrl = "https://lorealjdcampaign-rc.isvjcloud.com/interact/index?activityType=10006&activityId=1738126574080573441&templateId=20201228083300yqrhyl01&nodeId=101001005&prd=crm";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10070&activityId=1744979364341022722&templateId=7fab7995-298c-44a1-af5a-f79c520fa8eff1&nodeId=101001&prd=cjwx";
+  activityUrl = "https://lzkj-isv.isvjcloud.com/prod/cc/interactsaas/index?activityType=10070&templateId=7fab7995-298c-44a1-af5a-f79c520fa8a888&activityId=1752989489668743169&nodeId=101001&prd=cjwx";
 }
 const {
-  RunMode: aa,
-  UserMode: ab,
-  baseCommonEnv: ac,
-  baseCommonEnvKey: ad
+  RunMode: llil1ilI,
+  UserMode: ii11lI,
+  baseCommonEnv: i111iii1,
+  baseCommonEnvKey: i1lIilil
 } = require("./bear");
-aa.envInfo = {
-  "name": "组队瓜分beta",
-  "runName": "jd_wx_team",
-  "version": "2.0.1"
+i111iii1.wx_address_stop_keyword = process.env.B_INVITE_STOP_KEYWORD ? process.env.B_INVITE_STOP_KEYWORD.split(/[@,&|]/) : "鼠标垫|测试".split(/[@,&|]/);
+i111iii1.leaderNum = parseInt(process.env.B_INVITE_LEADER_NUM || 1);
+i111iii1.needMaxNum = parseInt(process.env.B_INVITE_MAX_NEED_NUM || 999);
+i111iii1.runReceive = parseInt(process.env.B_INVITE_RUN_RECEIVE || 0);
+i111iii1.runMode = parseInt(process.env.B_INVITE_RUN_MODE || 0);
+i1lIilil.B_INVITE_STOP_KEYWORD = "__wx_address_stop_keyword__";
+i1lIilil.B_INVITE_LEADER_NUM = "leaderNum";
+i1lIilil.B_INVITE_MAX_NEED_NUM = "needMaxNum";
+i1lIilil.B_INVITE_RUN_RECEIVE = "runReceive";
+i1lIilil.B_INVITE_RUN_MODE = "runMode";
+llil1ilI.envInfo = {
+  "name": "邀请有礼beta",
+  "runName": "jd_inviteJoin",
+  "version": "2.0.4"
 };
-ac.leaderNum = parseInt(process.env.B_TEAM_LEADER_NUM || 10);
-ad.B_TEAM_LEADER_NUM = "leaderNum";
-class ae extends ab {
-  async ["saveCaptain"](e = true) {
-    let g = await this.wxApi(this.type + "/saveCaptain", {
-      "activityId": this.activityId,
-      "pin": this.secretPin,
-      "venderId": this.venderId,
-      "pinImg": "https://img10.360buyimg.com/imgzone/jfs/t1/21383/2/6633/3879/5c5138d8E0967ccf2/91da57c5e2166005.jpg"
-    });
-    this.debug(g);
-    if (g && g.result) {
-      this.signUuid = g.data?.["signUuid"];
-      this.log("助力码[" + this.signUuid + "]");
-      this.putMsg("建队");
-      return;
-    }
-    let h = g?.["errorMessage"] ?? "";
-    if (h.includes("店铺会员") && ab.activity.openCard && e) {
-      await this.bindWithVender();
-      if (this.canNotOpenCard) return this.reseCookieStatus();
-      return await this.saveCaptain(false);
-    } else h.includes("活动未开始") && (ab.activity.noStart = true, this.stop());
-    this.log(h);
-    await this.wxStopSync(h);
-    this.needHelp = false;
+class iIiiIl1l extends ii11lI {
+  constructor(iI11I1iI, iliIIlI) {
+    super(iI11I1iI, iliIIlI);
+    this.equityTypes = ["JD_BEAN", "JD_E_CARD", "JD_REDBAG", "JD_AIQIYI", "JD_GOODS"];
+    this.keymap = {
+      "one": "awardOneStatus",
+      "two": "awardTwoStatus",
+      "three": "awardThreeStatus",
+      "four": "awardFourStatus"
+    };
+    this.keymap2 = {
+      "one": "leveOneNum",
+      "two": "leveTwoNum",
+      "three": "leveThreeNum",
+      "four": "leveFourNum"
+    };
+    this.keymap4 = {
+      "one": "1级",
+      "two": "2级",
+      "three": "3级",
+      "four": "4级"
+    };
   }
-  async ["saveMember"](e = true) {
-    let g = await this.wxApi(this.type + "/saveMember", {
-      "activityId": this.activityId,
-      "pin": this.secretPin,
-      "venderId": this.venderId,
-      "pinImg": "https://img10.360buyimg.com/imgzone/jfs/t1/21383/2/6633/3879/5c5138d8E0967ccf2/91da57c5e2166005.jpg",
-      "signUuid": this.toHelpUser.signUuid
-    });
-    this.debug(g);
-    if (g && g.result) {
-      this.log("加入[" + this.toHelpUser.pin + "]成功");
-      this.toHelpUser.helpedCount += 1;
-      if (this.toHelpUser.helpedCount >= ab.activity.maxHelpCount) {
-        this.toHelpUser.needHelp = false;
-        this.toHelpUser.putMsg("已组满");
-        await this.toHelpUser.writeLongCache();
+  async ["customAcquire"]() {
+    if (this.toHelpUser.asyncLock) return;
+    let illli11I = this.toHelpUser.inviteSuccessTimesList.filter(iill1I1i => iill1I1i.status === 999).sort((IiIl1Iil, Illiill1) => IiIl1Iil.days - Illiill1.days);
+    if (illli11I.length > 0) {
+      this.toHelpUser.asyncLock = true;
+      for (let l11lIlI1 of illli11I.reverse()) {
+        await this.toHelpUser.acquire(l11lIlI1.id);
       }
-      await this.writeLongCache(this.activityId + "_invite");
       return;
     }
-    let h = g?.["errorMessage"] ?? "";
-    if (h.includes("满员")) {
-      this.toHelpUser.needHelp = false;
-      await this.toHelpUser.writeLongCache();
-      this.reseInviteStatus();
-      return;
-    } else {
-      if (h.includes("已经加入")) this.canHelp = false, await this.writeLongCache(this.activityId + "_invite");else {
-        if (h.includes("店铺会员") && ab.activity.openCard && e) {
-          await this.bindWithVender();
-          if (this.canNotOpenCard) return this.reseCookieStatus();
-          return await this.saveMember(false);
+  }
+  async ["checkCooieNum"]() {
+    let IIi11ii1 = this.toHelpUser.inviteSuccessTimesList.filter(IIl11iIi => IIl11iIi.status !== 1);
+    IIi11ii1.length > 0 && IIi11ii1[0].days - this.toHelpUser.helpedCount > ii11lI.activity.cookieNum && (this.log("ck不够"), this.toHelpUser.needHelp = false, this.toHelpUser.memberType === 1 && (await this.customAcquire()));
+  }
+  async ["jinggengAcquire"](i1lI1III) {
+    let ii11llli = await this.jinggengApi("receiveInviteJoinAward", {
+      "awardId": i1lI1III
+    });
+    if (ii11llli && ii11llli.succ) {
+      let ill1I1I1 = ii11llli.msg ?? "{}",
+        IiiIIIll = JSON.parse(ill1I1I1);
+      if (IiiIIIll?.["isSendSucc"]) {
+        let i1liilll = IiiIIIll?.["drawAwardDto"]?.["awardName"];
+        this.putMsg("" + IiiIIIll?.["drawAwardDto"]?.["awardDenomination"] + i1liilll);
+        if (IiiIIIll?.["drawAwardDto"]?.["awardType"] === "JD_GOODS") {
+          this.addressId = IiiIIIll?.["drawAwardDto"]?.["actLogId"];
+          this.prizeName = i1liilll;
+          await this.saveAddress();
         }
-      }
-    }
-    this.canHelp = false;
-    this.log(h);
-    await this.wxStopSync(h);
-  }
-  async ["getActContent"]() {
-    let f = await this.activityContent();
-    if (!f?.["result"] || !f?.["data"]) {
-      this.putMsg(f?.["errorMessage"]);
-      return;
-    }
-    this.signUuid = f.data?.["signUuid"];
-    let g = f.data?.["active"] ?? {},
-      h = g?.["maxGroup"] ?? 5,
-      {
-        prizeType: i,
-        startTime: j,
-        endTime: k
-      } = g;
-    ab.activity.startTime = j;
-    ab.activity.endTime = k;
-    i == 6 && (ab.activity.openCard = true);
-    ab.activity.maxHelpCount = h * 4;
-    let l = f.data?.["successRetList"] ?? [],
-      m = f.data?.["list"] ?? [],
-      n = f.data?.["joinMap"]?.["memberList"] ?? [];
-    if (n.length > 0) {
-      this.canHelp = false;
-      await this.writeLongCache(this.activityId + "_invite");
-    }
-    this.helpedCount = Math.abs(Math.max(l?.["length"] * 4 + (m?.["length"] > 0 ? m.length - 1 : 0), 0));
-    this.debug(this.helpedCount);
-    const o = this.formatDate(j, "yyyy-MM-dd HH:mm:ss") + "至" + this.formatDate(k, "yyyy-MM-dd HH:mm:ss");
-    ab.activity.timeStr = o;
-    if (j && j > Date.now()) {
-      let s = j - Date.now();
-      s < 60 * 1000 * 4 ? (this.log("活动即将开始,等待" + s / 1000 + "s"), await this.sleep(s)) : (this.putMsg("活动未开始"), i == 6 && (ab.activity.noStart = true), this.stop());
-    }
-    k && k < Date.now() && (this.putMsg("活动已结束"), await this.writeLongCacheByStop(), this.stop());
-    if (this.helpedCount >= ab.activity.maxHelpCount) {
-      this.needHelp = false;
-      this.putMsg("已组满");
-      await this.writeLongCache();
-      return;
-    }
-    this.signUuid ? this.log("助力码[" + this.signUuid + "]") : await this.saveCaptain();
-  }
-  async ["activityInfo"]() {
-    let f = await this.lzkjApi("api/task/" + this.type + "/activity", {
-      "shareUserId": this.shareUserId || ""
-    });
-    if (f && f.resp_code === 0) {
-      let i = f.data?.["groupNumber"] ?? 5;
-      ab.activity.maxHelpCount = i * 4;
-      this.helpedCount = 0;
-      let j = f.data?.["captainList"] ?? [];
-      this.createTeamNum = i - j.length;
-      let k = f.data?.["prizeType"] ?? 0;
-      k == 1 && (ab.activity.openCard = true);
-      ab.activity.customThread = 1;
-      if (j.length > 0) {
-        this.teamId = j[j.length - 1].id;
-        let m = j[j.length - 1]?.["teamList"] ?? [];
-        this.helpedCount = m.length > 0 ? m.length - 1 : 0;
-      }
-      let l = f.data?.["captain"];
-      l && (await this.writeLongCache(this.activityId + "_invite"), this.canHelp = false);
-      if (this.createTeamNum === 0 && this.helpedCount === 4) {
-        this.putMsg("已组满");
-        this.needHelp = false;
-        await this.writeLongCache();
-        this.exit();
-      }
-      return;
-    }
-    let g = f?.["resp_msg"];
-    this.log(g);
-  }
-  async ["saveCaptain100"](e = true) {
-    let g = await this.lzkjApi("api/task/" + this.type + "/saveCaptain");
-    this.debug(g);
-    if (g && g.resp_code === 0) {
-      this.putMsg("建队");
-      this.createTeamNum -= 1;
-      this.helpedCount = 0;
-      return;
-    }
-    let h = g?.["resp_msg"];
-    if (h?.["includes"]("会员") && ab.activity.openCard && e) {
-      await this.bindWithVender();
-      if (this.canNotOpenCard) return this.reseCookieStatus();
-      return await this.login(false), await this.saveCaptain100(false);
-    }
-    this.log(h);
-    await this.wxStopSync(h);
-  }
-  async ["saveMember100"](e = true, f = 0) {
-    let h = await this.lzkjApi("api/task/" + this.type + "/saveMember", {
-      "shareUserId": this.toHelpUser.shareUserId,
-      "teamId": this.toHelpUser.teamId
-    });
-    this.debug(h);
-    if (h && h.resp_code === 0) {
-      let j = h.data?.["canSend"];
-      switch (j) {
-        case undefined:
-          break;
-        case 4:
-          return this.putMsg("今日奖品已发完"), this.stop();
-        case 5:
-        case 6:
-          return this.putMsg("活动奖品已发完"), this.stop();
-        case 8:
-        case 9:
-          f++, this.log("活动人气爆棚", "retry:" + f);
-          if (f > 10) return this.putMsg("活动人气爆棚"), this.exit();
-          return await this.saveMember100(e, f);
-        default:
-          this.putMsg("canSend:" + j);
-          break;
-      }
-      if (h.data == true) {
-        this.toHelpUser.putMsg("已组满");
-        this.toHelpUser.needHelp = false;
-        await this.toHelpUser.writeLongCache();
-        this.reseInviteStatus();
-        return;
-      } else {
-        if (h.data?.["memberList"]) {
-          this.log("加入[" + this.toHelpUser.pin + "]成功");
-          await this.writeLongCache(this.activityId + "_invite");
-          this.toHelpUser.helpedCount += 1;
-          if (this.toHelpUser.helpedCount >= ab.activity.maxHelpCount) {
-            if (this.toHelpUser.createTeamNum > 0) {
-              return;
-            }
-            this.toHelpUser.needHelp = false;
-            this.toHelpUser.putMsg("已组满");
-            await this.toHelpUser.writeLongCache();
-          }
-          return;
-        } else {
-          if (JSON.stringify(h.data) == "{}") {
-            this.canHelp = false;
-            this.log("已加入或不能参加");
-            await this.writeLongCache(this.activityId + "_invite");
-          }
-        }
-      }
-      return;
-    }
-    let i = h?.["resp_msg"];
-    if (i?.["includes"]("会员") && ab.activity.openCard && e) {
-      await this.bindWithVender();
-      if (this.canNotOpenCard) return this.reseCookieStatus();
-      return await this.login(false), await this.saveMember100(false);
-    }
-    if (i?.["includes"]("已加入其他队伍")) {
-      await this.writeLongCache(this.activityId + "_invite");
-    }
-    this.canHelp = false;
-    this.log(i);
-    await this.wxStopSync(i);
-  }
-  async ["getTeamInfo"]() {
-    await this.getUserId();
-    if (!this.teamId) {
-      await this.activityInfo();
-    }
-  }
-  async ["loadPartitionTeamSetting"]() {
-    let f = await this.hdbApi("loadPartitionTeamSetting");
-    this.debug(f);
-    if (f && f?.["succ"]) {
-      let {
-        surPlusTeamNum: h,
-        hasInviteTeam: i,
-        hasJoinTeam: j,
-        partitionTeamSetting = {},
-        myTeamLog = {}
-      } = f.result;
-      if (j > 0) {
-        this.canHelp = false;
-      }
-      let {
-          inviterTimes: k,
-          teamCondition: l
-        } = partitionTeamSetting,
-        {
-          teamMemberNum = 0,
-          teamId = ""
-        } = myTeamLog ?? {};
-      ab.activity.maxHelpCount = l - 1;
-      this.helpedCount = Math.abs(Math.max(teamMemberNum - 1, 0));
-      this.createTeamNum = h;
-      this.log(this.helpedCount, ab.activity.maxHelpCount);
-      if (h <= 0) {
-        this.putMsg("已组满");
-        await this.writeLongCache();
-        this.needHelp = false;
         return;
       }
-      if (!teamId) return await this.startPartitionTeam();
-      if (teamMemberNum >= l) {
-        await this.startPartitionTeam();
-        return;
-      } else this.teamId = teamId;
-      this.debug("helpedCount", this.helpedCount, this.createTeamNum, this.teamId, ab.activity.maxHelpCount);
       return;
     }
-    let g = f?.["message"];
-    this.log(g);
-    this.needHelp = false;
-  }
-  async ["startPartitionTeam"](e = true) {
-    let g = await this.hdbApi("startPartitionTeam");
-    this.debug(g);
-    if (g && g?.["succ"]) {
-      this.teamId = g.result.teamId;
-      this.putMsg("建队");
-      this.createTeamNum -= 1;
-      this.helpedCount = 0;
-      return;
-    }
-    let h = g?.["message"];
-    if (h?.["includes"]("关注店铺") && (await this.follow())) return await this.sleep(1000), await this.startPartitionTeam();
-    if (h?.["includes"]("会员") && e) {
-      await this.bindWithVender();
-      if (this.canNotOpenCard) return this.reseCookieStatus();
-      return await this.sleep(1000), await this.startPartitionTeam(false);
-    }
-    this.needHelp = false;
-    this.log(h);
-  }
-  async ["joinPartitionTeam"](e = true) {
-    let g = await this.hdbApi("joinPartitionTeam", {
-      "teamId": this.toHelpUser.teamId,
-      "tidaType": "joinPartitionTeam"
-    });
-    this.debug(g);
-    if (g && g?.["succ"]) {
-      this.log("加入[" + this.toHelpUser.pin + "]成功");
-      this.toHelpUser.helpedCount += 1;
-      if (this.toHelpUser.helpedCount >= ab.activity.maxHelpCount) {
-        if (this.toHelpUser.createTeamNum > 0) return await this.toHelpUser.startPartitionTeam();
-        this.toHelpUser.needHelp = false;
-        this.toHelpUser.putMsg("已组满");
-        await this.toHelpUser.writeLongCache();
-      }
-      await this.writeLongCache(this.activityId + "_invite");
-      return;
-    }
-    let h = g?.["message"];
-    if (h?.["includes"]("关注店铺") && (await this.follow())) return await this.sleep(1000), await this.joinPartitionTeam();
-    if (h?.["includes"]("会员") && e) {
-      await this.bindWithVender();
-      if (this.canNotOpenCard) return this.reseCookieStatus();
-      return await this.sleep(1000), await this.joinPartitionTeam(false);
-    }
-    if (h?.["includes"]("已满员")) {
-      await this.toHelpUser.writeLongCache();
-      this.reseInviteStatus();
-      return;
-    }
-    this.canHelp = false;
-    this.log(h);
-    await this.wxStopSync(h);
-  }
-  async ["postPartition"](e = true) {
-    let g = await this.jinggengApi("postPartition");
-    this.debug(g);
-    if (g && (g?.["succ"] || g?.["msg"]?.["includes"]("请先完成现有组队") || g?.["msg"]?.["includes"]("机会用完了"))) {
-      let i = g.data?.["partitionSetting"]?.["creatTeamNum"] ?? 0,
-        j = g.data?.["partitionSetting"]?.["teamNum"] ?? 0,
-        k = g.data?.["partitionTeamLogParams"] ?? [];
-      this.teamId = k[0].jdCombatTeamLogs[0].teamId;
-      this.createTeamNum = i - k.length;
-      ab.activity.maxHelpCount = j - 1;
-      this.helpedCount = Math.abs(Math.max(k[0].jdCombatTeamLogs.length - 1, 0));
-      this.debug("helpedCount", this.helpedCount, this.createTeamNum, this.teamId, ab.activity.maxHelpCount);
-      if (this.createTeamNum <= 0 && this.helpedCount >= ab.activity.maxHelpCount) {
-        this.needHelp = false;
-        this.putMsg("已组满");
-        await this.writeLongCache();
-        return;
-      }
-      this.putMsg("建队");
-      return;
-    }
-    let h = g?.["msg"] || "建队失败";
-    if (h?.["includes"]("关注店铺") && e) return await this.taskPost("front/followShop", {
-      "userId": this.userId
-    }), await this.sleep(1000), await this.postPartition(false);
-    this.putMsg(h);
-    await this.wxStopSync(h);
-    this.needHelp = false;
+    let l1iliiil = ii11llli?.["msg"] || "领取失败";
+    this.putMsg(l1iliiil);
+    this.wxStop();
     return;
   }
-  async ["postPartitionJoin"](e = true) {
-    let g = await this.jinggengApi("postPartition", {
-      "teamId": this.toHelpUser.teamId
+  async ["showInviteJoin"](l1l1lII = 0) {
+    let IIlIlilI = await this.taskGet("ql/front/showInviteJoin", {
+      "inviterNick": this.toHelpUser.mixNick,
+      "isOpenCard": 1,
+      "id": this.activityId,
+      "user_id": this.userId
     });
-    if (g && g?.["succ"]) {
-      this.log("加入[" + this.toHelpUser.pin + "]成功");
-      this.toHelpUser.helpedCount += 1;
-      if (this.toHelpUser.helpedCount >= ab.activity.maxHelpCount) {
-        if (this.toHelpUser.createTeamNum > 0) return await this.toHelpUser.postPartition();
-        this.toHelpUser.needHelp = false;
-        this.toHelpUser.putMsg("已组满");
-        await this.toHelpUser.writeLongCache();
-      }
-      await this.writeLongCache(this.activityId + "_invite");
-      return;
-    }
-    let h = g?.["msg"] || "入队失败";
-    if (h?.["includes"]("满员")) {
-      this.toHelpUser.needHelp = false;
-      await this.toHelpUser.writeLongCache();
-      this.reseInviteStatus();
-      return;
-    }
-    if (h?.["includes"]("关注店铺") && e) return await this.taskPost("front/followShop", {
-      "userId": this.userId
-    }), await this.postPartitionJoin(false);
-    h?.["includes"]("组队机会已用完") && (await this.writeLongCache(this.activityId + "_invite"));
-    this.canHelp = false;
-    this.log(h);
-    await this.wxStopSync(h);
+    if (IIlIlilI.includes("请稍后再试") || IIlIlilI.includes("努力加载") || IIlIlilI.includes("请稍后重试")) return l1l1lII > 3 && (this.log("未知原因"), this.exit()), this.debug("火爆重试"), await this.showInviteJoin(l1l1lII + 1);
+    return IIlIlilI;
   }
-  async ["inviteTask"](e) {
-    await this.hitCache(this.activityId + "_invite", this.pin, "已加入队伍", true);
-    this.retryCount = 2;
-    this.proxyRetryCount = 5;
-    this.toHelpUser = e;
-    if (!this.toHelpUser.needHelp) return;
+  async ["recordActPvUvData"]() {}
+  async ["inviteTask"](iIliIiIl) {
+    this.toHelpUser = iIliIiIl;
+    if (!this.toHelpUser.needHelp) {
+      return;
+    }
     await this.isvObfuscator();
     if (this.mode === "jinggeng") {
+      ii11lI.activity.cookieNum--;
       await this.setMixNick();
-      await this.postPartitionJoin();
-      return;
-    }
-    if (this.mode == "hdb") {
-      const h = await this.login();
-      if (!(h && h.code)) return;
-      await this.loadFrontAct();
-      await this.reportPVUV();
-      await this.joinPartitionTeam();
+      this.venderId = this.toHelpUser.venderId;
+      this.userId = this.venderId;
+      let i1II1iIi = await this.taskGet("ql/front/showInviteJoin", {
+        "inviterNick": this.toHelpUser.mixNick,
+        "isOpenCard": 0,
+        "id": this.activityId,
+        "user_id": this.userId
+      });
+      if (!i1II1iIi) return this.stop();
+      await this.getShopOpenCardInfo();
+      if (this.openCardStatus !== 0) return this.log("已开卡"), this.exit();
+      await this.bindWithVender();
+      if (this.canNotOpenCard) return this.canHelp = false;
+      this.debug({
+        "inviterNick": this.toHelpUser.mixNick,
+        "isOpenCard": 1,
+        "id": this.activityId,
+        "user_id": this.userId
+      });
+      await this.jinggengApi("reportActivity/recordActPvUvData");
+      await this.taskPost("front/checkTokenInSession", {
+        "userId": this.userId,
+        "token": this.isvToken
+      });
+      let I1iIiII1 = await this.showInviteJoin();
+      I1iIiII1 = this.textToHtml(I1iIiII1);
+      let iiIIiIll = I1iIiII1("#inviteSucc", "body").attr("value"),
+        iIi1lI1I = I1iIiII1("#buyerFans", "body").attr("value");
+      this.debug("inviteSucc:", iiIIiIll, "buyerFans:", iIi1lI1I);
+      if (iiIIiIll && iIi1lI1I) {
+        this.toHelpUser.helpedCount++;
+        this.log("助力[" + this.toHelpUser.pin + "]成功" + this.toHelpUser.helpedCount);
+        let lilI1IiI = this.toHelpUser.inviteSuccessTimesList.filter(iilI1ii => this.toHelpUser.helpedCount >= iilI1ii.days && iilI1ii.status !== 1);
+        lilI1IiI.length > 0 && (await this.toHelpUser.jinggengAcquire(lilI1IiI[0].awardId));
+      }
+      await this.checkCooieNum();
       return;
     }
     await this.getDefenseUrls();
-    if (["10033"].includes(this.activityType)) {
-      await this.login();
-      if (["1005", "1006", "1002"].includes(this.joinCode)) {
-        if (!ab.activity.openCard) return this.log(this.joinDes), this.reseCookieStatus();
-        await this.bindWithVender();
-        if (this.canNotOpenCard) return this.log(this.joinDes), this.reseCookieStatus();
-        await this.login(false);
-      }
-      await this.toHelpUser.activityInfo();
-      await this.saveMember100();
+    if (!this.toHelpUser.needHelp) {
       return;
     }
-    await this.wxCommonInfo();
-    await this.getSimpleActInfoVo();
-    this.defenseUrls.length === 0 ? await this.getMyPing() : await this.initPinToken();
-    await this.accessLog();
-    await this.saveMember();
+    await this.login();
+    if (this.joinCode === "1001") {
+      this.log("已是会员");
+      ii11lI.activity.cookieNum--;
+      await this.checkCooieNum();
+      return;
+    }
+    if (!this.toHelpUser.needHelp) {
+      return;
+    }
+    await this.bindWithVender();
+    if (this.canNotOpenCard) {
+      this.log(this.joinDes);
+      this.canHelp = false;
+      return;
+    }
+    await this.login(false);
+    let i1ii1i11 = await this.lzkjApi("/api/task/member/getMember", {
+      "shareUserId": this.toHelpUser.shareUserId
+    });
+    this.debug(i1ii1i11);
+    ii11lI.activity.cookieNum--;
+    if (i1ii1i11 && i1ii1i11.resp_code === 0) {
+      if (i1ii1i11.data?.["isSuccess"] === 1 || i1ii1i11.data?.["isSuccess"] === 0 && this.activityUrl.includes("//loreal")) {
+        this.toHelpUser.helpedCount++;
+        this.log("助力[" + this.toHelpUser.pin + "]成功" + this.toHelpUser.helpedCount);
+        let IiIIIIll = this.toHelpUser.inviteSuccessTimesList.filter(IIiI11l1 => this.toHelpUser.helpedCount >= IIiI11l1.days && IIiI11l1.status !== 1 && IIiI11l1.status !== 999);
+        if (IiIIIIll.length > 0) {
+          if (this.toHelpUser.memberType === 1) IiIIIIll[0].status = 999;else {
+            IiIIIIll[0].status = 1;
+            await this.toHelpUser.acquire(IiIIIIll[0].id);
+          }
+        }
+        if (this.toHelpUser.helpedCount >= ii11lI.activity.maxHelpCount) {
+          this.toHelpUser.needHelp = false;
+          this.toHelpUser.memberType === 1 && (await this.customAcquire());
+          return;
+        }
+      } else this.log("助力失败");
+    } else this.log(i1ii1i11.resp_msg || "助力失败");
+    await this.checkCooieNum();
   }
   async ["userTask"]() {
-    await this.hitCache();
-    this.inviteMode = 2;
-    if (this.index >= ac.leaderNum) return this.stop();
+    if (this.index >= i111iii1.leaderNum) return this.stop();
     await this.isvObfuscator();
     if (this.mode === "jinggeng") {
       await this.setMixNick();
-      await this.postPartition();
-      return;
-    }
-    if (this.mode == "hdb") {
-      const g = await this.login();
-      if (!(g && g.code)) return;
-      await this.loadFrontAct();
-      await this.reportPVUV();
-      await this.loadPartitionTeamSetting();
-      return;
-    }
-    await this.getDefenseUrls();
-    if (["10033"].includes(this.activityType)) {
-      await this.login();
-      await this.activityInfo();
-      if (["1005", "1006", "1002"].includes(this.joinCode)) {
-        if (!ab.activity.openCard) return this.log(this.joinDes), this.reseCookieStatus();
-        await this.bindWithVender();
-        if (this.canNotOpenCard) return this.log(this.joinDes), this.reseCookieStatus();
-        await this.login(false);
+      let ii1lIlil = await this.jinggengShopInfo();
+      if (!ii1lIlil) return this.stop();
+      let ll1i1li = this.str2Json(ii1lIlil("#helpLogs", "body").attr("value")),
+        liliil1I = this.str2Json(ii1lIlil("#bindLogsList", "body").attr("value")),
+        liill111 = this.str2Json(ii1lIlil("#inviteSetting2", "body").attr("value")),
+        il1l111i = this.str2Json(ii1lIlil("#activityAll", "body").attr("value")),
+        il1Ii1ll = false;
+      for (let lIili in liill111) {
+        if (!il1Ii1ll) il1Ii1ll = liill111[lIili]?.["availableQuantity"] > 0;
       }
-      this.debug(this.createTeamNum, this.helpedCount);
-      !this.teamId && (await this.saveCaptain100());
-      await this.getTeamInfo();
-      !this.teamId && (this.needHelp = false);
+      if (!il1Ii1ll) return this.putMsg("垃圾或领完"), this.stop();
+      this.debug(ll1i1li, liliil1I, liill111);
+      let iIlilll1 = [];
+      for (let l1II1li in liill111) {
+        let IIi = liill111[l1II1li].equityName;
+        [1, 2].includes(liill111[l1II1li][this.keymap[l1II1li]]) && this.equityTypes.includes(liill111[l1II1li].equityType) && liill111[l1II1li].availableQuantity > 0 && iIlilll1.push({
+          "equityName": IIi,
+          "awardId": liill111[l1II1li].id,
+          "days": liill111[l1II1li][this.keymap2[l1II1li]],
+          "status": 0
+        });
+        [3].includes(liill111[l1II1li][this.keymap[l1II1li]]) && iIlilll1.push({
+          "status": 1
+        });
+      }
+      this.debug(iIlilll1);
+      iIlilll1 = iIlilll1.filter(i1111lil => i1111lil.days <= i111iii1.needMaxNum);
+      if (iIlilll1.length === 0) return this.putMsg("垃圾活动"), this.stop();
+      iIlilll1 = iIlilll1.filter(ll1iiII1 => ll1iiII1.status === 0);
+      if (iIlilll1.length === 0) return this.putMsg("已全部领取"), this.exit();
+      iIlilll1 = iIlilll1.sort((I1ll1Ii1, Ii11lIii) => I1ll1Ii1.days - Ii11lIii.days);
+      ii11lI.activity.maxHelpCount = iIlilll1[iIlilll1.length - 1].days;
+      ii11lI.activity.customThread = 1;
+      this.inviteSuccessTimesList = iIlilll1;
+      this.helpedCount = ll1i1li.length;
+      ii11lI.activity.cookieNum < this.inviteSuccessTimesList[0]?.["days"] - this.helpedCount && (this.putMsg("ck不够"), this.stop());
+      await this.jinggengApi("reportActivity/recordActPvUvData");
+      await this.taskPost("front/checkTokenInSession", {
+        "userId": this.userId,
+        "token": this.isvToken
+      });
       return;
     }
-    await this.wxCommonInfo();
-    await this.getSimpleActInfoVo();
-    this.defenseUrls.length === 0 ? await this.getMyPing() : await this.initPinToken();
-    await this.accessLog();
-    await this.getActContent();
+    this.log(this.activityType);
+    if (!["10070", "10006"].includes(this.activityType)) return this.putMsg("不支持的活动类型"), this.stop();
+    await this.getDefenseUrls();
+    await this.login();
+    let iliiliii = this.activityType === "10070" && this.activityUrl.includes("//lzkj") ? "api/task/member/rank/prizeList" : "api/task/member/prizeList",
+      Illl1lii = await this.lzkjApi(iliiliii);
+    this.debug(Illl1lii.data?.["maxReceiveNum"] ?? 0);
+    let lII11l11 = (Illl1lii.data?.["maxReceiveNum"] ?? 0) === 1 ? 1 : 0;
+    this.debug(lII11l11);
+    this.memberType = Illl1lii.data?.["memberType"] ?? lII11l11 ?? 0;
+    this.debug(this.memberType);
+    this.prizeList = Illl1lii.data?.["prizeInfo"] ?? [];
+    let lI1li1i = [2, 6, 10, 11];
+    i111iii1.runMode === 0 && lI1li1i.push(4);
+    let lI1i1il1 = this.prizeList.filter(iiIliiiI => !lI1li1i.includes(iiIliiiI.prizeType) && iiIliiiI.leftNum > 0 && iiIliiiI.days <= i111iii1.needMaxNum && !i111iii1.wx_address_stop_keyword?.["some"](lilll1ii => iiIliiiI.prizeName.includes(lilll1ii)));
+    if (lI1i1il1.length === 0) {
+      this.putMsg("垃圾活动");
+      this.stop();
+      return;
+    }
+    this.prizeList = this.prizeList.filter(i1i1liiI => ![2, 6, 10, 11, 4].includes(i1i1liiI.prizeType) && i1i1liiI.leftNum > 0 && i1i1liiI.days <= i111iii1.needMaxNum && !i111iii1.wx_address_stop_keyword?.["some"](iI1liIli => i1i1liiI.prizeName.includes(iI1liIli)));
+    if (["1005", "1006", "1002"].includes(this.joinCode)) {
+      await this.getShopOpenCardInfo();
+      await this.bindWithVender();
+      if (this.canNotOpenCard) return this.putMsg(this.joinDes);
+      await this.login(false);
+    }
+    let iI1Ilil1 = await this.lzkjApi("api/prize/receive/list");
+    if (!iI1Ilil1 || iI1Ilil1.resp_code !== 0) {
+      this.putMsg(iI1Ilil1?.["resp_msg"] || "获取活动信息失败");
+      this.wxStop(iI1Ilil1?.["resp_msg"] || "获取活动信息失败");
+      return;
+    }
+    let I1l1ill1 = iI1Ilil1.data?.["receivePrizes"] ?? [];
+    if (this.memberType === 1 && I1l1ill1.some(Il1lIlll => Il1lIlll.status === 1)) {
+      this.putMsg("已领取奖品");
+      this.needHelp = false;
+      return;
+    }
+    if (I1l1ill1.length > 0 && i111iii1.runReceive === 1) {
+      for (let li11llli of I1l1ill1) {
+        li11llli.status === 0 && (await this.acquire(li11llli.prizeInfoId), li11llli.status = 1);
+      }
+    }
+    if (this.memberType === 1 && I1l1ill1.some(IIlliiIi => IIlliiIi.status === 1)) {
+      this.putMsg("已领取奖品");
+      this.needHelp = false;
+      return;
+    }
+    this.inviteSuccessTimesList = this.prizeList.filter(ili1i1I1 => !I1l1ill1.some(ililIiii => ililIiii.prizeInfoId === ili1i1I1.id && ililIiii.status === 1)).map(i11I1ii1 => ({
+      ...i11I1ii1,
+      "status": 0
+    })) || [];
+    if (this.inviteSuccessTimesList.length === 0) {
+      this.putMsg("已领取所有奖品");
+      this.needHelp = false;
+      return;
+    }
+    this.inviteSuccessTimesList = this.inviteSuccessTimesList.sort((I1iilIi, lI11lii1) => I1iilIi.days - lI11lii1.days);
+    let l11IIl1i = await this.lzkjApi("/api/task/member/getMember", {
+      "shareUserId": ""
+    });
+    this.debug(l11IIl1i);
+    if (!l11IIl1i || l11IIl1i.resp_code !== 0) {
+      this.putMsg(l11IIl1i?.["resp_msg"] || "获取活动信息失败");
+      this.wxStop(l11IIl1i?.["resp_msg"] || "获取活动信息失败");
+      return;
+    }
+    let lilliI1I = l11IIl1i.data?.["shareUser"] ?? 0;
+    this.helpedCount = lilliI1I;
+    await this.getUserId();
+    let iI1i1llI = this.inviteSuccessTimesList[this.inviteSuccessTimesList.length - 1]?.["days"] ?? 0;
+    ii11lI.activity.maxHelpCount = iI1i1llI;
+    ii11lI.activity.customThread = iI1i1llI > 20 ? 20 : iI1i1llI;
+    ii11lI.activity.cookieNum = llil1ilI.cookieLength - 1 + llil1ilI.inviteCookieLength;
+    this.log("可助力ck:" + ii11lI.activity.cookieNum);
+    ii11lI.activity.cookieNum < this.inviteSuccessTimesList[0]?.["days"] - lilliI1I && (this.putMsg("ck不够"), this.stop());
+    this.debug(this.inviteSuccessTimesList);
+    this.debug(this.helpedCount, this.inviteSuccessTimesList.length, ii11lI.activity.maxHelpCount);
   }
 }
-aa.activity = {
+llil1ilI.activity = {
   "activityUrl": activityUrl
 };
-aa.TaskClass = ae;
-aa.run({
-  "whitelist": ["1-20000"],
-  "thread": 99,
+llil1ilI.TaskClass = iIiiIl1l;
+llil1ilI.run({
+  "whitelist": ["1-1000"],
+  "thread": 5,
   "main_thread": 1,
   "inviteTask": true
 });
